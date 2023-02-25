@@ -1,4 +1,21 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+
+# Ignore the Hugo published site
+public/
+
+# Ignore Cloudflare Worker files
+workers-site/node_modules/*
+workers-site/worker/*
+workers-site/dist/*
+workers-site/.install.lock
+dist/*
+
+# macOS
+.DS_Store
+*/.DS_Store
+*/**/.DS_Store
+
+# NPM
+node_modules/
+
+# Hugo caches
+resources/_gen/
