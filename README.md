@@ -21,7 +21,7 @@ Do you have good resources to share?
 
 _Contributions are welcome!_
 
-![Contributions](/assets/meme/contributions.png)
+![Contributions](/static/meme/contributions.png)
 
 ## Usage
 

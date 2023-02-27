@@ -8,7 +8,7 @@
 #########################
 
 # The name of the Worker script.
-name = "website-saltlabs"
+name = "website-saltlabs-docs"
 
 # The account id that matches the worker
 account_id = "6d6a8fb1f9f3f38b7374d4974c0743cf"
