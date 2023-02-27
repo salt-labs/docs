@@ -26,10 +26,12 @@ markup:
 params:
 
   plugins:
+
     css:
       - link: plugins/bootstrap/bootstrap.min.css
       - link: plugins/search/auto-complete.css
       - link: plugins/featherlight/featherlight.min.css
+
     js:
       - link: plugins/jQuery/jquery.min.js
       - link: plugins/bootstrap/bootstrap.min.js
