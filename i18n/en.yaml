@@ -7,6 +7,9 @@
 - id: topics
   translation: Browse Your Topics
 
+- id: details
+  translation: Details
+
 - id: first_name
   translation: First Name
 
@@ -24,6 +27,9 @@
 
 - id: send
   translation: Send
+
+- id: send_feedback
+  translation: Send Feedback
 
 - id: search_result
   translation: Search result for

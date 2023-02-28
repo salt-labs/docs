@@ -1,6 +1,6 @@
 ---
-title: "Questions"
-description: "This is the place to ask questions."
+title: "Contact"
+description: "Contact form."
 layout: "contact"
 draft: false
 ---

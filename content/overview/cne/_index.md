@@ -1,9 +1,10 @@
 ---
 title: Cloud Native Engineering
 date: 2023-02-26T00:00:00+00:00
-icon: "far fa-credit-card"
+icon: "fa-solid fa-poo-storm"
 description: "Overview of the website"
-type : "docs"
+type: "docs"
+weight: 1
 ---
 
 Cloud-native engineering architecture and technologies are an approach to designing, constructing, and operating workloads that are built to take full advantage of the cloud computing model.

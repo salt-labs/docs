@@ -2,20 +2,20 @@
 title: "FAQ"
 description: "Most frequently asked questions."
 draft: false
-_build:
+build:
   render: true
   list: never
 ---
 
 {{< faq "Why are you sharing this?" >}}
 
-Sharing is caring.
+Sharing is caring. 🧂
 
 {{</ faq >}}
 
 {{< faq "Where does this information come from?" >}}
 
-Most of the content here is linked to from around the internet. Where sources are available they are linked to in references sections for attribution.
+The majority of the content here is a collection of external links put together in one location for ease of access.
 
 {{</ faq >}}
 

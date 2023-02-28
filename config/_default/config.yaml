@@ -50,8 +50,7 @@ params:
 
   variables:
 
-    primary_color: 'purple'
-    #primary_color: '#FF0043'
+    primary_color: '#710793'
     text_color: '#333'
     text_color_dark: '#222'
     text_color_light: '#999'
@@ -62,7 +61,6 @@ params:
     light: '#FBFBFB'
     # https://fonts.google.com/
     primary_font: 'Montserrat:wght@300;400;500;600;700;800'
-    #primary_font: Roboto
     primary_font_type: sans-serif
     secondary_font: ''
     secondary_font_type: ''
@@ -70,8 +68,8 @@ params:
 
   author: Salt Labs
   description: Salt Labs documentation.
-  contact_form_action: '#'
-  feedback_form_action: '#'
+  contact_form_action: https://airform.io/contact@saltlabs.tech
+  feedback_form_action: https://airform.io/feedback@saltlabs.tech
 
   logo:
     main: images/logo.png
@@ -82,8 +80,8 @@ params:
     docs_logo: images/logo-docs.png
 
   preloader:
-    enable: false
-    preloader: ""
+    enable: true
+    preloader: images/salty.png
 
   nav_button:
     - style: outline
@@ -118,8 +116,8 @@ Languages:
     banner:
       title: Documentation
       subtitle: >-
-        An unofficial collection of guides, tips and tutorials on VMware products.
-      image: images/banner.jpg
+        An unofficial collection of guides, tips and tutorials for VMware products.
+      image: images/banner.png
 
     feedback:
       title: Did you find this doc useful?
@@ -129,13 +127,13 @@ Languages:
 
     call_to_action:
       enable: true
-      title: Still Didn't Find Your Answer?
-      image: images/cta-illustration.jpg
+      title: Do you have a suggestion?
+      image: images/salty.png
       content: >-
-        Send us your details and we will do out best to help you out.
+        Send it over and we will do our best to help you out.
       button:
-        enable: 'true'
-        label: Submit a ticket
+        enable: true
+        label: Contact
         link: contact/
 
     menu:
@@ -150,11 +148,18 @@ Languages:
           url: 'https://github.com/salt-labs/'
           weight: 3
       main:
-        - name: "Dropdown"
-          weight: 4
-          hasChildren: true
-          url: "https://gethugothemes.com/"
-        - name: "Dropdown Item"
-          parent: "Dropdown"
+        - name: Salt Labs
           weight: 1
-          url: "https://gethugothemes.com/"
+          hasChildren: true
+        - name: Home
+          weight: 2
+          parent: Salt Labs
+          url: https://saltlabs.tech
+        - name: Docs
+          weight: 3
+          parent: Salt Labs
+          url: https://docs.saltlabs.tech
+        - name: Presentations
+          weight: 4
+          parent: Salt Labs
+          url: https://presentations.saltlabs.tech

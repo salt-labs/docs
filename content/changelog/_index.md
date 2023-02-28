@@ -1,25 +1,40 @@
 ---
 title: "Changelog"
-description: "A very neglected changelog."
+description: "A very neglected site changelog."
 layout: "changelog"
 draft: false
 ---
 
-<hr>
-
-### March 2023
-
-TODO...
-
-<hr>
-
 ### February 2023
 
-Initial release of the site.
+Re-launched the site with a shiny new hugo theme. This theme even includes search which is super helpful.
 
-{{< changelog "Added" >}}
+{{< changelog "Changed" >}}New site theme.{{</ changelog >}}
 
-{{</ changelog >}}
+<hr>
+
+### July 2022
+
+Corrected a few broken links and added a new section about helping people on their journey to becoming a _"Cloud Native Engineer"_ because apparently that's the latest name now.
+
+{{< changelog "Fixed" >}}Broken links.{{</ changelog >}}
+{{< changelog "Added" >}}Cloud Native Engineer.{{</ changelog >}}
+
+<hr>
+
+## September 2021
+
+Added some new content about common frameworks and design patterns.
+
+{{< changelog "Added" >}}Added Frameworks.{{</ changelog >}}
+
+<hr>
+
+### May 2021
+
+The site has been launched <i class="fa-solid fa-rocket"></i>. Time will tell whether it ever gets an update from here.
+
+{{< changelog "Added" >}}Initial release of the site.{{</ changelog >}}
 
 <hr>
 
