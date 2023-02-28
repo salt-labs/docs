@@ -58,3 +58,7 @@ open http://localhost:1313/
 #### GitHub Actions
 
 There is an included workflow for Cloudflare Workers that will deploy the site.
+
+## Documentation
+
+There official documentation for this theme can be found at [gethugothemes](https://docs.gethugothemes.com/godocs/)

@@ -36,7 +36,7 @@ params:
       - link: plugins/jQuery/jquery.min.js
       - link: plugins/bootstrap/bootstrap.min.js
       - link: >-
-          https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js
+          https://kit.fontawesome.com/51ce7c1389.js
         attributes: crossorigin='anonymous' defer='defer' data-search-pseudo-elements
       - link: plugins/masonry/masonry.min.js
       - link: plugins/featherlight/featherlight.min.js
@@ -49,7 +49,9 @@ params:
       - link: plugins/search/search-page.js
 
   variables:
-    primary_color: '#FF0043'
+
+    primary_color: 'purple'
+    #primary_color: '#FF0043'
     text_color: '#333'
     text_color_dark: '#222'
     text_color_light: '#999'
@@ -58,11 +60,13 @@ params:
     black: '#000'
     white: '#fff'
     light: '#FBFBFB'
+    # https://fonts.google.com/
     primary_font: 'Montserrat:wght@300;400;500;600;700;800'
+    #primary_font: Roboto
     primary_font_type: sans-serif
     secondary_font: ''
     secondary_font_type: ''
-    icon_font: Font Awesome 5 Free
+    icon_font: Font Awesome 6 Free
 
   author: Salt Labs
   description: Salt Labs documentation.
@@ -79,7 +83,7 @@ params:
 
   preloader:
     enable: false
-    preloader: ''
+    preloader: ""
 
   nav_button:
     - style: outline
@@ -110,27 +114,30 @@ Languages:
     weight: 1
     copyright: >-
       [Salt Labs](https://saltlabs.tech)
+
     banner:
       title: Documentation
       subtitle: >-
-        An unofficial collection of guides tips and tutorials on VMware products.
+        An unofficial collection of guides, tips and tutorials on VMware products.
       image: images/banner.jpg
+
     feedback:
       title: Did you find this doc useful?
       content: Your feedback helps us improve our docs.
       positive_placeholder: What did you like about this doc?
       negative_placeholder: What can we improve in this doc?
+
     call_to_action:
       enable: true
       title: Still Didn't Find Your Answer?
       image: images/cta-illustration.jpg
       content: >-
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br>
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+        Send us your details and we will do out best to help you out.
       button:
         enable: 'true'
         label: Submit a ticket
         link: contact/
+
     menu:
       footer:
         - name: Changelog
@@ -142,3 +149,12 @@ Languages:
         - name: Github
           url: 'https://github.com/salt-labs/'
           weight: 3
+      main:
+        - name: "Dropdown"
+          weight: 4
+          hasChildren: true
+          url: "https://gethugothemes.com/"
+        - name: "Dropdown Item"
+          parent: "Dropdown"
+          weight: 1
+          url: "https://gethugothemes.com/"
