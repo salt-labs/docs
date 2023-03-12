@@ -1,7 +1,8 @@
 ---
 title: "FAQ"
-description: "Most frequently asked questions."
+description: "Frequently asked questions."
 layout: "faq"
+weight: 1
 draft: false
 _build:
   render: never
@@ -14,9 +15,9 @@ Sharing is caring. 🫂
 
 {{</ faq >}}
 
-{{< faq "Where does this information come from?" >}}
+{{< faq "Where does this content come from?" >}}
 
-Every time we find content worthy of being bookmarked, notes are often taken. This site is just those notes with their associated external links put together in one location for ease of access.
+Every time we find content worthy of being bookmarked, notes are often taken. This site is just a combination of those notes with their associated links put together in one location for ease of access.
 
 {{</ faq >}}
 

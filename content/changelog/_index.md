@@ -2,8 +2,15 @@
 title: "Changelog"
 description: "A very neglected site changelog."
 layout: "changelog"
+weight: 1
 draft: false
 ---
+
+<hr>
+
+### Future
+
+🔮
 
 <hr>
 

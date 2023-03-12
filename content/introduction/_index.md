@@ -1,11 +1,14 @@
 ---
-title: Overview
+title: Introduction
 date: 2023-02-26T00:00:00+00:00
 icon: "fa-solid fa-user"
-description: "Overview of the website"
+description: "Introduction to the website"
 type: "topic"
-draft: true
+weight: 1
+draft: false
 ---
+
+## Overview
 
 Welcome to the __Salt Labs__ documentation website.
 

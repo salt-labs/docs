@@ -124,13 +124,13 @@ Languages:
 
     call_to_action:
       enable: true
-      title: Suggestion Box
+      title: Have a suggestion?
       image: images/salty.png
       content: >-
-        If you have a suggestion for content and aren't able to contribute directly to GitHub yourself, why not drop it in the box
+        If you have a suggestion for content and aren't able to contribute directly to GitHub yourself, why not drop it in the box below.
       button:
         enable: true
-        label: Contact
+        label: Suggestion Box
         link: contact/
 
     menu:
@@ -141,7 +141,7 @@ Languages:
         - name: Contact
           url: contact/
           weight: 2
-        - name: Github
+        - name: GitHub
           url: 'https://github.com/salt-labs/'
           weight: 3
       main:
