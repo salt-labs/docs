@@ -5,9 +5,19 @@ layout: "changelog"
 draft: false
 ---
 
+<hr>
+
+### March 2023
+
+Added tutorials for TKGs upgrades and where to find the VMware interop matrix.
+
+{{< changelog "Added" >}}Added TKGs upgrade tutorial.{{</ changelog >}}
+
+<hr>
+
 ### February 2023
 
-Re-launched the site with a shiny new hugo theme. This theme even includes search which is super helpful.
+Re-launched the site with a shiny new theme. This theme even includes search!.
 
 {{< changelog "Changed" >}}New site theme.{{</ changelog >}}
 
@@ -15,7 +25,7 @@ Re-launched the site with a shiny new hugo theme. This theme even includes searc
 
 ### July 2022
 
-Corrected a few broken links and added a new section about helping people on their journey to becoming a _"Cloud Native Engineer"_ because apparently that's the latest name now.
+Corrected a few broken links and added a new section about helping people on their journey to becoming a _"Cloud Native Engineer"_ because apparently that's the latest title recruiters are looking for now.
 
 {{< changelog "Fixed" >}}Broken links.{{</ changelog >}}
 {{< changelog "Added" >}}Cloud Native Engineer.{{</ changelog >}}
@@ -24,15 +34,17 @@ Corrected a few broken links and added a new section about helping people on the
 
 ## September 2021
 
-Added some new content about common frameworks and design patterns.
+Brushed of the cobwebs and added new content about common frameworks and design patterns found around the web.
 
 {{< changelog "Added" >}}Added Frameworks.{{</ changelog >}}
 
 <hr>
 
-### May 2021
+### May 2020
 
-The site has been launched <i class="fa-solid fa-rocket"></i>. Time will tell whether it ever gets an update from here.
+The site has been launched! <i class="fa-solid fa-rocket"></i>
+
+_Time will tell whether it ever gets an update or gets abandoned from here._
 
 {{< changelog "Added" >}}Initial release of the site.{{</ changelog >}}
 

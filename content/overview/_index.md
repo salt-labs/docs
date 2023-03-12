@@ -3,7 +3,8 @@ title: Overview
 date: 2023-02-26T00:00:00+00:00
 icon: "fa-solid fa-user"
 description: "Overview of the website"
-type: "docs"
+type: "topic"
+draft: true
 ---
 
 Welcome to the __Salt Labs__ documentation website.

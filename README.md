@@ -4,7 +4,7 @@ This repository contains the source files for the Salt Labs [docs](https://docs.
 
 ## Overview
 
-In the spirit of open collaboration, we're sharing some non-sensitive _Cloud Native Engineering_ resources that we found useful here at Salt Labs.
+In the spirit of open collaboration, we're sharing some non-sensitive _Cloud Native Engineering_ resources that we found useful here at Salt Labs in our travels.
 
 ## Content
 
@@ -59,6 +59,6 @@ open http://localhost:1313/
 
 There is an included workflow for Cloudflare Workers that will deploy the site.
 
-## Documentation
+### Theme
 
-There official documentation for this theme can be found at [gethugothemes](https://docs.gethugothemes.com/godocs/)
+The official documentation for this theme (GoDocs) can be found at [gethugothemes](https://docs.gethugothemes.com/godocs/)

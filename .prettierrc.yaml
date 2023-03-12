@@ -20,7 +20,7 @@ overrides:
       - "*.md"
     options:
       tabWidth: 4
-      usetabs: false
+      useTabs: false
 
   #########################
   # HTML
@@ -29,7 +29,7 @@ overrides:
       - "*.html"
     options:
       tabWidth: 4
-      usetabs: false
+      useTabs: false
 
   #########################
   # Python
@@ -38,7 +38,7 @@ overrides:
       - "*.py"
     options:
       tabWidth: 2
-      usetabs: false
+      useTabs: false
 
   #########################
   # YAML
@@ -48,4 +48,4 @@ overrides:
       - "*.yml"
     options:
       tabWidth: 2
-      usetabs: false
+      useTabs: false

@@ -2,9 +2,6 @@
 
 title: Docs
 themesDir: themes
-#theme: godocs-1
-#theme: godocs-2
-#theme: godocs-3
 theme: godocs-4
 
 publishDir: public
@@ -121,16 +118,16 @@ Languages:
 
     feedback:
       title: Did you find this doc useful?
-      content: Your feedback helps us improve our docs.
+      content: Your feedback helps us improve.
       positive_placeholder: What did you like about this doc?
       negative_placeholder: What can we improve in this doc?
 
     call_to_action:
       enable: true
-      title: Do you have a suggestion?
+      title: Suggestion Box
       image: images/salty.png
       content: >-
-        Send it over and we will do our best to help you out.
+        If you have a suggestion for content and aren't able to contribute directly to GitHub yourself, why not drop it in the box
       button:
         enable: true
         label: Contact
