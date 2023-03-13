@@ -3,7 +3,7 @@ title: "Changelog"
 description: "A very neglected site changelog."
 layout: "changelog"
 weight: 1
-draft: true
+draft: false
 ---
 
 <hr>

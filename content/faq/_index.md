@@ -3,7 +3,7 @@ title: "FAQ"
 description: "Frequently asked questions."
 layout: "faq"
 weight: 1
-draft: true
+draft: false
 _build:
   render: never
   list: never
