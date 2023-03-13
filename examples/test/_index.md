@@ -6,6 +6,8 @@ description: "Testing the site short codes."
 type : "docs"
 ---
 
+_Testing all the things._
+
 {{< collapse "this is a simple collapse" >}}
 This is the content that collapse
 {{</ collapse >}}

@@ -3,7 +3,7 @@ title: "Installation"
 date: 2018-12-29T11:02:05+06:00
 weight: 2
 feedback: true
-draft: false
+draft: true
 ---
 
 The following steps are here to help you initialize your new website. If you don't know Hugo at all, we strongly suggest you learn more about it by following this [great documentation for beginners](https://gohugo.io/overview/quickstart/).
@@ -46,7 +46,7 @@ hugo new installation/first-content.md
 hugo new installation/second-content/_index.md
 ```
 
-Feel free to edit thoses files by adding some sample content and replacing the `title` value in the beginning of the files. 
+Feel free to edit thoses files by adding some sample content and replacing the `title` value in the beginning of the files.
 
 ### Launching the website locally
 
