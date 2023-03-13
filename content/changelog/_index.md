@@ -16,9 +16,9 @@ draft: false
 
 ### March 2023
 
-Added tutorials for TKGs upgrades and where to find the VMware interop matrix.
+Started work on a tutorial for TKGs upgrades and where to find the VMware interop matrix.
 
-{{< changelog "Added" >}}Added TKGs upgrade tutorial.{{</ changelog >}}
+{{< changelog "Unreleased" >}}Started TKGs upgrade tutorial.{{</ changelog >}}
 
 <hr>
 
@@ -26,7 +26,10 @@ Added tutorials for TKGs upgrades and where to find the VMware interop matrix.
 
 Re-launched the site with a shiny new theme. This theme even includes search!.
 
+Moved all content back to drafts so it can be reviewed for accuracy and re-uploaded. The site will be a little bare for a while until this can be completed.
+
 {{< changelog "Changed" >}}New site theme.{{</ changelog >}}
+{{< changelog "Removed" >}}Moved old content back to drafts.{{</ changelog >}}
 
 <hr>
 
