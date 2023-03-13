@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "Salt Labs website",
+  "main": "index.js",
+  "license": "Unlicense",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "0.3.0"
+  }
+}

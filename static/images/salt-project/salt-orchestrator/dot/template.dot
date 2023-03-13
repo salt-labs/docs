@@ -1,0 +1,104 @@
+digraph DOT_TEMPLATE {
+
+  /*
+  ###############################################
+  Name: Template
+  Author: Matthew Duncan
+  Version: 1.0
+  Creation Date: XX/XX/XXXX
+  Description: Template
+  ###############################################
+  */
+
+  clusterrank = local;
+  compound = true;
+  concentrate = false;
+  edge [ fontname = "helvetica", fontsize = 14, fontcolor = black ];
+  fixedsize = false;
+  graph [ fontname = "helvetica", fontsize = 14, fontcolor = black ];
+  imagepath = images;
+  label = "Template"
+  labelloc = top;
+  labeljust = center;
+  layout = dot;
+  margin = 10;
+  newrank = true
+  node [ fontname = "helvetica", fontsize = 14, fontcolor = black ];
+  nodesep = "1 equally";
+  overlap = false;
+  pack = false;
+  //packMode = node;
+  rankdir = TB;
+  ranksep = "1 equally";
+  ratio = auto
+  //size = "11.7, 16.5"; // A3 Size
+  //size = "8.3,11.7"; // A4 Size
+  sep = 1;
+  splines = false;
+  start = random;
+
+  /*
+  ###############################################
+  SUBGRAPHS
+  ###############################################
+  */
+
+  subgraph cluster_SUBGRAPH_NAME {
+
+    bgcolor = lightgrey;
+    color = black;
+    //edge [ ];
+    graph [ color = lightyellow, style = filled ];
+    label = "Build";
+    labelloc = top;
+    labeljust = center;
+    margin = 10;
+    rankdir = TB;
+    //style = bold;
+
+    // Nodes
+    // NODE1 [ label = "Node1", group "Nodes" ];
+
+
+  }
+
+  /*
+  ###############################################
+  EDGES
+  ###############################################
+  */
+
+  // Description for group of edges
+  #Object_1 -> Object2 [ label = "Edge Label" ];
+
+  /*
+  ###############################################
+  RANK
+  ###############################################
+  */
+
+  // TOP RANK
+  {
+
+    rank = same;
+
+    // NODE1
+
+  }
+
+  // MIDDLE RANK
+
+  {
+
+    rank = same;
+
+  }
+
+  // BOTTOM RANK
+  {
+
+    rank = same;
+
+  }
+
+}

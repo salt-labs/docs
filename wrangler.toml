@@ -1,0 +1,64 @@
+##################################################
+# Name: wrangler.toml
+# Description: Cloudflare Workers config
+##################################################
+
+#########################
+# Global
+#########################
+
+# The name of the Worker script.
+name = "website-saltlabs-docs"
+
+# The account id that matches the worker
+account_id = "6d6a8fb1f9f3f38b7374d4974c0743cf"
+
+# Deploy to the workers.dev subdomain?
+workers_dev = false
+
+# Compatibility date for the Workers runtime.
+compatibility_date = "2023-02-25"
+
+# The entry point for your Worker.
+main = "workers-site/index.js"
+
+# Usage model for the Worker (bundled or unbound)
+usage_model = "bundled"
+
+# Send logs to the console.
+logpush = false
+
+#########################
+[site]
+#########################
+
+bucket = "./public"
+
+#include = ["upload_dir"]
+#exclude = ["ignore_dir"]
+
+#########################
+[env.staging]
+#########################
+
+# The route where to use the worker
+# Ref: https://developers.cloudflare.com/workers/about/routes/
+routes = [
+
+	{ pattern = "staging.docs.saltlabs.tech", custom_domain = true },
+	{ pattern = "staging.docs.saltlabs.tech/*", zone_name = "saltlabs.tech" },
+
+]
+
+#########################
+[env.production]
+#########################
+
+# The route where to use the worker
+# Ref: https://developers.cloudflare.com/workers/about/routes/
+routes = [
+
+	{ pattern = "docs.saltlabs.tech", custom_domain = true },
+	{ pattern = "docs.saltlabs.tech/*", zone_name = "saltlabs.tech" },
+
+]

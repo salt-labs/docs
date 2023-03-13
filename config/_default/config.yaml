@@ -1,0 +1,162 @@
+---
+
+title: Docs
+themesDir: themes
+theme: godocs-4
+
+publishDir: public
+
+googleAnalytics: "G-75QSQ6BKDP"
+
+disableLanguages: []
+
+outputs:
+  home:
+    - HTML
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+
+  plugins:
+
+    css:
+      - link: plugins/bootstrap/bootstrap.min.css
+      - link: plugins/search/auto-complete.css
+      - link: plugins/featherlight/featherlight.min.css
+
+    js:
+      - link: plugins/jQuery/jquery.min.js
+      - link: plugins/bootstrap/bootstrap.min.js
+      - link: >-
+          https://kit.fontawesome.com/51ce7c1389.js
+        attributes: crossorigin='anonymous' defer='defer' data-search-pseudo-elements
+      - link: plugins/masonry/masonry.min.js
+      - link: plugins/featherlight/featherlight.min.js
+      - link: plugins/clipboard/clipboard.min.js
+      - link: plugins/search/auto-complete.js
+      - link: plugins/search/search.js
+      - link: plugins/search/lunr.min.js
+      - link: plugins/search/fuse.min.js
+      - link: plugins/search/mark.js
+      - link: plugins/search/search-page.js
+
+  variables:
+
+    primary_color: '#710793'
+    text_color: '#333'
+    text_color_dark: '#222'
+    text_color_light: '#999'
+    body_color: '#fff'
+    border_color: '#E2E2E2'
+    black: '#000'
+    white: '#fff'
+    light: '#FBFBFB'
+    # https://fonts.google.com/
+    primary_font: 'Montserrat:wght@300;400;500;600;700;800'
+    primary_font_type: sans-serif
+    secondary_font: ''
+    secondary_font_type: ''
+    icon_font: Font Awesome 6 Free
+
+  author: Salt Labs
+  description: Salt Labs documentation.
+  contact_form_action: https://airform.io/contact@saltlabs.tech
+  feedback_form_action: https://airform.io/feedback@saltlabs.tech
+
+  logo:
+    main: images/logo.png
+    favicon: images/favicon.png
+    main_site_link: 'https://docs.saltlabs.tech'
+    logo_icon: images/logo-icon.png
+    site_logo: images/logo-site.png
+    docs_logo: images/logo-docs.png
+
+  preloader:
+    enable: true
+    preloader: images/salty.png
+
+  nav_button:
+    - style: outline
+      label: changelog
+      link: changelog/
+    - style: solid
+      label: contact
+      link: contact/
+
+  social:
+    #- title: facebook
+    #  icon: fab fa-facebook
+    #  link: '#'
+    #- title: twitter
+    #  icon: fab fa-twitter
+    #  link: '#'
+    - title: github
+      icon: fab fa-github
+      link: 'https://github.com/salt-labs'
+    #- title: linkedin
+    #  icon: fab fa-linkedin
+    #  link: '#'
+
+Languages:
+  en:
+    languageName: En
+    languageCode: en-us
+    weight: 1
+    copyright: >-
+      [Salt Labs](https://saltlabs.tech)
+
+    banner:
+      title: Documentation
+      subtitle: >-
+        An unofficial collection of guides, tips and tutorials for VMware products.
+      image: images/banner.png
+
+    feedback:
+      title: Did you find this doc useful?
+      content: Your feedback helps us improve.
+      positive_placeholder: What did you like about this doc?
+      negative_placeholder: What can we improve in this doc?
+
+    call_to_action:
+      enable: true
+      title: Have a suggestion?
+      image: images/salty.png
+      content: >-
+        If you have a suggestion for content and aren't able to contribute directly to GitHub yourself, why not drop it in the box below.
+      button:
+        enable: true
+        label: Suggestion Box
+        link: contact/
+
+    menu:
+      footer:
+        - name: Changelog
+          url: changelog/
+          weight: 1
+        - name: Contact
+          url: contact/
+          weight: 2
+        - name: GitHub
+          url: 'https://github.com/salt-labs/'
+          weight: 3
+      main:
+        - name: Salt Labs
+          weight: 1
+          hasChildren: true
+        - name: Home
+          weight: 2
+          parent: Salt Labs
+          url: https://saltlabs.tech
+        - name: Docs
+          weight: 3
+          parent: Salt Labs
+          url: https://docs.saltlabs.tech
+        - name: Presentations
+          weight: 4
+          parent: Salt Labs
+          url: https://presentations.saltlabs.tech
