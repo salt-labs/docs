@@ -1,0 +1,38 @@
+---
+
+hugoVersion:
+  extended: true
+  min: 0.109.0
+
+imports:
+
+  - path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5
+  - path: github.com/gethugothemes/hugo-modules/components/preloader
+  - path: github.com/gethugothemes/hugo-modules/components/social-share
+  - path: github.com/gethugothemes/hugo-modules/components/cookie-consent
+  - path: github.com/gethugothemes/hugo-modules/components/custom-script
+  - path: github.com/gethugothemes/hugo-modules/components/render-link
+  - path: github.com/gethugothemes/hugo-modules/icons/font-awesome
+  - path: github.com/gethugothemes/hugo-modules/components/crisp-chat
+  - path: github.com/gethugothemes/hugo-modules/pwa
+  - path: github.com/gethugothemes/hugo-modules/images
+  - path: github.com/gethugothemes/hugo-modules/shortcodes/buttons
+  - path: github.com/gethugothemes/hugo-modules/shortcodes/codepen
+  - path: github.com/gethugothemes/hugo-modules/shortcodes/collapse
+  - path: github.com/gethugothemes/hugo-modules/shortcodes/notice
+  - path: github.com/gethugothemes/hugo-modules/shortcodes/video
+  - path: github.com/gethugothemes/hugo-modules/shortcodes/tabs
+  - path: github.com/gethugothemes/hugo-modules/shortcodes/image
+  - path: github.com/gethugothemes/hugo-modules/shortcodes/gallery
+  - path: github.com/gethugothemes/hugo-modules/shortcodes/table-of-contents
+  - path: github.com/gethugothemes/hugo-modules/shortcodes/youtube-lite
+  - path: github.com/gethugothemes/hugo-modules/shortcodes/vimeo-lite
+  - path: github.com/gethugothemes/hugo-modules/seo-tools/baidu-analytics
+  - path: github.com/gethugothemes/hugo-modules/seo-tools/matomo-analytics
+  - path: github.com/gethugothemes/hugo-modules/seo-tools/plausible-analytics
+  - path: github.com/gethugothemes/hugo-modules/seo-tools/counter-analytics
+  - path: github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager
+  - path: github.com/gethugothemes/hugo-modules/seo-tools/site-verifications
+  - path: github.com/gethugothemes/hugo-modules/seo-tools/basic-seo
+  - path: github.com/gethugothemes/hugo-modules/gzip-caching
+  - path: github.com/gethugothemes/hugo-modules/adsense

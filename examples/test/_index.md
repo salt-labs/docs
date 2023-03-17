@@ -4,6 +4,8 @@ date: 2023-02-26T00:00:00+00:00
 icon: "far fa-credit-card"
 description: "Testing the site short codes."
 type : "docs"
+weight: 1
+draft: true
 ---
 
 _Testing all the things._
@@ -54,8 +56,12 @@ another:
     - item3
 {{< /highlight >}}
 
+{{< gist MAHDTech 03806be9b5109e1bdd2d28e5d5d1ac10 >}}
+
 {{< youtube w7Ft2ymGmfc >}}
 
 {{< vimeo 146022717 >}}
+
+{{< instagram BQD9zQQFQZ >}}
 
 {{< tweet 877500564405444608 >}}

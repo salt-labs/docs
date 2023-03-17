@@ -3,10 +3,9 @@ title: "Elements"
 date: 2018-12-29T11:02:05+06:00
 weight: 5
 feedback: true
-draft: true
+draft: false
 ---
-
-#### Heading example
+#### Heading Example
 
 Here is example of hedings. You can use this heading by following markdownify rules. For example: use `#` for heading 1 and use `######` for heading 6.
 
@@ -44,8 +43,8 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 Or leave it empty and use the [link text itself].
 
-URLs and URLs in angle brackets will automatically get turned into links.
-http://www.example.com or <http://www.example.com> and sometimes
+URLs and URLs in angle brackets will automatically get turned into links. 
+http://www.example.com or <http://www.example.com> and sometimes 
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
@@ -96,11 +95,15 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
   This is a simple info.
 {{< /notice >}}
 
+{{< notice "warning" >}}
+  This is a simple warning.
+{{< /notice >}}
+
 <hr>
 
 #### Tab
 
-{{< tabs >}}
+{{< tabs "my-tab" >}}
 
   {{< tab "first" >}}
    This is first tab
@@ -120,16 +123,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 
 ### Collapse
 
-{{< collapse "collapse 1" >}}
-  This is a simple collapse
+{{< collapse "This is an Collapse" >}}
+- Lorem ipsum dolor sit amet consectetur adipisicing elit.
+- Lorem ipsum dolor sit amet consectetur adipisicing elit.
+- Lorem ipsum dolor sit amet consectetur adipisicing elit.
 {{< /collapse >}}
 
-{{< collapse "collapse 2" >}}
-  This is a simple collapse
-{{< /collapse >}}
-
-{{< collapse "collapse 3" >}}
-  This is a simple collapse
+{{< collapse "This is a dummy description text" >}}
+This is the start of dummy description text. You can change it whenever you want. It is used to test the responsiveness of the site. It is not used in the actual site. 
 {{< /collapse >}}
 
 <hr>
@@ -142,14 +143,14 @@ Inline `code` has `back-ticks around` it.
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
-
+ 
 ```python
 s = "Python syntax highlighting"
 print s
 ```
-
-```
-No language indicated, so no syntax highlighting.
+ 
+```html
+No language indicated, so no syntax highlighting. 
 But let's throw in a <b>tag</b>.
 ```
 
@@ -173,7 +174,6 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 
-
 <hr>
 
 ##### Tables
@@ -187,7 +187,7 @@ Colons can be used to align columns.
 | zebra stripes | are neat      |    $1 |
 
 There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the
+The outer pipes (|) are optional, and you don't need to make the 
 raw Markdown line up prettily. You can also use inline Markdown.
 
 Markdown | Less | Pretty
@@ -199,10 +199,10 @@ Markdown | Less | Pretty
 
 ##### Image
 
-![image](img-1.jpg)
+{{< image src="img-1.jpg" alt="image" zoomable="true" >}}
 
 <hr>
 
 ##### Youtube video
 
-{{< youtube C0DPdy98e4c >}}
+{{< youtube 8cdO5mJnPws >}}

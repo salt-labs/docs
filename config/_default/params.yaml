@@ -1,0 +1,121 @@
+---
+
+favicon: "images/favicon.png"
+logo: "images/logo.png"
+
+main_site_link: 'https://docs.saltlabs.tech'
+
+logo_icon: "images/logo-icon.png"
+site_logo: "images/logo-site.png"
+docs_logo: "images/logo-docs.png"
+logo_width: "155px"
+logo_webp: true
+logo_text: "Docs"
+
+purge_css: true
+
+image_gallery: true
+
+contact_form_action: "https://airform.io/contact@saltlabs.tech"
+#feedback_form_action: "https://airform.io/feedback@saltlabs.tech"
+
+#google_adsense: ''
+google_adsense: "ca-pub-1104801561087207"
+
+google_tag_manager: "GTM-WQQVKD7"
+
+custom_script: "<script>console.log(\"Preloading salt...\")</script>"
+
+table_of_content: true
+copyright: Copyleft by Salt Labs
+theme_copyright: false
+
+preloader:
+  enable: true
+  preloader: "images/salty.png"
+
+nav_button:
+
+  - label: Changelog
+    link: changelog/
+    style: outline
+
+  - label: Contact
+    link: contact/
+    style: solid
+
+call_to_action:
+  enable: true
+  title: Have a suggestion?
+  image: images/salty.png
+  content: >-
+    If you have a suggestion for content and don't want to contribute directly to GitHub yourself, drop it in the box below.
+  button:
+    enable: true
+    label: Suggestion Box
+    link: contact/
+
+feedback:
+  enable: true
+  title: Did you find this doc useful?
+  content: Your feedback helps us improve.
+  positive_placeholder: What did you like about this doc?
+  negative_placeholder: What can we improve in this doc?
+
+# https://www.youtube.com/watch?v=nW5UX6iVdFc
+crisp_chat:
+  enable: false
+  crisp_website_id: 9aa449e1-9999-422a-938f-8567982eec6d
+
+metadata:
+  author: "Salt Labs"
+  description: "Salt Labs Documentation"
+  image: "images/favicon.png"
+  keywords:
+    - Salt Labs
+    - Documentation
+
+# https://matomo.org/
+matomo:
+  enable: false
+  id: ''
+  url: ''
+
+# https://tongji.baidu.com/
+baidu:
+  analytics_id: ''
+  enable: false
+
+# https://plausible.io/
+plausible:
+  domain: ''
+  enable: false
+
+# https://counter.dev/setup.html
+counter:
+  enable: false
+  username: ''
+
+site_verification:
+  baidu: ''
+  bing: ''
+  facebook: ''
+  google: ''
+  mastodon: ''
+
+cookies:
+  enable: true
+  button: I Accept
+  content: >-
+    This site uses cookies.
+    By continuing to use this website,
+    you agree to their use.
+  expire_days: 30
+
+social:
+  - icon: fab fa-twitter
+    link: 'https://twitter.com/MAHDTecher'
+    title: Twitter
+  - icon: fab fa-github
+    link: 'https://github.com/salt-labs'
+    title: GitHub

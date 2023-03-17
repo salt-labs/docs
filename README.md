@@ -21,7 +21,7 @@ Do you have good resources to share?
 
 _Contributions are welcome!_
 
-![Contributions](/static/meme/contributions.png)
+![Contributions](/assets/images/meme/contributions.png)
 
 ## Usage
 
@@ -40,11 +40,7 @@ git submodule update --recursive --remote
 -   Run your own local instance using [hugo](https://gohugo.io)
 
 ```bash
-hugo server \
-    --verbose \
-    --disableFastRender \
-    --ignoreCache \
-    --environment development
+hugo server --environment development
 ```
 
 -   Browse to the site running on `localhost`

@@ -100,7 +100,23 @@ jobs:
         run: |
           rm -f themes/*/content/post/* || echo "Failed to remove posts from theme"
           rm -f themes/*/data/authors/* || echo "Failed to remove authors from theme"
+          rm -rf assets/images/backup || echo "Failed to remove extra images"
           rm -rf static/images/backup || echo "Failed to remove extra images"
+
+      - id: hugo_modules
+        name: Download Hugo modules
+        run: |
+          if [[ -f "go.mod" ]]; then
+            echo "Downloading Go modules"
+            go mod download
+          else
+            echo "No go.mod file found"
+          fi
+          echo "Downloading Hugo modules"
+          hugo mod clean
+          hugo mod get -u ./...
+          hugo mod tidy
+          hugo mod graph
 
       - id: hugo_build_staging
         name: Build the website using Hugo (Staging)

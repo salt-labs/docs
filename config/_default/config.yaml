@@ -1,162 +1,445 @@
 ---
 
-title: Docs
-themesDir: themes
-theme: godocs-4
+# The directory to be used for configuration properties
+archetypeDir: archetypes
 
-publishDir: public
+# The directory where the assets are located
+assetDir: assets
 
+# hostname (and path) to the root
+baseURL: ""
+
+# Build configuration
+build:
+  useResourceCacheWhen: fallback
+  writeStats: true
+
+# include content marked as draft
+buildDrafts: false
+
+# include content with publish date in the future
+buildFuture: false
+
+# include content already expired
+buildExpired: false
+
+# Cache configuration
+caches:
+
+  assets:
+    dir: :resourceDir/_gen
+    maxAge: -1
+
+  getcsv:
+    dir: :cacheDir/:project
+    maxAge: -1
+
+  getjson:
+    dir: :cacheDir/:project
+    maxAge: -1
+
+  images:
+    dir: :resourceDir/_gen
+    maxAge: -1
+
+  modules:
+    dir: :cacheDir/modules
+    maxAge: -1
+
+# If enabled all relative URLs will be *canonicalized* using `baseurl`
+canonifyURLs: true
+
+# Clean the destination directory before building the website
+cleanDestinationDir: true
+
+# The content directory
+contentDir: content
+
+Copyright: Salt Labs
+
+# The data directory
+dataDir: data
+
+# Missing translations will default to this content language
+DefaultContentLanguage: en
+
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+DefaultContentLanguageInSubdir: false
+
+# Disable generation of alias redirects
+disableAliases: false
+
+# Force full render of all pages
+disableFastRender: true
+
+# Disable injection of Hugo meta-tag in the HTML
+disableHugoGeneratorInject: false
+
+# Disable all pages of a specific kind
+# A list which can include
+# - page
+# - home
+# - section
+# - taxonomy
+# - term
+# - RSS
+# - sitemap
+# - robotsTXT
+# - 404
+disableKinds: []
+
+# List of languages to disable
+disableLanguages:
+  - "fr"
+
+# Stop HUGO from automatically rebuilding the site on change
+disableLiveReload: false
+
+# If enabled, do not convert the URL/path to lowercase
+disablePathToLower: false
+
+# Do not build RSS files
+disableRSS: false
+
+# Do not build Sitemap file
+disableSitemap: false
+
+# disqus short name
+# Tutotial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
+#disqusShortname = "saltlabs-docs"
+disqusShortname: ""
+
+# Allows the use of emoji
+# https://www.webfx.com/tools/emoji-cheat-sheet/
+enableEmoji: true
+
+# Enable to show the git information on the page
+enableGitInfo: false
+
+# Enable inline shortcode support
+enableInlineShortcodes: true
+
+# Show a placeholder instead of the default value if a translation is missing
+enableMissingTranslationPlaceholders: true
+
+# Build robots.txt file
+enableRobotsTXT: true
+
+# Copy all files when static is changed.
+forceSyncStatic: true
+
+# Front Matter configuration
+frontmatter:
+
+  date:
+    - date
+    - publishDate
+    - lastmod
+
+  lastmod:
+    - ":git"
+    - lastmod
+    - date
+    - publishDate
+
+  publishDate:
+    - publishDate
+    - date
+
+  expiryDate:
+    - expiryDate
+
+# Prefix for footnote anchors
+footnoteAnchorPrefix: ""
+
+# Text to display for footnote return links
+footnoteReturnLinkContent: ""
+
+# Google Analytics ID
 googleAnalytics: "G-75QSQ6BKDP"
 
-disableLanguages: []
+# Enable to auto-detect Chinese/Japanese/Korean languages
+hasCJKLanguage: false
+
+# Completely ignore the cache for builds.
+ignoreCache: true
+
+# Image processing configuration
+imaging:
+
+  # Resample filter
+  # Ref: https://github.com/disintegration/imaging
+  resampleFilter: box
+
+  # Default quality for JPEG
+  quality: 90
+
+  # Anchor used when cropping pictures
+  anchor: smart
+
+  # Default background color
+  bgColor: "#ffffff"
+
+  # EXIF config
+  exif:
+
+    includeFields: ""
+
+    excludeFields: ""
+
+    # Disable date extraction from photos
+    disableDate: false
+
+    # Disable GPS coords extraction from photos
+    disableLatLong: false
+
+# Language configuration
+Languages:
+
+  en:
+    languageName: "En"
+    languageCode: "en-au"
+    weight: 1
+
+  fr:
+    languageName: "Fr"
+    languageCode: "fr-fr"
+    weight: 2
+
+# Layout directory
+layoutDir: layouts
+
+# Enable Logging
+log: false
+
+# Log File path (if set, logging enabled automatically)
+logFile: "hugo.log"
+
+# Markup configuration
+markup:
+
+  asciidocExt:
+    attributes: {}
+    backend: html5
+    docType: article
+    extensions: []
+    failureLevel: fatal
+    noHeaderOrFooter: true
+    safeMode: unsafe
+    sectionNumbers: false
+    trace: false
+    verbose: true
+    workingFolderCurrent: false
+
+  blackFriday:
+    angledQuotes: false
+    extensions: null
+    extensionsMask: null
+    footnoteAnchorPrefix: ""
+    footnoteReturnLinkContents: ""
+    fractions: true
+    hrefTargetBlank: false
+    latexDashes: true
+    nofollowLinks: false
+    noreferrerLinks: false
+    plainIDAnchors: true
+    skipHTML: false
+    smartDashes: true
+    smartypants: true
+    smartypantsQuotesNBSP: false
+    taskLists: true
+
+  defaultMarkdownHandler: goldmark
+
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    # https://xyproto.github.io/splash/docs/all.html
+    style: catppuccin-mocha
+    tabWidth: 2
+
+  tableOfContents:
+    startLevel: 0
+    endLevel: 6
+    ordered: false
+
+mediaTypes:
+  application/manifest+json:
+    suffixes:
+      - webmanifest
+  text/netlify:
+    delimiter: ''
+    suffixes:
+      - ''
+
+# Minify configuration
+minify:
+
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  tdewolff:
+    css:
+      decimals: -1
+      keepCSS2: true
+    html:
+      keepConditionalComments: true
+      keepDefaultAttrVals: true
+      keepDocumentTags: true
+      keepEndTags: true
+      keepQuotes: false
+      keepWhitespace: false
+    js: {}
+    json: {}
+    svg:
+      decimals: -1
+    xml:
+      keepWhitespace: false
+
+# The editor to use when creating new content
+newContentEditor: vim
+
+# Don't sync permission mode of files
+noChmod: false
+
+# Don't sync modification times of files
+noTimes: true
 
 outputs:
   home:
     - HTML
+    - RSS
     - JSON
+    - WebAppManifest
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
+outputFormats:
+  WebAppManifest:
+    mediaType: application/manifest+json
+    rel: manifest
 
-params:
+# Default number of elements per page
+paginate: 10
 
-  plugins:
+# The path element used during pagination
+# Example: https://website.com/page/2
+paginatePath: page
 
-    css:
-      - link: plugins/bootstrap/bootstrap.min.css
-      - link: plugins/search/auto-complete.css
-      - link: plugins/featherlight/featherlight.min.css
+# Permalink configuration
+permalinks:
+  posts: /:year/:month/:title/
 
-    js:
-      - link: plugins/jQuery/jquery.min.js
-      - link: plugins/bootstrap/bootstrap.min.js
-      - link: >-
-          https://kit.fontawesome.com/51ce7c1389.js
-        attributes: crossorigin='anonymous' defer='defer' data-search-pseudo-elements
-      - link: plugins/masonry/masonry.min.js
-      - link: plugins/featherlight/featherlight.min.js
-      - link: plugins/clipboard/clipboard.min.js
-      - link: plugins/search/auto-complete.js
-      - link: plugins/search/search.js
-      - link: plugins/search/lunr.min.js
-      - link: plugins/search/fuse.min.js
-      - link: plugins/search/mark.js
-      - link: plugins/search/search-page.js
+# Pluralize titles in lists using inflect
+pluralizeListTitles: true
 
-  variables:
+# Preserve Taxonomies
+preserveTaxonomyNames: true
 
-    primary_color: '#710793'
-    text_color: '#333'
-    text_color_dark: '#222'
-    text_color_light: '#999'
-    body_color: '#fff'
-    border_color: '#E2E2E2'
-    black: '#000'
-    white: '#fff'
-    light: '#FBFBFB'
-    # https://fonts.google.com/
-    primary_font: 'Montserrat:wght@300;400;500;600;700;800'
-    primary_font_type: sans-serif
-    secondary_font: ''
-    secondary_font_type: ''
-    icon_font: Font Awesome 6 Free
+# Publish directory
+publishDir: public
 
-  author: Salt Labs
-  description: Salt Labs documentation.
-  contact_form_action: https://airform.io/contact@saltlabs.tech
-  feedback_form_action: https://airform.io/feedback@saltlabs.tech
+# Related configuration
+related:
 
-  logo:
-    main: images/logo.png
-    favicon: images/favicon.png
-    main_site_link: 'https://docs.saltlabs.tech'
-    logo_icon: images/logo-icon.png
-    site_logo: images/logo-site.png
-    docs_logo: images/logo-docs.png
+  includeNewer: false
 
-  preloader:
-    enable: true
-    preloader: images/salty.png
+  indices:
 
-  nav_button:
-    - style: outline
-      label: changelog
-      link: changelog/
-    - style: solid
-      label: contact
-      link: contact/
+    - name: keywords
+      weight: 100
 
-  social:
-    #- title: facebook
-    #  icon: fab fa-facebook
-    #  link: '#'
-    #- title: twitter
-    #  icon: fab fa-twitter
-    #  link: '#'
-    - title: github
-      icon: fab fa-github
-      link: 'https://github.com/salt-labs'
-    #- title: linkedin
-    #  icon: fab fa-linkedin
-    #  link: '#'
+    - name: date
+      weight: 10
 
-Languages:
-  en:
-    languageName: En
-    languageCode: en-us
-    weight: 1
-    copyright: >-
-      [Salt Labs](https://saltlabs.tech)
+  threshold: 80
+  toLower: false
 
-    banner:
-      title: Documentation
-      subtitle: >-
-        An unofficial collection of guides, tips and tutorials for VMware products.
-      image: images/banner.png
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs: true
 
-    feedback:
-      title: Did you find this doc useful?
-      content: Your feedback helps us improve.
-      positive_placeholder: What did you like about this doc?
-      negative_placeholder: What can we improve in this doc?
+# The log level for ref or relref.
+# WARNING or ERROR
+refLinksErrorLevel: ERROR
 
-    call_to_action:
-      enable: true
-      title: Have a suggestion?
-      image: images/salty.png
-      content: >-
-        If you have a suggestion for content and aren't able to contribute directly to GitHub yourself, why not drop it in the box below.
-      button:
-        enable: true
-        label: Suggestion Box
-        link: contact/
+# The URL to be used as a placeholder when a page cannot be found
+refLinksNotFoundURL: ""
 
-    menu:
-      footer:
-        - name: Changelog
-          url: changelog/
-          weight: 1
-        - name: Contact
-          url: contact/
-          weight: 2
-        - name: GitHub
-          url: 'https://github.com/salt-labs/'
-          weight: 3
-      main:
-        - name: Salt Labs
-          weight: 1
-          hasChildren: true
-        - name: Home
-          weight: 2
-          parent: Salt Labs
-          url: https://saltlabs.tech
-        - name: Docs
-          weight: 3
-          parent: Salt Labs
-          url: https://docs.saltlabs.tech
-        - name: Presentations
-          weight: 4
-          parent: Salt Labs
-          url: https://presentations.saltlabs.tech
+# The maximum number of items in the RSS feed
+rssLimit: 1000
+
+# Section Menu for Lazy Bloggers
+# Ref: https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers
+sectionPagesMenu: main
+
+# Sitemap configuration
+sitemap:
+
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+# Static directory
+staticDir: static
+
+# The length of text in words to show a .Summary
+summaryLength: 70
+
+# Show templating metrics and hints.
+templateMetrics: true
+templateMetricsHints: true
+
+# Theme to yse from /themes/$themeName
+themesDir: themes
+theme: godocs-4
+
+# Timeout for generating page contents
+timeout: 10000
+
+# Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
+timeZone: "UTC"
+
+# Website title
+title: Docs
+
+# Title case style
+# Ref: https://gohugo.io/getting-started/configuration/#configure-title-case
+# AP, Chicago, Go
+titleCaseStyle: AP
+
+# if true, use /filename.html instead of /filename/
+uglyURLs: false
+
+# verbose output
+verbose: true
+
+# verbose logging
+verboseLog: true
+
+# watch filesystem for changes and recreate as needed
+watch: true

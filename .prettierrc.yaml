@@ -8,7 +8,7 @@
 #########################
 
 trailingComma: "es5"
-tabWidth: 4
+tabWidth: 2
 semi: false
 singleQuote: false
 
@@ -19,7 +19,7 @@ overrides:
   - files:
       - "*.md"
     options:
-      tabWidth: 4
+      tabWidth: 2
       useTabs: false
 
   #########################
@@ -28,8 +28,11 @@ overrides:
   - files:
       - "*.html"
     options:
-      tabWidth: 4
+      tabWidth: 2
       useTabs: false
+      parser: "go-template"
+      goTemplateBracesSpacing: true
+      bracketSameLine: true
 
   #########################
   # Python

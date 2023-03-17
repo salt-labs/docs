@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt dolore magna aliquyam erat, sed diam voluptua. At vero eos et ustoLorem ipsum dolor sit amet, consetetur."
 layout: "changelog"
-draft: true
+draft: false
 ---
 
 ### February Updates
@@ -51,22 +51,29 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 ### Changelog label
 
 {{< changelog "Added" >}}
+This is the start of dummy description text. You can change it whenever you want. It is used to test the responsiveness of the site. It is not used in the actual site. 
 {{</ changelog >}}
 
 {{< changelog "Changed" >}}
+This is the start of dummy description text. You can change it whenever you want. It is used to test the responsiveness of the site. It is not used in the actual site. 
 {{</ changelog >}}
 
 {{< changelog "Depricated" >}}
+This is the start of dummy description text. You can change it whenever you want. It is used to test the responsiveness of the site. It is not used in the actual site. 
 {{</ changelog >}}
 
 {{< changelog "Removed" >}}
+This is the start of dummy description text. You can change it whenever you want. It is used to test the responsiveness of the site. It is not used in the actual site. 
 {{</ changelog >}}
 
 {{< changelog "Fixed" >}}
+This is the start of dummy description text. You can change it whenever you want. It is used to test the responsiveness of the site. It is not used in the actual site. 
 {{</ changelog >}}
 
 {{< changelog "Security" >}}
+This is the start of dummy description text. You can change it whenever you want. It is used to test the responsiveness of the site. It is not used in the actual site. 
 {{</ changelog >}}
 
 {{< changelog "Unreleased" >}}
+This is the start of dummy description text. You can change it whenever you want. It is used to test the responsiveness of the site. It is not used in the actual site. 
 {{</ changelog >}}

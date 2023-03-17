@@ -3,11 +3,10 @@ title: "Customization"
 date: 2018-12-29T11:02:05+06:00
 weight: 4
 feedback: true
-draft: true
+draft: false
 ---
 
 **GoDocs** has been built to be as configurable as possible.
-
 
 ### Change the logo
 
@@ -35,14 +34,13 @@ If you need to change this default behavior, create a new file in `layouts/parti
 
 **GoDocs** support change color. You can change the colors from `assets/scss/variables.scss`. You can change the colors of the template as you want.
 
-
 ```scss
 /* Color Variables */
-$primary-color: #FF0043;
+$color-primary: #FF0043;
 $text-color: #333;
-$text-color-dark: #222;
-$text-color-light: #999;
-$body-color: #fff;
+$text-dark: #222;
+$text-light: #999;
+$body-bg: #fff;
 $border-color: #E2E2E2;
 $black: #000;
 $white: #fff;
@@ -50,5 +48,5 @@ $light: #FBFBFB;
 
 /* Font Variables */
 $font-primary: 'Montserrat', sans-serif;
-$icon-font: 'themify';
+$font-icon: 'Font Awesome 5 Free';
 ```
