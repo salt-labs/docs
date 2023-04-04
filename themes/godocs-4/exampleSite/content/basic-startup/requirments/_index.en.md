@@ -1,11 +1,10 @@
 ---
-title: "Requirments"
+title: "Requirements"
 date: 2018-12-29T11:02:05+06:00
 weight: 1
 feedback: true
 draft: false
 ---
-
 
 Thanks to the simplicity of Hugo, this page is as empty as this theme needs requirements.
 

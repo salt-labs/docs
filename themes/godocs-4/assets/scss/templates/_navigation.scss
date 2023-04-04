@@ -141,7 +141,6 @@ header.search-active.home-nav {
 }
 
 @include desktop {
-
   #banner .search-wrapper {
     max-width: 300px;
     margin: auto;
@@ -170,7 +169,7 @@ header.search-active.home-nav {
     }
   }
 
-  .logo-devider {
+  .logo-divider {
     height: 30px;
     width: 3px;
     background-color: $border-color;

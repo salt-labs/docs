@@ -20,6 +20,8 @@ purge_css = true
 image_gallery = true
 # contact form action
 contact_form_action = "#" # contact form works with [https://airform.io/] or [https://formspree.io]
+# feedback form action
+feedback_form_action = "#" # feedback form works with [https://airform.io/] or [https://formspree.io]
 # google tag manager, see https://developers.google.com/tag-manager/
 google_adsense = "" # example: ca-pub-xxxxxxxxxxxxxxxx
 google_tag_manager = "" # example: G-XXXXXXXXXX
@@ -28,8 +30,8 @@ custom_script = ""
 # table of content on document page
 table_of_content = true
 # copyright
-copyright = "Copyright by your company"
 theme_copyright = true
+copyright = "Copyright by your company"
 
 # Preloader
 [preloader]

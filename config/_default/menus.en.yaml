@@ -1,9 +1,7 @@
 ---
-
 main:
-
   - name: Home
-    url: ''
+    url: ""
     weight: 1
 
   - name: Salt Labs
@@ -19,7 +17,6 @@ main:
     weight: 4
 
 footer:
-
   - name: Changelog
     url: changelog/
     weight: 1
@@ -28,6 +25,6 @@ footer:
     url: contact/
     weight: 2
 
-  - name: Github
-    url: 'https://github.com/salt-labs/'
+  - name: GitHub
+    url: "https://github.com/salt-labs/"
     weight: 3

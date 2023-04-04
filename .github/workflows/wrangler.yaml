@@ -9,12 +9,10 @@
 name: Wrangler
 
 on:
-
   # Automatically run anytime there
   # is a push to the default branch
   push:
     branches:
-      - $default-branch
       - trunk
 
   # Automatically run anytime a PR
@@ -22,7 +20,6 @@ on:
   # for the defined types.
   pull_request:
     branches:
-      - $default-branch
       - trunk
     types:
       - opened
@@ -35,7 +32,7 @@ on:
   # the site still builds as external
   # dependencies change.
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: "0 0 * * 0"
 
 permissions:
   contents: read
@@ -44,12 +41,10 @@ permissions:
   statuses: read
 
 defaults:
-
   run:
     shell: bash
 
 env:
-
   HUGO_VERSION: 0.110.0
 
   WRANGLER_API_TOKEN: ${{ secrets.CLOUDFLARE_WORKERS }}
@@ -58,13 +53,11 @@ env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
 jobs:
-
   ##################################################
   # Publish to Cloudflare Workers using the Wrangler CLI
   ##################################################
 
   deploy:
-
     name: Publish website
 
     runs-on: ${{ matrix.os }}
@@ -78,7 +71,6 @@ jobs:
           - ubuntu-latest
 
     steps:
-
       - id: checkout_repository
         name: Checkout repository with submodules
         uses: actions/checkout@v3
@@ -108,7 +100,7 @@ jobs:
         run: |
           if [[ -f "go.mod" ]]; then
             echo "Downloading Go modules"
-            go mod download
+            go mod download -x
           else
             echo "No go.mod file found"
           fi
@@ -148,7 +140,9 @@ jobs:
       - id: publish_website_staging
         name: Publish website using Wrangler (Staging)
         if: |
-          startsWith( env.BRANCH_NAME, 'draft/' ) &&
+          startsWith( env.BRANCH_NAME, 'draft/' ) ||
+          startsWith( env.BRANCH_NAME, 'feat/' ) ||
+          startsWith( env.BRANCH_NAME, 'fix/' ) &&
           steps.hugo_build_staging.outcome == 'success'
         uses: cloudflare/wrangler-action@2.0.0
         with:
@@ -177,7 +171,6 @@ jobs:
   ##################################################
 
   check:
-
     name: PR Status Checks
 
     runs-on: ${{ matrix.os }}
@@ -193,7 +186,6 @@ jobs:
     needs: deploy
 
     steps:
-
       - name: PR Status Giphy
         id: pr-status-giphy
         uses: dgteixeira/pr-status-giphy-action@v2

@@ -14,6 +14,14 @@ draft: false
 
 <hr>
 
+### April 2023
+
+Still working on getting ready to re-launch a bunch of old content under this new theme.
+
+{{< changelog "Unreleased" >}}Relaunch.{{</ changelog >}}
+
+<hr>
+
 ### March 2023
 
 Started work on a tutorial for TKGs upgrades and where to find the VMware interop matrix.
@@ -72,8 +80,8 @@ Something was added.
 Something was changed.
 {{</ changelog >}}
 
-{{< changelog "Depricated" >}}
-Something has been depricated.
+{{< changelog "Deprecated" >}}
+Something has been deprecated.
 {{</ changelog >}}
 
 {{< changelog "Removed" >}}

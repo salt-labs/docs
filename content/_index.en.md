@@ -1,17 +1,16 @@
 ---
-
 title: "Salt Labs Documentation"
 
 banner:
   title: "Documentation"
   subtitle: >-
-    An unofficial collection of guides, tips and tutorials for VMware products.
+    An unofficial collection of guides, tips and tutorials for cloud-native products.
   image: "images/banner.png"
 
 banner_button:
   enable: "true"
   label: "Get Started"
-  link: "100_introduction/"
+  link: "introduction/"
 
 call_to_action:
   enable: true

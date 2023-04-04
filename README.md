@@ -58,3 +58,20 @@ There is an included workflow for Cloudflare Workers that will deploy the site.
 ### Theme
 
 The official documentation for this theme (GoDocs) can be found at [gethugothemes](https://docs.gethugothemes.com/godocs/)
+
+#### Weights
+
+The weights are used to determine the order of the pages in the menu. The lower the weight, the higher the page will appear in the menu.
+
+It can get a little confusing, so here's a table to track the weights.
+
+| Page Name | Weight |
+| :-------: | :----: |
+| Changelog | 1 |
+| Contact | 1 |
+| FAQ | 1 |
+|  Introduction   |  1    |
+| Search | 1 |
+| Frameworks | 100-199 |
+| Technologies | 200-299 |
+| Guides | 300-399 |
