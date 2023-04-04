@@ -45,7 +45,7 @@ defaults:
     shell: bash
 
 env:
-  HUGO_VERSION: 0.110.0
+  HUGO_VERSION: 0.111.3
 
   WRANGLER_API_TOKEN: ${{ secrets.CLOUDFLARE_WORKERS }}
 
