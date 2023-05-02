@@ -119,29 +119,43 @@ _Time will tell whether it ever gets an update or gets abandoned from here._
 The following labels are used in the changelog.
 
 {{< changelog "Added" >}}
-Something was added.
+
+- Something was added.
+
 {{</ changelog >}}
 
 {{< changelog "Changed" >}}
-Something was changed.
+
+- Something was changed.
+
 {{</ changelog >}}
 
 {{< changelog "Deprecated" >}}
-Something has been deprecated.
+
+- Something has been deprecated.
+
 {{</ changelog >}}
 
 {{< changelog "Removed" >}}
-Something has been removed
+
+- Something has been removed
+
 {{</ changelog >}}
 
 {{< changelog "Fixed" >}}
-Something has been fixed
+
+- Something has been fixed
+
 {{</ changelog >}}
 
 {{< changelog "Security" >}}
-A security related item has changed.
+
+- A security related item has changed.
+
 {{</ changelog >}}
 
 {{< changelog "Unreleased" >}}
-Work is in progress but still in draft.
+
+- Work is in progress but still in draft.
+
 {{</ changelog >}}
