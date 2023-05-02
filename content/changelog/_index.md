@@ -50,7 +50,7 @@ Corrected a few broken links and added a new section about helping people on the
 
 <hr>
 
-## September 2021
+### September 2021
 
 Brushed of the cobwebs and added new content about common frameworks and design patterns found around the web.
 
