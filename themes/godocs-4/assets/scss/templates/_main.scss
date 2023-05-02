@@ -1,7 +1,7 @@
 .card {
   @extend .shadow;
   @extend .rounded;
-  transition: 0.2s ease;
+  transition: .2s ease;
   border: 0;
 
   &-lg {
@@ -64,7 +64,7 @@
     display: block;
     padding: 10px;
     color: $text-color;
-    transition: 0.2s ease;
+    transition: .2s ease;
     font-weight: 500;
 
     &:hover {
@@ -84,7 +84,7 @@
     padding-left: 10px;
   }
 
-  & > li {
+  &>li {
     a {
       padding: 10px 0;
       color: $text-dark;
@@ -105,7 +105,7 @@
   }
 
   .parent {
-    & > a {
+    &>a {
       color: $color-primary !important;
       position: relative;
       margin-left: 10px;
@@ -132,7 +132,7 @@
         color: rgba($text-dark, 0.8);
       }
 
-      li.active > a {
+      li.active>a {
         margin-left: 10px;
 
         &::before {
@@ -238,7 +238,7 @@ pre {
   }
 }
 
-:not(pre) > code + span.copy-to-clipboard {
+:not(pre)>code+span.copy-to-clipboard {
   display: none;
 }
 
@@ -262,7 +262,7 @@ pre {
   }
 
   .autocomplete-suggestion {
-    transition: 0.2s ease;
+    transition: .2s ease;
     padding: 10px;
     font-weight: 500;
 
@@ -317,7 +317,7 @@ pre {
 
   .form-select {
     font-size: 16px;
-    color: rgba($text-dark, 0.8);
+    color: rgba($text-dark, .8);
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -365,17 +365,17 @@ textarea.form-control {
   border-radius: 4px;
 
   &.added {
-    background: #3778ff;
+    background: #3778FF;
     color: $white;
   }
 
   &.fixed {
-    background: #f54773;
+    background: #F54773;
     color: $white;
   }
 
   &.changed {
-    background: #3aaa55;
+    background: #3AAA55;
     color: $white;
   }
 
@@ -390,12 +390,12 @@ textarea.form-control {
   }
 
   &.security {
-    background: #f53535;
+    background: #F53535;
     color: $white;
   }
 
   &.unreleased {
-    background: #a037ff;
+    background: #A037FF;
     color: $white;
   }
 }
@@ -422,7 +422,7 @@ textarea.form-control {
     color: #7f818c !important;
   }
 
-  & > img {
+  &>img {
     border-radius: 5px;
   }
 
@@ -459,7 +459,7 @@ textarea.form-control {
 
       &::before {
         position: absolute;
-        content: "";
+        content: '';
         height: 8px;
         width: 8px;
         border-radius: 50%;
@@ -468,13 +468,14 @@ textarea.form-control {
         top: 8px;
       }
     }
+
   }
 
   table {
     width: 100%;
     max-width: 100%;
     margin-bottom: 1rem;
-    border: 1px solid #eeeeee;
+    border: 1px solid #EEEEEE;
     border-radius: 5px;
     border-spacing: 0;
     border-collapse: separate;
@@ -483,13 +484,13 @@ textarea.form-control {
 
   table td,
   table th {
-    padding: 0.75rem;
+    padding: .75rem;
     vertical-align: top;
     margin-bottom: 0;
   }
 
   tr:not(:last-child) {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #EEEEEE;
   }
 
   th {
@@ -501,7 +502,7 @@ textarea.form-control {
     margin-bottom: 0;
 
     tr {
-      border-bottom: 1px solid #eeeeee;
+      border-bottom: 1px solid #EEEEEE;
     }
   }
 
@@ -578,7 +579,7 @@ blockquote,
 
     &::before {
       position: absolute;
-      content: "";
+      content: '';
       height: 8px;
       width: 8px;
       border-radius: 50%;

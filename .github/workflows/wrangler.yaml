@@ -43,8 +43,8 @@ env:
 
   WRANGLER_API_TOKEN: ${{ secrets.CLOUDFLARE_WORKERS }}
 
-  # Works on pushes or PRs
-  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+  BRANCH_NAME_CURRENT: ${{ github.head_ref || github.ref_name }}
+  BRANCH_NAME_DEFAULT: ${{ github.event.repository.default_branch }}
 
 jobs:
   ##################################################
@@ -92,6 +92,10 @@ jobs:
       - id: hugo_modules
         name: Download Hugo modules
         run: |
+          if [[ -f package.json ]]; then
+            echo "Running npm install"
+            npm install
+          fi
           if [[ -f "go.mod" ]]; then
             echo "Downloading Go modules"
             go mod download -x
@@ -104,14 +108,10 @@ jobs:
           hugo mod tidy
           hugo mod graph
 
+      # Any branch other than the default is staged for preview.
       - id: hugo_build_staging
         name: Build the website using Hugo (Staging)
-        if: |
-          startsWith( env.BRANCH_NAME, 'draft/' ) ||
-          startsWith( env.BRANCH_NAME, 'bug/' ) ||
-          startsWith( env.BRANCH_NAME, 'fix/' ) ||
-          startsWith( env.BRANCH_NAME, 'feat/' ) ||
-          github.event_name == 'pull_request'
+        if: env.BRANCH_NAME_CURRENT != env.BRANCH_NAME_DEFAULT
         env:
           TZ: "Australia/Sydney"
         run: |
@@ -119,9 +119,9 @@ jobs:
           touch public/.nojekyll
           ls -la public/
 
+      # The default branch is 'Production'
       - id: hugo_build_production
-        if: |
-          env.BRANCH_NAME == 'trunk'
+        if: env.BRANCH_NAME_CURRENT == env.BRANCH_NAME_DEFAULT
         name: Build the website using Hugo (Production)
         env:
           TZ: "Australia/Sydney"
@@ -130,13 +130,10 @@ jobs:
           touch public/.nojekyll
           ls -la public/
 
-      # Only 'draft/*' branches are pushed to the Staging website
       - id: publish_website_staging
         name: Publish website using Wrangler (Staging)
         if: |
-          startsWith( env.BRANCH_NAME, 'draft/' ) ||
-          startsWith( env.BRANCH_NAME, 'feat/' ) ||
-          startsWith( env.BRANCH_NAME, 'fix/' ) &&
+          env.BRANCH_NAME_CURRENT != env.BRANCH_NAME_DEFAULT &&
           steps.hugo_build_staging.outcome == 'success'
         uses: cloudflare/wrangler-action@2.0.0
         with:
@@ -150,7 +147,7 @@ jobs:
       - id: publish_website_production
         name: Publish website using Wrangler (Production)
         if: |
-          env.BRANCH_NAME == 'trunk' &&
+          env.BRANCH_NAME_CURRENT == env.BRANCH_NAME_DEFAULT &&
           steps.hugo_build_production.outcome == 'success'
         uses: cloudflare/wrangler-action@2.0.0
         with:
