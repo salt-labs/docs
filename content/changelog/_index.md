@@ -24,7 +24,7 @@ Shipped the first guide as a sample of the things to come. Not finished, but got
 
 ### April 2023
 
-Still working on getting ready to re-launch a bunch of old content under this new theme.
+Still working towards re-launching the old content under this new theme.
 
 {{< changelog "Unreleased" >}}Relaunch.{{</ changelog >}}
 
