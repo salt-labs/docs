@@ -5,19 +5,19 @@ icon: "fab fa-kubernetes"
 description: "The Stages of a PaaS project."
 type: "docs"
 weight: 1
-draft: true
+draft: false
 ---
 
 ## Overview
 
-The stages of a PaaS project.
+The stages of a Kubernetes PaaS project.
 
 ### Stage 1: Discovery and Assessment
 
 - Assess the existing infrastructure and applications
 - Identify requirements and constraints
 - Perform a skills gap analysis to determine training needs
-  Evaluate current CI/CD processes
+- Evaluate current CI/CD processes
 
 ### Stage 2: Planning and Design
 
@@ -39,25 +39,30 @@ The stages of a PaaS project.
 - Implement role-based access control (RBAC) and namespaces
 - Set up ingress and egress controls
 - Configure cluster autoscaling
+- Develop CI/CD pipelines for Core Services
+- Package and deploy all Core Services
+- Implement Cluster observability tooling and incident management process
+- Implement Cluster Backup and Recovery tooling and processes
 
 ### Stage 5: Application Migration and Modernization
 
 - Containerize applications and create Kubernetes manifests
 - Implement CI/CD pipelines for deployment and rollback
 - Test and validate application functionality on the new cluster
-- Migrate applications in a phased approach
+- Migrate applications in a phased approach.
 
 ### Stage 6: Monitoring, Logging, and Security
 
-- Integrate monitoring and logging tools (e.g., Prometheus, Grafana, Elasticsearch, Fluentd)
+- Integrate application monitoring and logging tools.
 - Implement security best practices and policies
 - Set up alerts and notifications for critical events
 - Regularly audit and update security configurations
+- Continue to harden through continual improvement processes.
 
 ### Stage 7: Training and Documentation
 
 - Train the IT and development teams on Kubernetes and TKG
-- Create and maintain documentation for infrastructure, applications, and processes
+- Refine and maintain documentation for infrastructure, applications, and processes
 - Develop runbooks and playbooks for common tasks and incident response
 
 ### Stage 8: Continuous Improvement and Optimization

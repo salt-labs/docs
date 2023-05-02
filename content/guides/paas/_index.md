@@ -5,7 +5,7 @@ icon: "fab fa-kubernetes"
 description: "Building a Platform as a Service with Kubernetes."
 type: "docs"
 weight: 303
-draft: true
+draft: false
 ---
 
 ## Overview
@@ -40,4 +40,4 @@ The below links walk through some opinionated categories that should be consider
 - [Runtime](runtime)
 - [Platform](paas)
 
-Once your PaaS is up and running, it's then finally time to start building and shipping your applications.
+Once your PaaS is up and running, it's then finally time to start building and shipping your applications!
