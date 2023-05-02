@@ -17,12 +17,12 @@
         </ul>
       </div>
       <div class="col-md-8">
-        <div class="px-lg-5 px-4">
-          <h1 class="mb-4 font-weight-medium">{{ .Title }}</h1>
+        <div class="px-lg-5 px-sm-4">
+          <h1 class="mb-4 fw-bold">{{ .Title }}</h1>
           {{ if .Content }}
           <div class="content">{{.Content}}</div>
           {{ else }}
-          <ul class="list-styled text-left mb-4">
+          <ul class="list-styled text-start mb-4">
             {{ range .Data.Pages }}
             <li><a href="{{.Permalink}}">{{.Title}}</a></li>
             {{end}}
@@ -30,41 +30,55 @@
           {{ end }}
           <nav class="pagination">
             <!-- Next prev page -->
-            {{ $currentNode := . }}
-            {{ template "menu-nextprev" dict "menu" .Site.Home "currentnode" $currentNode }}
-            {{ define "menu-nextprev" }}
-            {{$currentNode := .currentnode }}
-            {{ if ne .menu.Params.hidden true}}
-            {{if hasPrefix $currentNode.Permalink .menu.Permalink }}
-            {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
-            {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
-            {{else}}
-            {{if eq ($currentNode.Scratch.Get "NextPageOK") "OK"}}
-            {{ $currentNode.Scratch.Set "NextPageOK" nil }}
-            {{ $currentNode.Scratch.Set "nextPage" .menu }}
-            {{end}}
-            {{end}}
-            {{ $currentNode.Scratch.Set "prevPageTmp" .menu }}
+            {{- $currentNode := . -}}
+            {{- template "menu-nextprev" dict "menu" site.Home "currentnode" $currentNode -}}
+            {{- define "menu-nextprev" -}}
+              {{- $currentNode := .currentnode -}}
+              {{- if ne .menu.Params.hidden true -}}
+                {{- if hasPrefix $currentNode.Permalink .menu.Permalink -}}
+                  {{- $currentNode.Scratch.Set "NextPageOK" "OK" -}}
+                  {{- $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") -}}
+                {{- else -}}
+                  {{- if eq ($currentNode.Scratch.Get "NextPageOK") "OK" -}}
+                    {{- $currentNode.Scratch.Set "NextPageOK" nil -}}
+                    {{- $currentNode.Scratch.Set "nextPage" .menu -}}
+                  {{- end -}}
+                {{- end -}}
+                {{- $currentNode.Scratch.Set "prevPageTmp" .menu -}}
+                {{- $currentNode.Scratch.Set "pages" .menu.Pages -}}
+                {{- if .menu.IsHome -}}
+                  {{- $currentNode.Scratch.Set "pages" .menu.Sections -}}
+                {{- else if .menu.Sections -}}
+                  {{- $currentNode.Scratch.Set "pages" (.menu.Pages | union .menu.Sections) -}}
+                {{- end -}}
+                {{- $pages := ($currentNode.Scratch.Get "pages") -}}
+    
+                {{- range $pages.ByWeight -}}
+                  {{- template "menu-nextprev" dict "menu" . "currentnode" $currentNode -}}
+                {{- end -}}
+              {{- end -}}
+            {{- end -}}
+            
+            {{- with ($.Scratch.Get "prevPage") -}}
+            {{- if .Title -}}
+            <a class="nav nav-prev" href="{{.RelPermalink }}"><i class="fas fa-chevron-left me-2"></i>
+              <span class="d-none d-sm-block">{{.Title}}</span> <span class="d-block d-sm-none">Prev</span>
+            </a>
+            {{- end -}}
+            {{- end -}}
 
-            {{ $currentNode.Scratch.Set "pages" .menu.Pages }}
-            {{ $pages := ($currentNode.Scratch.Get "pages") }}
-
-            {{ range $pages.ByWeight  }}
-            {{ template "menu-nextprev" dict "menu" . "currentnode" $currentNode }}
-            {{end}}
-            {{ end }}
-            {{ end }}
-
-            {{with ($.Scratch.Get "prevPage")}}
-            <a class="nav nav-prev" href="{{.Permalink }}"><i class="fas fa-chevron-left mr-2"></i>
-              <span class="d-none d-md-block">{{.Title}}</span></a>
-            {{end}}
-            {{with ($.Scratch.Get "nextPage")}}
-            <a class="nav nav-next" href="{{.Permalink }}"> <span class="d-none d-md-block">{{.Title}}</span><i
-                class="fas fa-chevron-right ml-2"></i></a>
-            {{end}}
+            {{- with ($.Scratch.Get "nextPage") -}}
+            {{- if .Title -}}
+            <a class="nav nav-next" href="{{.RelPermalink }}">
+              <span class="d-none d-sm-block">{{.Title}}</span> <span class="d-block d-sm-none">Next</span><i class="fas fa-chevron-right ms-2"></i>
+            </a>
+            {{- end -}}
+            {{- end -}}
           </nav>
-          {{ partial "feedback.html" . }}
+          
+          {{ if .Params.Feedback }}
+          {{ partial "components/feedback.html" . }}
+          {{ end }}
         </div>
       </div>
     </div>

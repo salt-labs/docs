@@ -20,7 +20,7 @@
   translation: Email
 
 - id: contact_reason
-  translation: Reason for Contact
+  translation: Reason of Contact
 
 - id: write_message
   translation: Start Writing From Here

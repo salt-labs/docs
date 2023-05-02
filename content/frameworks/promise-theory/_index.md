@@ -3,8 +3,8 @@ title: "Promise Theory"
 date: 2020-10-10T12:00:00-04:00
 icon: "fa-solid fa-handshake"
 description: "A pattern using agents who publish their intentions to one another in the form of promises."
-type: 'docs'
-weight: 100
+type: "docs"
+weight: 107
 draft: true
 ---
 
@@ -18,29 +18,34 @@ You may have used Promise Theory concepts without even realizing it. _CFEngine_,
 
 ### Videos
 
-If you prefer a shorter summary of the concepts, here are some videos from the creator of Promise Theory [Mark Burgess](https://en.wikipedia.org/wiki/Mark_Burgess_(computer_scientist)).
+If you prefer a shorter summary of the concepts, here are some videos from the creator of Promise Theory [Mark Burgess](<https://en.wikipedia.org/wiki/Mark_Burgess_(computer_scientist)>).
 
 - Promise Theory Part 1
 
-{{< button href="https://www.youtube.com/watch?v=2TPsB5WuZgk" >}}Watch video (10 min){{< /button >}}
+{{< button label="Watch video (10 min)" link="https://www.youtube.com/watch?v=2TPsB5WuZgk" >}}
+<br/>
 
 - Promise Theory Part 2
 
-{{< button href="https://www.youtube.com/watch?v=vGDRoHLQlnU" >}}Watch video (15 min){{< /button >}}
+{{< button label="Watch video (15 min)" link="https://www.youtube.com/watch?v=vGDRoHLQlnU" >}}
+<br/>
 
 - Promise Theory Part 3
 
-{{< button href="https://www.youtube.com/watch?v=CZcWZokRRac" >}}Watch video (8 min){{< /button >}}
+{{< button label="Watch video (8 min)" link="https://www.youtube.com/watch?v=CZcWZokRRac" >}}
+<br/>
 
 - Promise Theory Part 4
 
-{{< button href="https://www.youtube.com/watch?v=7AVGh7N3TzQ" >}}Watch video (10 min){{< /button >}}
+{{< button label="Watch video (10 min)" link="https://www.youtube.com/watch?v=7AVGh7N3TzQ" >}}
+<br/>
 
 ### Books
 
 If you prefer to read, there are multiple books available on the subject.
 
-{{< button href="http://markburgess.org/promises.html" >}}Books (~){{< /button >}}
+{{< button label="Books (~)" link="http://markburgess.org/promises.html" >}}
+<br/>
 
 ### Applications
 
@@ -53,9 +58,10 @@ There are some talks that go into more about how to apply Promise Theory directl
 
 - Promise Theory and DevSecOps
 
-{{< button href="https://www.youtube.com/watch?v=B7NsH6WdYkw" >}}Watch video (30 min){{< /button >}}
+{{< button label="Watch video (30 min)" link="https://www.youtube.com/watch?v=B7NsH6WdYkw" >}}
+<br/>
 
-## References
+## Related Links
 
 - [Promise Theory](https://en.wikipedia.org/wiki/Promise_theory)
 - [Chiteki Promise Theory](https://www.chiteki.org/promise-theory)

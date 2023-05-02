@@ -4,7 +4,7 @@ date: 2021-04-19T00:00:00+00:00
 icon: "fa-solid fa-credit-card"
 description: "DevOps is a culture, not a title."
 type: "docs"
-weight: 100
+weight: 102
 draft: true
 ---
 
@@ -25,13 +25,7 @@ DevOps is often conflated with Agile but in truth, compliments it.
 Ask yourself the following questions to find out...
 
 {{< notice tip >}}
-
-**Checklist**
-
-This checklist is an extended version based on the fine work over at [DevOps Checklist](https://devopschecklist.com) and is intended to be used to gauge the maturity level of software delivery competency and form a baseline to be able to measure future improvements.
-
-It's not meant to say that you're failing DevOps but rather to surface the areas that need improvement.
-
+This checklist is an extended version based on the fine work over at [DevOps Checklist](https://devopschecklist.com) and is intended to be used to gauge the maturity level of software delivery competency and form a baseline to be able to measure future improvements. It's not meant to say that you're failing DevOps but rather to surface the areas that need improvement.
 {{</ notice >}}
 
 #### Alignment
@@ -105,10 +99,10 @@ Rituals crafted to foster consistency and confidence, providing a framework for 
 | :---------------------------------------------------------------------- | :----: |
 | Our organisation follows agile development practices.                   | YES/NO |
 | We regularly examine constraints in our delivery process                | YES/NO |
-| Our system configuration is commited into version control               | YES/NO |
+| Our system configuration is committed into version control              | YES/NO |
 | We practice test or behavior driven development                         | YES/NO |
 | We test our changes against a merge with our mainline code              | YES/NO |
-| We test out changes against production-equivilent load and use patterns | YES/NO |
+| We test out changes against production-equivalent load and use patterns | YES/NO |
 
 #### Protection
 
@@ -156,48 +150,56 @@ Monitoring and securing APIs.
 
 The classic interview questionnaire is _still_ relevant over 20 years on.
 
-| Question | Answer |
-| :------- | :----: |
-| Do you use source control? | YES/NO |
-| Can you make a build in one step? | YES/NO |
-| Do you make daily builds? | YES/NO |
-| Do you have a bug database? | YES/NO |
-| Do you fix bugs before writing new code? | YES/NO |
-| Do you have an up-to-date schedule? | YES/NO |
-| Do you have spec? | YES/NO |
-| Do programmers have quiet workinng conditions? | YES/NO |
-| Do you use the best tools that money can buy? | YES/NO |
-| Do you have testers? | YES/NO |
+| Question                                             | Answer |
+| :--------------------------------------------------- | :----: |
+| Do you use source control?                           | YES/NO |
+| Can you make a build in one step?                    | YES/NO |
+| Do you make daily builds?                            | YES/NO |
+| Do you have a bug database?                          | YES/NO |
+| Do you fix bugs before writing new code?             | YES/NO |
+| Do you have an up-to-date schedule?                  | YES/NO |
+| Do you have spec?                                    | YES/NO |
+| Do programmers have quiet working conditions?        | YES/NO |
+| Do you use the best tools that money can buy?        | YES/NO |
+| Do you have testers?                                 | YES/NO |
 | Do new candidates write code during their interview? | YES/NO |
-| Do you do hallway usability testing? | YES/NO |
+| Do you do hallway usability testing?                 | YES/NO |
 
 ### Quotes
 
-Some of my favorite DevOps quotes.
+Some of our favourite DevOps quotes.
 
->
-> To me, the goal of DevOps is to automate your s**t to the point of boredom and then keep the infrastructure up-to date with new tech._
->
-> DevOps is about getting away from monkeying servers with the goal of monkeying systems that monkey the servers for you.
->
-> DevOps is about using these sexy toolchains to build testable, repeatable, automated infrastructure in such a way that you never have to actually touch a server again (ie you can disable SSH)
->
-> DevOps is about being able to look at your infrastructure not as a fleet of servers but as a bunch of code in a repository.
->
-> Tools come and ago, but how you approach the work makes the difference. If your approach is "I want to learn DevOps, what tool do I need" you are doomed to disappointment, because you are asking the wrong question from the start.
->
+- quote,
+
+  > To me, the goal of DevOps is to automate your s\*\*t to the point of boredom and then keep the infrastructure up-to date with new tech.
+
+- quote,
+
+  > DevOps is about getting away from monkeying servers with the goal of monkeying systems that monkey the servers for you.
+
+- quote,
+
+  > DevOps is about using these sexy toolchains to build testable, repeatable, automated infrastructure in such a way that you never have to actually touch a server again (ie you can disable SSH)
+
+- quote,
+
+  > DevOps is about being able to look at your infrastructure not as a fleet of servers but as a bunch of code in a repository.
+
+- quote,
+
+  > Tools come and ago, but how you approach the work makes the difference. If your approach is "I want to learn DevOps, what tool do I need" you are doomed to disappointment, because you are asking the wrong question from the start.
 
 ### Resources
 
--   [The Phoenix Project](https://itrevolution.com/the-phoenix-project/)
--   [Velocity: 10+ deploys a day](https://itrevolution.com/the-phoenix-project/)
--   [Continuous Integration](https://www.thoughtworks.com/continuous-integration)
--   [Continuous Delivery](https://continuousdelivery.com/)
--   [DevOps Cafe](http://devopscafe.org/)
--   [The Ship Show](https://theshipshow.com/)
--   [Food Fight](http://foodfightshow.org/)
--   [Arrested DevOps](https://www.arresteddevops.com/)
--   [Scrum guides](https://scrumguides.org/)
--   [DevOps Checklist](https://devopschecklist.com/)
--   [12 Factor Apps](https://12factor.net/)
--   [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
+- [The Phoenix Project](https://itrevolution.com/the-phoenix-project/)
+- [Velocity: 10+ deploys a day](https://itrevolution.com/the-phoenix-project/)
+- [Continuous Integration](https://www.thoughtworks.com/continuous-integration)
+- [Continuous Delivery](https://continuousdelivery.com/)
+- [DevOps Cafe](http://devopscafe.org/)
+- [The Ship Show](https://theshipshow.com/)
+- [Food Fight](http://foodfightshow.org/)
+- [Arrested DevOps](https://www.arresteddevops.com/)
+- [Scrum guides](https://scrumguides.org/)
+- [DevOps Checklist](https://devopschecklist.com/)
+- [12 Factor Apps](https://12factor.net/)
+- [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)

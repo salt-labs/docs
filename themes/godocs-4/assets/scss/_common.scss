@@ -1,10 +1,10 @@
 body {
-  background-color: $body-color;
+  background-color: $body-bg;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: lighten($color: $primary-color, $amount: 10);
+  background: lighten($color: $color-primary, $amount: 10);
   color: $white;
 }
 
@@ -21,6 +21,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.section-title {
+  font-weight: 700;
 }
 
 img {
@@ -56,7 +60,7 @@ select {
 }
 
 a:hover {
-  color: $primary-color;
+  color: $color-primary;
 }
 
 .slick-slide {
@@ -121,58 +125,18 @@ a:hover {
 }
 
 .bg-primary {
-  background: $primary-color !important;
+  background: $color-primary !important;
 }
 
 .text-primary {
-  color: $primary-color !important;
+  color: $color-primary !important;
 }
 
 .text-light {
-  color: $text-color-light !important;
+  color: $text-light !important;
 }
 
-.mb-10 {
-  margin-bottom: 10px !important;
-}
-
-.mb-20 {
-  margin-bottom: 20px !important;
-}
-
-.mb-30 {
-  margin-bottom: 30px !important;
-}
-
-.mb-40 {
-  margin-bottom: 40px !important;
-}
-
-.mb-50 {
-  margin-bottom: 50px !important;
-}
-
-.mb-60 {
-  margin-bottom: 60px !important;
-}
-
-.mb-70 {
-  margin-bottom: 70px !important;
-}
-
-.mb-80 {
-  margin-bottom: 80px !important;
-}
-
-.mb-90 {
-  margin-bottom: 90px !important;
-}
-
-.mb-100 {
-  margin-bottom: 100px !important;
-}
-
-iframe{
+iframe {
   max-width: 100%;
 }
 
@@ -184,17 +148,57 @@ iframe{
   overflow: hidden;
 }
 
-.font-weight-medium {
+.fw-medium {
   font-weight: 500;
 }
 
-.top-0 {
-  top: 0 !important;
+// Arrow Icon
+.nav-next,
+.nav-prev {
+  span {
+    font-size: 18px;
+  }
+
+  i {
+    font-size: 14px;
+    line-height: 29px;
+    transition: transform 0.4s;
+  }
 }
 
-.mark, mark {
-  padding: 0;
-  background-color: inherit;
-  text-decoration: underline;
-  color: inherit;
+.nav-prev {
+  &:hover i {
+    transform: translateX(-3px);
+  }
+
+  i {
+    margin-left: 3px;
+  }
+}
+
+.nav-next {
+  &:hover i {
+    transform: translateX(3px);
+  }
+
+  i {
+    margin-right: 3px;
+  }
+}
+
+.glightbox:hover {
+  cursor: pointer;
+  opacity: .9;
+  transition: 0.3s;
+}
+
+.glightbox-clean .gslide-title {
+  text-align: center;
+  margin-bottom: 0 !important;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.glightbox-clean .gdesc-inner {
+  padding: 14px 20px !important;
 }

@@ -1,0 +1,64 @@
+#######################################################################
+#
+# DON'T REMOVE THIS FILE.
+# This file is for render site variables and plugins
+#
+# The actual configuration files are stored in the `config/_default/` folder.
+#
+#######################################################################
+
+######################### Site variables ##############################
+
+[params.variables]
+
+color_primary = "#710793"
+text_color = "#333"
+text_dark = "#222"
+text_light = "#999"
+body_color = "#fff"
+border_color = "#E2E2E2"
+black = "#000"
+white = "#fff"
+light = "#FBFBFB"
+
+# https://fontawesome.com/v6/icons
+font_icon = "Font Awesome 6 Free"
+
+# https://fonts.google.com/
+#font_primary = "Work+Sans:wght@400;500;600"
+font_primary = "Poppins:wght@300;400;500;600;700;800"
+#font_primary = "Montserrat:wght@300;400;500;600;700;800"
+font_primary_type = "sans-serif"
+font_secondary = ""
+font_secondary_type = ""
+
+font_size = "16px" # default is 16px
+
+############################# Plugins ##############################
+
+# CSS Plugins
+
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/brands.css"
+
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/solid.css"
+
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/icons.css"
+
+# JS Plugins
+
+[[params.plugins.js]]
+link = "plugins/glightbox.js"
+
+[[params.plugins.js]]
+link = "plugins/webfont/webfont-loader-2.js"
+
+[[params.plugins.js]]
+link = "plugins/masonry/masonry.min.js"
+
+[[params.plugins.js]]
+link = "plugins/cookie.js"
+
+############################# End ##############################

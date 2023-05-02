@@ -3,8 +3,8 @@ title: "Graph Theory"
 date: 2021-04-19T00:00:00+00:00
 icon: "fa-solid fa-credit-card"
 description: "Applying a mathematical model to IT infrastructure."
-type: 'docs'
-weight: 100
+type: "docs"
+weight: 108
 draft: true
 ---
 
@@ -18,19 +18,22 @@ Graphs are one of the principal objects of study in discrete mathematics.
 
 - Introduction to Graph Theory
 
-{{< button href="https://www.youtube.com/watch?v=mMUfbPUxfgE?t=1" >}}Watch Video (5 min){{< /button >}}
+{{< button label="Watch Video (5 min)" link="https://www.youtube.com/watch?v=mMUfbPUxfgE?t=1" >}}
+<br/>
 
 - Applying Graph Theory to Infrastructure as Code with Terraform
 
-{{< button href="https://youtu.be/4Pd9NrZSbGU?t=1" >}}Watch Video (25 min){{< /button >}}
+{{< button label="Watch Video (25 min)" link="https://youtu.be/4Pd9NrZSbGU?t=1" >}}
+<br/>
 
 ### Books
 
 If you prefer to read, there are multiple books available on the subject.
 
-{{< button href="https://www.amazon.com/Best-Sellers-Graph-Theory/zgbs/books/13938" >}}Books (~){{< /button >}}
+{{< button label="Books (~)" link="https://www.amazon.com/Best-Sellers-Graph-Theory/zgbs/books/13938" >}}
+<br/>
 
-## References
+## Related Links
 
 - [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory)
 - [Applying Graph Theory to Infrastructure](https://www.youtube.com/watch?v=4Pd9NrZSbGU)

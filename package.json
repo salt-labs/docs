@@ -1,0 +1,19 @@
+{
+  "name": "saltlabs-docs",
+  "version": "1.0.0",
+  "license": "UNLICENSE",
+  "author": "Salt Labs",
+  "scripts": {
+    "dev": "hugo server --environment development --disableFastRender",
+    "test": "hugo server --environment development --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic --minify",
+    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
+    "update": "hugo mod clean && hugo mod get -u ./... && hugo mod tidy"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^2.8.4",
+    "prettier-plugin-go-template": "0.0.13"
+  }
+}

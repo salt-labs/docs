@@ -1,4 +1,3 @@
-
 # Ignore the Hugo published site
 public/
 
@@ -20,5 +19,31 @@ node_modules/
 # Hugo caches
 resources/_gen/
 
-# Ignore WIP files.
-**/TODO/
+# Ignore WIP
+TODO/
+
+# Hugo defaults
+Thumbs.db
+.DS_Store
+.dist
+.tmp
+.lock
+.sass-cache
+npm-debug.log
+node_modules
+builds
+package-lock.json
+public
+resources
+.hugo_build.lock
+jsconfig.json
+hugo_stats.json
+go.sum
+yarn.lock
+scss__
+
+# Ignore devenv.sh cache.
+.devenv/
+
+# Ignore direnv cache.
+.direnv/

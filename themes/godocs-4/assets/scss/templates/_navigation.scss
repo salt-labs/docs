@@ -1,5 +1,5 @@
 .navigation {
-  transition: .2s ease;
+  transition: 0.2s ease;
 
   &.home-nav {
     transition: unset;
@@ -32,9 +32,11 @@
     @include desktop {
       top: -60px;
     }
+
     @include mobile {
       top: -50px;
     }
+
     @include mobile-xs {
       top: -45px;
     }
@@ -52,7 +54,6 @@
   @include desktop {
     .form-inline {
       width: 100%;
-      margin-top: 15px;
 
       .form-control {
         box-shadow: none !important;
@@ -67,52 +68,84 @@
   }
 }
 
-.language-selector{
+.language-selector {
   border: 0;
   margin-right: 10px;
 }
 
+header .search-wrapper {
+  display: none;
+}
+
 .search-wrapper {
   position: relative;
+  cursor: text;
+
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+  }
 
   .form-control {
-    height: 46px;
-    border: 0;
-    border-radius: 6px;
-    outline: 0;
+    height: 54px;
+    border: 1px solid $border-color;
+    padding-left: 40px !important;
+    border-radius: 5px;
+    width: 320px;
     @extend .shadow;
+
     @include mobile {
-      height: 40px;
+      width: 250px;
     }
 
-    &:focus {
-      @extend .shadow;
+    &-sm {
+      height: 45px;
+      width: 220px;
     }
 
     &::placeholder {
-      color: $text-color-light;
+      color: $text-light;
       font-size: 15px;
-    }
-
-    &-lg {
-      height: 70px;
-    }
-
-    &.active.focus-visible {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
     }
   }
 
-  button {
+  .search-button {
+    border: 1px solid $border-color;
+    color: $text-light;
+    background-color: transparent;
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    border-radius: 4px;
+    cursor: text;
+  }
+}
 
-    i {
-      color: $primary-color;
+header.search-active.home-nav {
+  .search-wrapper {
+    display: block !important;
+  }
+
+  @include desktop {
+    .logo-wrapper {
+      display: none;
     }
+
+    .mobile-view {
+      display: none !important;
+    }
+  }
+}
+
+@include desktop {
+
+  #banner .search-wrapper {
+    max-width: 300px;
+    margin: auto;
+    display: block;
   }
 }
 
@@ -179,6 +212,7 @@
         border: 0;
       }
     }
+
     @include mobile {
       height: 40px !important;
     }
@@ -193,11 +227,12 @@
   }
 }
 
-.mobile-view{
+.mobile-view {
   @include mobile {
-    zoom: .8;
+    zoom: 0.7;
   }
+
   @include mobile-xs {
-    zoom: .6;
+    zoom: 0.6;
   }
 }

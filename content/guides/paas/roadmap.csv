@@ -1,0 +1,165 @@
+Title,Description,Issue Type,Status,Component,Priority,Assignee,Labels,Epic Link
+"CI Pipeline for publishing Carvel Packages","Create a CI pipeline that utilizes Carvel tools (ytt, vendir, kapp, kapp-controller, kbld, imgpkg) to build, package, and publish applications.",Epic,To Do,CI/CD,Medium,,carvel,
+"Design CI pipeline for Carvel packages","Design a CI pipeline that utilizes Carvel tools (ytt, vendir, kapp, kapp-controller, kbld, imgpkg) to build, package, and publish applications.",Epic,To Do,CI/CD,Medium,,carvel,CI Pipeline for publishing Carvel Packages
+"Configure ytt for templating","Set up ytt for templating YAML configuration files.",Task,To Do,CI/CD,Medium,,carvel,CI Pipeline for publishing Carvel Packages
+"Configure vendir for syncing dependencies","Set up vendir to manage and sync external dependencies required by the application.",Task,To Do,CI/CD,Medium,,carvel,CI Pipeline for publishing Carvel Packages
+"Create documentation for pipeline","Document the pipeline, its components, and usage.",Task,To Do,CI/CD,Medium,,carvel,CI Pipeline for publishing Carvel Packages
+"Configure kapp for deployment","Set up kapp for deploying the application to Kubernetes clusters.",Task,To Do,CI/CD,Medium,,carvel,CI Pipeline for publishing Carvel Packages
+"Integrate kapp-controller","Integrate kapp-controller to manage application deployments in a declarative manner.",Task,To Do,CI/CD,Medium,,carvel,CI Pipeline for publishing Carvel Packages
+"Configure kbld for image management","Set up kbld to manage container images during the deployment process.",Task,To Do,CI/CD,Medium,,carvel,CI Pipeline for publishing Carvel Packages
+"Configure imgpkg for image packaging","Set up imgpkg to package and distribute application container images.",Task,To Do,CI/CD,Medium,,carvel,CI Pipeline for publishing Carvel Packages
+"Test and validate pipeline","Test the pipeline end-to-end and validate its functionality.",Task,To Do,CI/CD,Medium,,carvel,CI Pipeline for publishing Carvel Packages
+"Define the Cluster API SKUs","Define and document the Cluster API SKUs that will be supported in the environment and their associated use cases.",Epic,To Do,Cluster Management,Medium,,cluster-api,
+"Document Cluster API SKU definitions","Create documentation for the defined Cluster API SKUs, including their specifications and use cases.",Task,To Do,Cluster Management,Medium,,cluster-api,"Define the Cluster API SKUs"
+"Create SKU templates","Create reusable templates for each Cluster API SKU to streamline cluster creation.",Task,To Do,Cluster Management,Medium,,cluster-api,"Define the Cluster API SKUs"
+"Review and update SKU documentation","Regularly review and update the Cluster API SKU documentation to ensure it remains accurate and up-to-date.",Task,To Do,Cluster Management,Medium,,cluster-api,"Define the Cluster API SKUs"
+"Establish SKU update process","Define a process for updating and deprecating Cluster API SKUs as needed.",Task,To Do,Cluster Management,Medium,,cluster-api,"Define the Cluster API SKUs"
+"Package, deploy and configure CoreDNS","Package, document and configure CoreDNS with Carvel.",Epic,To Do,Service Discovery,Medium,,coredns,
+"Package CoreDNS with Carvel","Package CoreDNS for deployment using Carvel tools.",Task,To Do,Service Discovery,Medium,,coredns,"Package, deploy and configure CoreDNS"
+"Create CoreDNS deployment documentation","Create documentation outlining the process of deploying and configuring CoreDNS with Carvel.",Task,To Do,Service Discovery,Medium,,coredns,"Package, deploy and configure CoreDNS"
+"Deploy CoreDNS using kapp","Deploy CoreDNS to the cluster using kapp.",Task,To Do,Service Discovery,Medium,,coredns,"Package, deploy and configure CoreDNS"
+"Configure CoreDNS using ytt and kbld","Configure CoreDNS with ytt and kbld based on the specific requirements of the environment.",Task,To Do,Service Discovery,Medium,,coredns,"Package, deploy and configure CoreDNS"
+"Validate CoreDNS deployment","Verify that CoreDNS is correctly deployed and functioning as expected.",Task,To Do,Service Discovery,Medium,,coredns,"Package, deploy and configure CoreDNS"
+"Create CoreDNS update process","Define a process for updating and managing CoreDNS configuration changes using Carvel tools.",Task,To Do,Service Discovery,Medium,,coredns,"Package, deploy and configure CoreDNS"
+"Container Runtime configuration","Define and configure containerd settings including maintenance policies.",Epic,To Do,Container Runtime,Medium,,container-runtime,
+"Create containerd configuration YAML","Create the containerd configuration YAML file with the required settings.",Task,To Do,Container Runtime,Medium,,container-runtime,"Container Runtime configuration"
+"Document container runtime configuration","Document the container runtime configuration process and settings for containerd.",Task,To Do,Container Runtime,Medium,,container-runtime,"Container Runtime configuration"
+"Apply containerd configuration","Apply the containerd configuration to the cluster and ensure it is being used by the nodes.",Task,To Do,Container Runtime,Medium,,container-runtime,"Container Runtime configuration"
+"Configure containerd garbage collection","Configure containerd garbage collection settings to ensure efficient use of resources.",Task,To Do,Container Runtime,Medium,,container-runtime,"Container Runtime configuration"
+"Validate containerd configuration","Verify that containerd is correctly configured and functioning as expected.",Task,To Do,Container Runtime,Medium,,container-runtime,"Container Runtime configuration"
+"Document containerd maintenance policies","Document the maintenance policies for containerd, including updates and troubleshooting.",Task,To Do,Container Runtime,Medium,,container-runtime,"Container Runtime configuration"
+"Document Lifecycle Management","Document the Cluster API lifecycle management plan with runbooks.",Epic,To Do,Lifecycle Management,Medium,,lifecycle-management,
+"Document Cluster API lifecycle management overview","Create an overview document describing the Cluster API lifecycle management process.",Task,To Do,Lifecycle Management,Medium,,lifecycle-management,"Document Lifecycle Management"
+"Create runbook for Cluster API creation","Document the steps for creating a new Cluster API object using kapp-controller.",Task,To Do,Lifecycle Management,Medium,,lifecycle-management,"Document Lifecycle Management"
+"Create runbook for Cluster API updates","Document the steps for updating a Cluster API object using kapp-controller.",Task,To Do,Lifecycle Management,Medium,,lifecycle-management,"Document Lifecycle Management"
+"Create runbook for Cluster API deletion","Document the steps for deleting a Cluster API object using kapp-controller.",Task,To Do,Lifecycle Management,Medium,,lifecycle-management,"Document Lifecycle Management"
+"Create runbook for troubleshooting Cluster API objects","Document the steps for troubleshooting Cluster API objects and common issues.",Task,To Do,Lifecycle Management,Medium,,lifecycle-management,"Document Lifecycle Management"
+"Create runbook for Cluster API object monitoring","Document the monitoring and alerting processes for Cluster API objects.",Task,To Do,Lifecycle Management,Medium,,lifecycle-management,"Document Lifecycle Management"
+"Package, deploy and configure Antrea","Package, configure and deploy Antrea with NSX Integration.",Epic,To Do,Networking,Medium,,antrea,
+"Package Antrea for deployment","Use ytt, kbld, and imgpkg to package Antrea for deployment.",Task,To Do,Networking,Medium,,antrea,"Package, deploy and configure Antrea"
+"Create Antrea configuration documentation","Document the process of configuring Antrea and its integration with NSX.",Task,To Do,Networking,Medium,,antrea,"Package, deploy and configure Antrea"
+"Create Antrea deployment documentation","Document the process of deploying Antrea using kapp and kapp-controller.",Task,To Do,Networking,Medium,,antrea,"Package, deploy and configure Antrea"
+"Deploy Antrea with NSX integration","Deploy Antrea with NSX integration using the packaged configuration.",Task,To Do,Networking,Medium,,antrea,"Package, deploy and configure Antrea"
+"Create Antrea monitoring and troubleshooting guide","Document the process of monitoring Antrea and troubleshooting common issues.",Task,To Do,Networking,Medium,,antrea,"Package, deploy and configure Antrea"
+"Create Antrea update and maintenance guide","Document the process of updating and maintaining Antrea.",Task,To Do,Networking,Medium,,antrea,"Package, deploy and configure Antrea"
+"Implement Container Storage","Implement Container Block, File and Object Storage.",Epic,To Do,Storage,Medium,,storage,
+"Package Weka Operator for Block Storage","Use ytt, kbld, and imgpkg to package the Weka Operator for Block Storage.",Task,To Do,Storage,Medium,,storage,"Implement Container Storage"
+"Package Weka Operator for Object Storage","Use ytt, kbld, and imgpkg to package the Weka Operator for Object Storage.",Task,To Do,Storage,Medium,,storage,"Implement Container Storage"
+"Package NFS Operator for File Storage","Use ytt, kbld, and imgpkg to package the NFS Operator for File Storage.",Task,To Do,Storage,Medium,,storage,"Implement Container Storage"
+"Deploy Weka Operator for Block Storage","Deploy the Weka Operator for Block Storage using kapp and kapp-controller.",Task,To Do,Storage,Medium,,storage,"Implement Container Storage"
+"Deploy Weka Operator for Object Storage","Deploy the Weka Operator for Object Storage using kapp and kapp-controller.",Task,To Do,Storage,Medium,,storage,"Implement Container Storage"
+"Deploy NFS Operator for File Storage","Deploy the NFS Operator for File Storage using kapp and kapp-controller.",Task,To Do,Storage,Medium,,storage,"Implement Container Storage"
+"Create documentation for Weka Operator configuration","Document the process of configuring the Weka Operator for Block and Object Storage.",Task,To Do,Storage,Medium,,storage,"
+"Implement Container Registry","Package, configure and deploy Harbor with High-Availability.",Epic,To Do,Registry,Medium,,registry,
+"Package Harbor Operator","Use ytt, kbld, and imgpkg to package the Harbor Operator.",Task,To Do,Registry,Medium,,registry,"Implement Container Registry"
+"Configure Harbor Operator for High Availability","Use ytt to create configuration files to enable high availability for Harbor.",Task,To Do,Registry,Medium,,registry,"Implement Container Registry"
+"Deploy Harbor Operator","Deploy the Harbor Operator using kapp and kapp-controller.",Task,To Do,Registry,Medium,,registry,"Implement Container Registry"
+"Configure and deploy Harbor with High Availability","Configure and deploy Harbor with high availability using the Harbor Operator.",Task,To Do,Registry,Medium,,registry,"Implement Container Registry"
+"Create Harbor documentation","Document the process of deploying and configuring Harbor with High Availability.",Task,To Do,Registry,Medium,,registry,"Implement Container Registry"
+"Implement Service Proxy","Package, configure and deploy Contour Gateway Provisioner.",Epic,To Do,Service Proxy,Medium,,service-proxy,
+"Research Contour Gateway Provisioner requirements","Research the requirements and dependencies for Contour Gateway Provisioner.",Task,To Do,Service Proxy,Medium,,service-proxy,
+"Install and configure Contour Gateway Provisioner","Install and configure Contour Gateway Provisioner using the researched requirements and dependencies.",Task,To Do,Service Proxy,Medium,,service-proxy,
+"Create Contour Gateway Provisioner packaging","Create the necessary Carvel packaging files (ytt, vendir, kbld, imgpkg) for Contour Gateway Provisioner.",Task,To Do,Service Proxy,Medium,,service-proxy,
+"Test Contour Gateway Provisioner","Test the deployment and functionality of Contour Gateway Provisioner in a test environment.",Task,To Do,Service Proxy,Medium,,service-proxy,
+"Document Contour Gateway Provisioner","Document the installation, configuration, and usage of Contour Gateway Provisioner.",Task,To Do,Service Proxy,Medium,,service-proxy,
+"Deploy Contour Gateway Provisioner","Deploy Contour Gateway Provisioner in the production environment.",Task,To Do,Service Proxy,Medium,,service-proxy,
+"Implement Container Load Balancing","Package, configure, deploy and test AVI Kubernetes Operator (AKO) and NSX Operators.",Epic,To Do,Load Balancing,Medium,,load-balancing,
+"Research AVI Kubernetes Operator (AKO) and NSX Operators requirements","Research the requirements and dependencies for AKO and NSX Operators.",Task,To Do,Load Balancing,Medium,,load-balancing,
+"Install and configure AKO and NSX Operators","Install and configure AKO and NSX Operators using the researched requirements and dependencies.",Task,To Do,Load Balancing,Medium,,load-balancing,
+"Create AKO and NSX Operators packaging","Create the necessary Carvel packaging files (ytt, vendir, kbld, imgpkg) for AKO and NSX Operators.",Task,To Do,Load Balancing,Medium,,load-balancing,
+"Test AKO and NSX Operators","Test the deployment and functionality of AKO and NSX Operators in a test environment.",Task,To Do,Load Balancing,Medium,,load-balancing,
+"Document AKO and NSX Operators","Document the installation, configuration, and usage of AKO and NSX Operators.",Task,To Do,Load Balancing,Medium,,load-balancing,
+"Deploy AKO and NSX Operators","Deploy AKO and NSX Operators in the production environment.",Task,To Do,Load Balancing,Medium,,load-balancing,
+"Implement External DNS Automation","Evaluate is ExternalDNS is suitable or find and implement a replacement and package it with carvel.",Epic,To Do,External DNS,Medium,,external-dns,
+"Evaluate ExternalDNS for suitability","Evaluate if ExternalDNS is suitable for the project requirements.",Task,To Do,External DNS,Medium,,external-dns,
+"Research alternative DNS automation tools","If ExternalDNS is not suitable, research alternative DNS automation tools that meet the project requirements.",Task,To Do,External DNS,Medium,,external-dns,
+"Select and document the chosen DNS automation tool","Select the appropriate DNS automation tool and document the decision and reasons.",Task,To Do,External DNS,Medium,,external-dns,
+"Package the chosen DNS automation tool with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld, imgpkg) for the chosen DNS automation tool.",Task,To Do,External DNS,Medium,,external-dns,
+"Test the chosen DNS automation tool","Test the deployment and functionality of the chosen DNS automation tool in a test environment.",Task,To Do,External DNS,Medium,,external-dns,
+"Document the chosen DNS automation tool","Document the installation, configuration, and usage of the chosen DNS automation tool.",Task,To Do,External DNS,Medium,,external-dns,
+"Deploy the chosen DNS automation tool","Deploy the chosen DNS automation tool in the production environment.",Task,To Do,External DNS,Medium,,external-dns,
+"Implement Workload Cluster Authentication and RBAC","Package, configure, test and document Pinniped with OAuth2 for authentication.",Epic,To Do,Authentication,Medium,,authentication,
+"Package Pinniped with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld, imgpkg) for Pinniped.",Task,To Do,Authentication,Medium,,authentication,
+"Configure Pinniped with OAuth2","Configure Pinniped with OAuth2 for authentication.",Task,To Do,Authentication,Medium,,authentication,
+"Test Pinniped and OAuth2 integration","Test the deployment and functionality of Pinniped with OAuth2 in a test environment.",Task,To Do,Authentication,Medium,,authentication,
+"Document Pinniped and OAuth2 setup","Document the installation, configuration, and usage of Pinniped with OAuth2.",Task,To Do,Authentication,Medium,,authentication,
+"Implement Role-Based Access Control (RBAC)","Configure and test Role-Based Access Control (RBAC) settings for workload clusters.",Task,To Do,Authentication,Medium,,authentication,
+"Document RBAC configuration and usage","Document the configuration and usage of Role-Based Access Control (RBAC) for workload clusters.",Task,To Do,Authentication,Medium,,authentication,
+"Deploy Pinniped and OAuth2 in the production environment","Deploy Pinniped with OAuth2 for authentication in the production environment.",Task,To Do,Authentication,Medium,,authentication,
+"Implement Data Protection","Package, configure deploy and document Velero for backup.",Epic,To Do,Data Protection,Medium,,data-protection,
+"Package Velero with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld, imgpkg) for Velero.",Task,To Do,Data Protection,Medium,,data-protection,
+"Configure Velero","Configure Velero settings for backup and restore.",Task,To Do,Data Protection,Medium,,data-protection,
+"Test Velero deployment","Test the deployment and functionality of Velero in a test environment.",Task,To Do,Data Protection,Medium,,data-protection,
+"Document Velero setup","Document the installation, configuration, and usage of Velero for backup and restore.",Task,To Do,Data Protection,Medium,,data-protection,
+"Test Velero backup and restore","Perform backup and restore tests with Velero to ensure data protection.",Task,To Do,Data Protection,Medium,,data-protection,
+"Deploy Velero in the production environment","Deploy Velero for backup and restore in the production environment.",Task,To Do,Data Protection,Medium,,data-protection,
+"Implement Policy Management","Package, configure test, deploy and document Open Policy Agent.",Epic,To Do,Policy Management,Medium,,policy-management,
+"Package Open Policy Agent with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld, imgpkg) for Open Policy Agent.",Task,To Do,Policy Management,Medium,,policy-management,
+"Configure Open Policy Agent","Configure Open Policy Agent settings for policy enforcement.",Task,To Do,Policy Management,Medium,,policy-management,
+"Test Open Policy Agent deployment","Test the deployment and functionality of Open Policy Agent in a test environment.",Task,To Do,Policy Management,Medium,,policy-management,
+"Document Open Policy Agent setup","Document the installation, configuration, and usage of Open Policy Agent for policy enforcement.",Task,To Do,Policy Management,Medium,,policy-management,
+"Test Open Policy Agent policy enforcement","Perform policy enforcement tests with Open Policy Agent to ensure proper policy management.",Task,To Do,Policy Management,Medium,,policy-management,
+"Deploy Open Policy Agent in the production environment","Deploy Open Policy Agent for policy enforcement in the production environment.",Task,To Do,Policy Management,Medium,,policy-management,
+"Implement Automated Certificate Management","Package, configure test, deploy and document cert-manager and trust-manager.",Epic,To Do,Certificate Management,Medium,,certificate-management,
+"Package cert-manager and trust-manager with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld, imgpkg) for cert-manager and trust-manager.",Task,To Do,Certificate Management,Medium,,certificate-management,
+"Configure cert-manager and trust-manager","Configure cert-manager and trust-manager settings for automated certificate management.",Task,To Do,Certificate Management,Medium,,certificate-management,
+"Test cert-manager and trust-manager deployment","Test the deployment and functionality of cert-manager and trust-manager in a test environment.",Task,To Do,Certificate Management,Medium,,certificate-management,
+"Document cert-manager and trust-manager setup","Document the installation, configuration, and usage of cert-manager and trust-manager for automated certificate management.",Task,To Do,Certificate Management,Medium,,certificate-management,
+"Test certificate issuance and renewal","Perform certificate issuance and renewal tests with cert-manager and trust-manager to ensure proper certificate management.",Task,To Do,Certificate Management,Medium,,certificate-management,
+"Deploy cert-manager and trust-manager in the production environment","Deploy cert-manager and trust-manager for automated certificate management in the production environment.",Task,To Do,Certificate Management,Medium,,certificate-management,
+"Implement Secret Management","Package, configure test, deploy and document SOPS and Bitnami Sealed Secrets.",Epic,To Do,Secret Management,Medium,,secret-management,
+"Package SOPS and Bitnami Sealed Secrets with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld, imgpkg) for SOPS and Bitnami Sealed Secrets.",Task,To Do,Secret Management,Medium,,secret-management,
+"Configure SOPS and Bitnami Sealed Secrets","Configure SOPS and Bitnami Sealed Secrets settings for secret management.",Task,To Do,Secret Management,Medium,,secret-management,
+"Test SOPS and Bitnami Sealed Secrets deployment","Test the deployment and functionality of SOPS and Bitnami Sealed Secrets in a test environment.",Task,To Do,Secret Management,Medium,,secret-management,
+"Document SOPS and Bitnami Sealed Secrets setup","Document the installation, configuration, and usage of SOPS and Bitnami Sealed Secrets for secret management.",Task,To Do,Secret Management,Medium,,secret-management,
+"Test secret encryption and decryption","Perform secret encryption and decryption tests with SOPS and Bitnami Sealed Secrets to ensure proper secret management.",Task,To Do,Secret Management,Medium,,secret-management,
+"Deploy SOPS and Bitnami Sealed Secrets in the production environment","Deploy SOPS and Bitnami Sealed Secrets for secret management in the production environment.",Task,To Do,Secret Management,Medium,,secret-management,
+"Implement Conformance and Benchmarking","Package, configure test, deploy and document Sonobuoy and Kubebench.",Epic,To Do,Conformance and Benchmarking,Medium,,conformance-benchmarking,
+"Package Sonobuoy and Kubebench with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld, imgpkg) for Sonobuoy and Kubebench.",Task,To Do,Conformance and Benchmarking,Medium,,conformance-benchmarking,
+"Configure Sonobuoy and Kubebench","Configure Sonobuoy and Kubebench settings for conformance and benchmarking.",Task,To Do,Conformance and Benchmarking,Medium,,conformance-benchmarking,
+"Test Sonobuoy and Kubebench deployment","Test the deployment and functionality of Sonobuoy and Kubebench in a test environment.",Task,To Do,Conformance and Benchmarking,Medium,,conformance-benchmarking,
+"Document Sonobuoy and Kubebench setup","Document the installation, configuration, and usage of Sonobuoy and Kubebench for conformance and benchmarking.",Task,To Do,Conformance and Benchmarking,Medium,,conformance-benchmarking,
+"Run conformance and benchmark tests","Perform conformance and benchmark tests using Sonobuoy and Kubebench to ensure the environment is compliant and performant.",Task,To Do,Conformance and Benchmarking,Medium,,conformance-benchmarking,
+"Deploy Sonobuoy and Kubebench in the production environment","Deploy Sonobuoy and Kubebench for conformance and benchmarking in the production environment.",Task,To Do,Conformance and Benchmarking,Medium,,conformance-benchmarking,
+"Implement Automated Build Service","Package, configure test, deploy and document Kpack.",Epic,To Do,Build Service,Medium,,build-service,
+"Package Kpack with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld, imgpkg) for Kpack.",Task,To Do,Build Service,Medium,,build-service,
+"Configure Kpack","Configure Kpack settings for the automated build service.",Task,To Do,Build Service,Medium,,build-service,
+"Test Kpack deployment","Test the deployment and functionality of Kpack in a test environment.",Task,To Do,Build Service,Medium,,build-service,
+"Document Kpack setup","Document the installation, configuration, and usage of Kpack for the automated build service.",Task,To Do,Build Service,Medium,,build-service,
+"Integrate Kpack with CI/CD pipeline","Integrate Kpack into the existing CI/CD pipeline for building and deploying container images.",Task,To Do,Build Service,Medium,,build-service,
+"Deploy Kpack in the production environment","Deploy Kpack for the automated build service in the production environment.",Task,To Do,Build Service,Medium,,build-service,
+"Implement GitOps","Package, configure test, deploy and document kapp-controller.",Epic,To Do,GitOps,Medium,,gitops,
+"Package kapp-controller with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld, imgpkg) for kapp-controller.",Task,To Do,GitOps,Medium,,gitops,
+"Configure kapp-controller","Configure kapp-controller settings for GitOps.",Task,To Do,GitOps,Medium,,gitops,
+"Test kapp-controller deployment","Test the deployment and functionality of kapp-controller in a test environment.",Task,To Do,GitOps,Medium,,gitops,
+"Document kapp-controller setup","Document the installation, configuration, and usage of kapp-controller for GitOps.",Task,To Do,GitOps,Medium,,gitops,
+"Integrate kapp-controller with CI/CD pipeline","Integrate kapp-controller into the existing CI/CD pipeline for GitOps.",Task,To Do,GitOps,Medium,,gitops,
+"Deploy kapp-controller in the production environment","Deploy kapp-controller for GitOps in the production environment.",Task,To Do,GitOps,Medium,,gitops,
+"Implement Application Catalog","Package, configure test, deploy and document kubeapps.",Epic,To Do,Application Catalog,Medium,,application-catalog,
+"Package kubeapps with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld) for kubeapps.",Task,To Do,Application Catalog,Medium,,application-catalog,
+"Configure kubeapps","Configure kubeapps settings for the application catalog.",Task,To Do,Application Catalog,Medium,,application-catalog,
+"Test kubeapps deployment","Test the deployment and functionality of kubeapps in a test environment.",Task,To Do,Application Catalog,Medium,,application-catalog,
+"Document kubeapps setup","Document the installation, configuration, and usage of kubeapps for the application catalog.",Task,To Do,Application Catalog,Medium,,application-catalog,
+"Integrate kubeapps with CI/CD pipeline","Integrate kubeapps into the existing CI/CD pipeline for the application catalog.",Task,To Do,Application Catalog,Medium,,application-catalog,
+"Deploy kubeapps in the production environment","Deploy kubeapps for the application catalog in the production environment.",Task,To Do,Application Catalog,Medium,,application-catalog,
+"Implement Observability Platform","Package, configure test, deploy and document loki, prometheus, alert-manager, grafana.",Epic,To Do,Observability Platform,Medium,,observability-platform,
+"Package observability components with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld) for loki, prometheus, alert-manager, and grafana.",Task,To Do,Observability Platform,Medium,,observability-platform,
+"Configure observability components","Configure settings for loki, prometheus, alert-manager, and grafana.",Task,To Do,Observability Platform,Medium,,observability-platform,
+"Test observability platform deployment","Test the deployment and functionality of loki, prometheus, alert-manager, and grafana in a test environment.",Task,To Do,Observability Platform,Medium,,observability-platform,
+"Document observability platform setup","Document the installation, configuration, and usage of loki, prometheus, alert-manager, and grafana for the observability platform.",Task,To Do,Observability Platform,Medium,,observability-platform,
+"Integrate observability platform with CI/CD pipeline","Integrate loki, prometheus, alert-manager, and grafana into the existing CI/CD pipeline for the observability platform.",Task,To Do,Observability Platform,Medium,,observability-platform,
+"Deploy observability platform in the production environment","Deploy loki, prometheus, alert-manager, and grafana for the observability platform in the production environment.",Task,To Do,Observability Platform,Medium,,observability-platform,
+"Package and Deploy PostgreSQL Operator","Package, configure test, deploy and document VMware PostgreSQL Operator.",Epic,To Do,PostgreSQL Operator,Medium,,postgresql-operator,
+"Package PostgreSQL Operator with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld) for the VMware PostgreSQL Operator.",Task,To Do,PostgreSQL Operator,Medium,,postgresql-operator,
+"Configure PostgreSQL Operator","Configure settings for the VMware PostgreSQL Operator.",Task,To Do,PostgreSQL Operator,Medium,,postgresql-operator,
+"Test PostgreSQL Operator deployment","Test the deployment and functionality of the VMware PostgreSQL Operator in a test environment.",Task,To Do,PostgreSQL Operator,Medium,,postgresql-operator,
+"Document PostgreSQL Operator setup","Document the installation, configuration, and usage of the VMware PostgreSQL Operator.",Task,To Do,PostgreSQL Operator,Medium,,postgresql-operator,
+"Integrate PostgreSQL Operator with CI/CD pipeline","Integrate the VMware PostgreSQL Operator into the existing CI/CD pipeline.",Task,To Do,PostgreSQL Operator,Medium,,postgresql-operator,
+"Deploy PostgreSQL Operator in the production environment","Deploy the VMware PostgreSQL Operator in the production environment.",Task,To Do,PostgreSQL Operator,Medium,,postgresql-operator,
+"Package and Deploy NVIDIA GPU Operator","Package, configure test, deploy and document NVIDIA GPU Operator.",Epic,To Do,NVIDIA GPU Operator,Medium,,nvidia-gpu-operator,
+"Package NVIDIA GPU Operator with Carvel","Create the necessary Carvel packaging files (ytt, vendir, kbld) for the NVIDIA GPU Operator.",Task,To Do,NVIDIA GPU Operator,Medium,,nvidia-gpu-operator,
+"Configure NVIDIA GPU Operator","Configure settings for the NVIDIA GPU Operator.",Task,To Do,NVIDIA GPU Operator,Medium,,nvidia-gpu-operator,
+"Test NVIDIA GPU Operator deployment","Test the deployment and functionality of the NVIDIA GPU Operator in a test environment.",Task,To Do,NVIDIA GPU Operator,Medium,,nvidia-gpu-operator,
+"Document NVIDIA GPU Operator setup","Document the installation, configuration, and usage of the NVIDIA GPU Operator.",Task,To Do,NVIDIA GPU Operator,Medium,,nvidia-gpu-operator,
+"Integrate NVIDIA GPU Operator with CI/CD pipeline","Integrate the NVIDIA GPU Operator into the existing CI/CD pipeline.",Task,To Do,NVIDIA GPU Operator,Medium,,nvidia-gpu-operator,
+"Deploy NVIDIA GPU Operator in the production environment","Deploy the NVIDIA GPU Operator in the production environment.",Task,To Do,NVIDIA GPU Operator,Medium,,nvidia-gpu-operator,

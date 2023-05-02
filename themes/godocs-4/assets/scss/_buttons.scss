@@ -9,7 +9,7 @@
   position: relative;
   z-index: 1;
   transition: .2s ease;
-  font-weight: 600;
+  font-weight: 500;
 
   &:hover,
   &:active,
@@ -24,32 +24,32 @@
 }
 
 .btn-primary {
-  background: $primary-color;
+  background: $color-primary;
   color: $white;
-  border-color: $primary-color;
+  border-color: $color-primary;
 
   &:active,
   &:hover,
   &:focus,
   &.focus,
   &.active {
-    background: darken($color: $primary-color, $amount: 10) !important;
-    border-color: darken($color: $primary-color, $amount: 10) !important;
+    background: darken($color: $color-primary, $amount: 10) !important;
+    border-color: darken($color: $color-primary, $amount: 10) !important;
   }
 }
 
 .btn-outline-primary {
   background: transparent;
-  color: $primary-color;
-  border-color: $primary-color;
+  color: $color-primary;
+  border-color: $color-primary;
 
   &:active,
   &:hover,
   &:focus,
   &.focus,
   &.active {
-    background: darken($color: $primary-color, $amount: 10) !important;
-    border-color: darken($color: $primary-color, $amount: 10) !important;
+    background: $color-primary !important;
+    border-color: $color-primary !important;
     color: $white;
   }
 }
