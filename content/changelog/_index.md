@@ -14,6 +14,14 @@ draft: false
 
 <hr>
 
+### May 2023
+
+Shipped the first guide as a sample of the things to come. Not finished, but got to start somewhere!
+
+{{< changelog "Added" >}}Added PaaS guide.{{</ changelog >}}
+
+<hr>
+
 ### April 2023
 
 Still working on getting ready to re-launch a bunch of old content under this new theme.
