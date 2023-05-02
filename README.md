@@ -27,7 +27,7 @@ _Contributions are welcome!_
 
 Local development instructions for working with this repository.
 
--   Ensure the submodules are up-to-date
+- Ensure the submodules are up-to-date
 
 ```bash
 # First time setup
@@ -37,13 +37,15 @@ git submodule update --init --recursive
 git submodule update --recursive --remote
 ```
 
--   Run your own local instance using [hugo](https://gohugo.io)
+- Run your own local instance using [hugo](https://gohugo.io)
 
 ```bash
+npm install
+
 hugo server --environment development
 ```
 
--   Browse to the site running on `localhost`
+- Browse to the site running on `localhost`
 
 ```bash
 open http://localhost:1313/
@@ -65,13 +67,13 @@ The weights are used to determine the order of the pages in the menu. The lower 
 
 It can get a little confusing, so here's a table to track the weights.
 
-| Page Name | Weight |
-| :-------: | :----: |
-| Changelog | 1 |
-| Contact | 1 |
-| FAQ | 1 |
-|  Introduction   |  1    |
-| Search | 1 |
-| Frameworks | 100-199 |
+|  Page Name   | Weight  |
+| :----------: | :-----: |
+|  Changelog   |    1    |
+|   Contact    |    1    |
+|     FAQ      |    1    |
+| Introduction |    1    |
+|    Search    |    1    |
+|  Frameworks  | 100-199 |
 | Technologies | 200-299 |
-| Guides | 300-399 |
+|    Guides    | 300-399 |

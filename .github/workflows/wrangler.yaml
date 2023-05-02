@@ -28,12 +28,6 @@ on:
       - ready_for_review
       - review_requested
 
-  # Re-build every week to ensure
-  # the site still builds as external
-  # dependencies change.
-  schedule:
-    - cron: "0 0 * * 0"
-
 permissions:
   contents: read
   pull-requests: write

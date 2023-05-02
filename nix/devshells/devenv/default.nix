@@ -46,6 +46,7 @@ in
             golangci-lint
             golangci-lint-langserver
             gosec
+            nodejs
           ]
           ++ unstablePkgs;
 
