@@ -104,7 +104,7 @@ jobs:
           fi
           echo "Downloading Hugo modules"
           hugo mod clean
-          hugo mod get -u ./...
+          hugo mod get ./...
           hugo mod tidy
           hugo mod graph
 
