@@ -39,6 +39,6 @@ The below links walk through some opinionated categories that should be consider
 - [Stages](stages)
 - [Runtime](runtime)
 - [Platform](paas)
-- [WIP: Backlog](./roadmap.csv)
+- [Example starter backlog](./roadmap.csv)
 
 Once your PaaS is up and running, it's then finally time to start building and shipping your applications!

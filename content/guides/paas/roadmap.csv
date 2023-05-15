@@ -1,4 +1,6 @@
 Title,Description,Issue Type,Status,Component,Priority,Assignee,Labels,Epic Link
+"Plan","It all starts with a plan. Define the requirements and perform planning sessions.",Epic,To Do,Plan,High,,plan,
+"Product Selection","Select the core services that will be used in the environment.",Task,To Do,Plan,High,,product-selection,
 "CI Pipeline for publishing Carvel Packages","Create a CI pipeline that utilizes Carvel tools (ytt, vendir, kapp, kapp-controller, kbld, imgpkg) to build, package, and publish applications.",Epic,To Do,CI/CD,Medium,,carvel,
 "Design CI pipeline for Carvel packages","Design a CI pipeline that utilizes Carvel tools (ytt, vendir, kapp, kapp-controller, kbld, imgpkg) to build, package, and publish applications.",Epic,To Do,CI/CD,Medium,,carvel,CI Pipeline for publishing Carvel Packages
 "Configure ytt for templating","Set up ytt for templating YAML configuration files.",Task,To Do,CI/CD,Medium,,carvel,CI Pipeline for publishing Carvel Packages
