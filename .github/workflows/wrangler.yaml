@@ -154,7 +154,7 @@ jobs:
           apiToken: ${{ env.WRANGLER_API_TOKEN }}
           preCommands: |
             npm --prefix workers-site install
-          command: publish --env production
+          command: deploy --env production
 
   ##################################################
   # Giphy thumbs up or down

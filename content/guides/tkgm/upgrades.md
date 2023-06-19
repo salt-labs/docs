@@ -5,6 +5,7 @@ icon: "fa-solid fa-credit-card"
 description: "Upgrading Tanzu Kubernetes Grid (TKG)"
 type: "docs"
 weight: 2
+draft: true
 ---
 
 Hello World!

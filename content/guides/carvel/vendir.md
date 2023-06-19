@@ -1,11 +1,11 @@
 ---
-title: "X"
+title: "vendir"
 date: 2021-03-01T00:00:00+00:00
 icon: "fa-solid fa-box"
-description: "X"
+description: "vendir"
 type: "docs"
-weight: 200
-draft: false
+weight: 1
+draft: true
 ---
 
 ## Overview
@@ -25,6 +25,7 @@ An analogy for describing `vendir` is _git submodules on steroids_.
 - Review the `vendir` documentation
 
 {{< button label="Review documentation (30min)" link="https://carvel.dev/vendir/docs/latest/" >}}
+<br/>
 
 ## Practical
 

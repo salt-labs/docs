@@ -14,11 +14,14 @@ draft: false
 
 ### June 2023
 
-Sprinkled some salt on some older docs for re-release and added some production-ready checklists.
+Sprinkled some salt on older docs to give them a new lease of life for re-release and added some new _production-ready_ checklists.
 
 {{< changelog "Changed" >}}
 
 - Updated PaaS guide.
+- Updated Carvel package author guide.
+- Updated TKGs upgrade guide.
+- Updated Frameworks.
 
 {{</ changelog >}}
 

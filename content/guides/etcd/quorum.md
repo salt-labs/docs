@@ -1,31 +1,46 @@
-# Readme
+---
+title: "Quorum"
+date: 2021-03-01T00:00:00+00:00
+icon: "fa-solid fa-box"
+description: "etcd"
+type: "docs"
+weight: 1
+draft: true
+---
 
-- [ ] capture pod and container info
+## Overview
+
+Steps for dealing with etcd quorum issues.
+
+## Steps
+
+- capture pod and container info
 
 ```bash
 crictl inspectp <pod-id> > pod.json
 crictl inspect <container-id> > container.json
 ```
 
-- [ ] modify files to include `--force-new-cluster`
+- modify files to include `--force-new-cluster`
 
 ```bash
 vim pod.json
 vim container.json
 ```
 
-- [ ] Create the container, passing the ID of the previously-created pod, the container config file, and the pod config file. The ID of the container is returned.
+- Create the container, passing the ID of the previously-created pod, the container config file, and the pod config file. The ID of the container is returned.
 
-````bash
+```bash
 crictl create $POD_ID container.json pod.json
+```
 
-- [ ] Verify the container is running
+- Verify the container is running
 
 ```bash
 crictl ps -a
-````
+```
 
-- Verify etcd container logs and test kube-apiserver
+- Verify etcd container logs and test `kube-apiserver`
 
 ```bash
 crictl logs $CONTAINER_ID
@@ -54,9 +69,17 @@ crictl stop $CONTAINER_ID
 vim container.json
 ```
 
-- Once healthy, fixup the control-plane to be 1 node
+- Once healthy, fix-up the control-plane to be 1 node
+
+```bash
+
+```
 
 - Then, once healthy, add additional etcd nodes back into cluster.
+
+```bash
+
+```
 
 ## Links
 

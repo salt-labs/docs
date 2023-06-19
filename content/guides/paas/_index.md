@@ -36,9 +36,9 @@ The below links walk through some opinionated categories that should be consider
 
 - [Stages](stages)
 - [Runtime](runtime)
-- [Platform](paas)
-- [An example starter backlog](./roadmap.csv)
+- [PaaS](platform)
+- [An example starter backlog](./backlog.csv)
 
-Once your PaaS is up and running, it's then finally time to start building and shipping your applications into production.
+Once your PaaS is up and running, it's time to verify you're cluster is production-ready and start start building and shipping your applications.
 
 - [Production-ready](production)

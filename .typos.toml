@@ -49,7 +49,7 @@ extend-glob = []
 check-file = false
 
 [type.gif]
-extend-glob = ["*.gif", "*.jpg"]
+extend-glob = ["*.gif", "*.jpg", "*.png"]
 binary = false
 check-file = false
 unicode = true

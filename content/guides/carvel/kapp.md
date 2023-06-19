@@ -1,11 +1,11 @@
 ---
-title: "X"
+title: "kapp"
 date: 2021-03-01T00:00:00+00:00
 icon: "fa-solid fa-box"
-description: "X"
+description: "kapp"
 type: "docs"
-weight: 200
-draft: false
+weight: 5
+draft: true
 ---
 
 ## Overview
@@ -22,24 +22,7 @@ This allows for applying changes safely and predictably, watching resources as t
 
 {{</ collapse >}}
 
-{{< button label="X (Xmin)" link="X" >}}
+- Review the `kapp` documentation
 
-## Practical
-
-{{< collapse "Outcomes" >}}
-
-- [ ] Know how to use _kapp_ to deploy and manage applications.
-
-{{</ collapse >}}
-
-### Pre-requisites
-
-If you intend on completing the tutorial section there are some pre-requisites.
-
-- [ ] Linux environment with admin permissions
-
-if using a Windows Laptop, the suggestion is to have either WSL installed or have available a Hyper-V Linux VM.
-
-### Tutorial
-
-TODO: COMPLETE TUTORIAL HERE...
+{{< button label="Review documentation (45min)" link="https://carvel.dev/kapp/docs/latest/" >}}
+<br/>

@@ -4,7 +4,7 @@ date: 2021-04-19T00:00:00+00:00
 icon: "fa-solid fa-credit-card"
 description: "DevOps is a culture, not a title."
 type: "docs"
-weight: 102
+weight: 100
 draft: false
 ---
 

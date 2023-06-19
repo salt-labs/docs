@@ -5,7 +5,7 @@ icon: "far fa-credit-card"
 description: "Testing the site short codes."
 type: "docs"
 weight: 1
-draft: false
+draft: true
 ---
 
 ## Table of Contents

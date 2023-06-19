@@ -1,11 +1,11 @@
 ---
-title: "X"
+title: "ytt"
 date: 2021-03-01T00:00:00+00:00
 icon: "fa-solid fa-box"
-description: "X"
+description: "ytt"
 type: "docs"
-weight: 200
-draft: false
+weight: 2
+draft: true
 ---
 
 ## Overview
@@ -23,18 +23,22 @@ draft: false
 - `ytt` vs X
 
 {{< button label="Review documentation (15min)" link="https://carvel.dev/ytt/docs/latest/ytt-vs-x/" >}}
+<br/>
 
 - Review the `ytt` documentation
 
 {{< button label="Review documentation (45min)" link="https://carvel.dev/ytt/docs/latest/" >}}
+<br/>
 
 - An introduction to `ytt` on TGI Kubernetes.
 
 {{< button label="TGI Kubernetes (1hr 30min)" link="https://www.youtube.com/watch?v=CSglwNTQiYg" >}}
+<br/>
 
 - YAML templating with `ytt`
 
 {{< button label="Read article (15min)" link="https://developer.ibm.com/blogs/yaml-templating-tool-to-simplify-complex-configuration-management/" >}}
+<br/>
 
 ## Practical
 
@@ -64,14 +68,17 @@ If you're looking for some inspiration, try completing some of the following sce
 - Primer on ytt overlays
 
 {{< button label="Blog Post (15min)" link="https://carvel.dev/blog/primer-on-ytt-overlays/" >}}
+<br/>
 
 - Parameterize project configuration
 
 {{< button label="Blog Post (30min)" link="https://carvel.dev/blog/parameterizing-project-config-with-ytt/" >}}
+<br/>
 
 - vendir and ytt, better together
 
 {{< button label="Blog Post (30min)" link="https://carvel.dev/blog/tanzu-tuesdays-vendir-ytt/" >}}
+<br/>
 
 #### Go you own way
 
