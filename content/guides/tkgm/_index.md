@@ -5,7 +5,7 @@ icon: "fa-solid fa-credit-card"
 description: "Tanzu Kubernetes Grid Community Edition (TKG)"
 type: "docs"
 weight: 305
-draft: true
+draft: false
 ---
 
 Tutorials on common tasks working with TKG Community Edition.

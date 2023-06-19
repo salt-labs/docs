@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "CI/CD drives the entire process"
 type: "docs"
 weight: 7
-draft: true
+draft: false
 ---
 
 _The CI tool drives the entire delivery process._

@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Salt Cloud hints."
 type: "docs"
 weight: 402
-draft: true
+draft: false
 ---
 
 - Download the latest version of the salt-bootstrap script

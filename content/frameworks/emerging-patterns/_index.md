@@ -5,7 +5,7 @@ icon: "fa-solid fa-credit-card"
 description: "A collection of patterns for building applications."
 type: "docs"
 weight: 105
-draft: true
+draft: false
 ---
 
 ## Emerging Architecture Patterns

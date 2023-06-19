@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Salt Tips and Tricks."
 type: "docs"
 weight: 200
-draft: true
+draft: false
 ---
 
 ## Table of Contents
@@ -476,7 +476,7 @@ done
 
 ## Salt State file structure migrations
 
-![Roles-Profile-Formula](images/Roles-Profile-Formula.png "Roles Profiles and Formulas")
+![Roles-Profile-Formula](/images/salt-project/salt-master/roles-profile-formula.png "Roles Profiles and Formulas")
 
 ```yaml
 # Set the ServerRealm

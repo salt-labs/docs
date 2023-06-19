@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Salt environment notes."
 type: "docs"
 weight: 400
-draft: true
+draft: false
 ---
 
 ## Overview

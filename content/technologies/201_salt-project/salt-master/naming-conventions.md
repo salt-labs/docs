@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Salt Naming Convention notes."
 type: "docs"
 weight: 400
-draft: true
+draft: false
 ---
 
 ## Overview

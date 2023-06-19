@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Salt Master notes and resources."
 type: "docs"
 weight: 202
-draft: true
+draft: false
 ---
 
 ## Overview

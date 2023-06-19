@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "How to monitor applications inside and out."
 type: "docs"
 weight: 11
-draft: true
+draft: false
 ---
 
 _How to monitor the application inside and out._

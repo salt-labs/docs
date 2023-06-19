@@ -1,6 +1,6 @@
 ---
 title: "Stages"
-date: 2020-02-13T15:00:00+02:00
+date: 2020-02-13T15:00:00+10:00
 icon: "fab fa-kubernetes"
 description: "The Stages of a PaaS project."
 type: "docs"

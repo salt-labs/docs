@@ -5,7 +5,7 @@ icon: "fa-solid fa-credit-card"
 description: "DevOps is a culture, not a title."
 type: "docs"
 weight: 102
-draft: true
+draft: false
 ---
 
 ## Overview
@@ -175,7 +175,7 @@ Some of our favourite DevOps quotes.
 
 - quote,
 
-  > DevOps is about getting away from monkeying servers with the goal of monkeying systems that monkey the servers for you.
+  > DevOps is about getting away from monkeying around with servers with the goal of monkeying with systems that monkey with the servers for you.
 
 - quote,
 
@@ -187,7 +187,7 @@ Some of our favourite DevOps quotes.
 
 - quote,
 
-  > Tools come and ago, but how you approach the work makes the difference. If your approach is "I want to learn DevOps, what tool do I need" you are doomed to disappointment, because you are asking the wrong question from the start.
+  > Tools come and go, but how you approach the work makes the difference. If your approach is "I want to learn DevOps, what tool do I need" you are doomed to disappointment, because you are asking the wrong question from the start.
 
 ### Resources
 

@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "Architecture Patterns every CNE should know"
 type: "docs"
 weight: 4
-draft: true
+draft: false
 ---
 
 _Know what you are dealing with._

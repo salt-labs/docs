@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "Are you building or buying and integrating?"
 type: "docs"
 weight: 2
-draft: true
+draft: false
 ---
 
 _Are you building or buying and integrating?_

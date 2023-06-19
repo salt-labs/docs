@@ -5,7 +5,7 @@ icon: "fa-solid fa-handshake"
 description: "A pattern using agents who publish their intentions to one another in the form of promises."
 type: "docs"
 weight: 107
-draft: true
+draft: false
 ---
 
 ## Overview

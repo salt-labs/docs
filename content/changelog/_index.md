@@ -12,6 +12,23 @@ draft: false
 
 🔮
 
+### June 2023
+
+Sprinkled some salt on some older docs for re-release and added some production-ready checklists.
+
+{{< changelog "Changed" >}}
+
+- Updated PaaS guide.
+
+{{</ changelog >}}
+
+{{< changelog "Added" >}}
+
+- Added Production-ready PaaS checklist
+- Added Production-ready Kapps checklist
+
+{{</ changelog >}}
+
 <hr>
 
 ### May 2023

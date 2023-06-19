@@ -5,7 +5,7 @@ icon: "fa-solid fa-credit-card"
 description: "Applying a mathematical model to IT infrastructure."
 type: "docs"
 weight: 108
-draft: true
+draft: false
 ---
 
 ## Overview

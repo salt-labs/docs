@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "CNEs need to know how to develop software"
 type: "docs"
 weight: 5
-draft: true
+draft: false
 ---
 
 _How to build and run the project._

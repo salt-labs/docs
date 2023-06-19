@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Salt Project notes and resources."
 type: "docs"
 weight: 201
-draft: true
+draft: false
 ---
 
 ## Table of Contents

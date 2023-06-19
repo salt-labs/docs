@@ -1,6 +1,6 @@
 ---
 title: "Platform as a Service Roadmap"
-date: 2020-02-13T15:00:00+02:00
+date: 2020-02-13T15:00:00+10:00
 icon: "fab fa-kubernetes"
 description: "A roadmap for building a Kubernetes PaaS."
 type: "docs"
@@ -16,19 +16,19 @@ Once your base Kubernetes Runtime is up and running, it's time to start extendin
 
 Databases are essential components of applications that require data storage, retrieval, and manipulation. Providing managed database services allows developers to focus on application logic without worrying about database administration tasks.
 
-Examples: VMWare Postgres Operator, CrunchyData Operator
+**Examples:** VMWare Postgres Operator, CrunchyData Operator, MySQL Operator, MongoDB Operator, Redis Operator, etcd Operator.
 
 ## Streaming and Messaging
 
 Streaming and messaging services enable asynchronous communication between microservices and facilitate real-time data processing. These services are critical for building event-driven architectures and can help ensure scalability and resiliency.
 
-Examples: NATS, Kafka
+**Examples:** NATS, Kafka, RabbitMQ, Redis Streams.
 
 ## Application Definition and Image Build
 
 Application definition and image build services provide tools and processes for defining application components, packaging them into container images, and managing the build process.
 
-Examples: Kpack
+**Examples:** Kpack, Buildpacks, Kaniko, Buildah, Docker Build.
 
 ## Service Discovery
 
@@ -50,17 +50,19 @@ API gateways serve as entry points for external clients to access a system's ser
 
 Service meshes provide a dedicated infrastructure layer for managing service-to-service communication. They can offer features such as load balancing, traffic routing, security, and observability.
 
-Examples; Istio, Linkerd, Consul Connect, App Mesh, Open Service Mesh.
+**Examples:** Istio, Linkerd, Consul Connect, App Mesh, Open Service Mesh, Kuma, Maersh.
 
 ## Serverless
 
 Serverless services allow developers to build and deploy applications without managing the underlying infrastructure. These services automatically scale with demand and can help reduce operational overhead.
 
-Examples: Knative, OpenFaaS, Fission, Kubeless, OpenWhisk, WasmCloud.
+**Examples:** Knative, OpenFaaS, Fission, Kubeless, OpenWhisk.
 
 ## Wasm
 
 WebAssembly (Wasm) is a binary instruction format that enables the execution of high-performance, sandboxed code in web browsers and other environments. Wasm can provide a lightweight and secure way to run code in a Kubernetes environment.
+
+**Examples:** Krustlet, WasmCloud, waSCC, waPC.
 
 ## Tanzu Application Platform
 

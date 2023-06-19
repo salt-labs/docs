@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "Every CNE needs a few under their belt"
 type: "docs"
 weight: 1
-draft: true
+draft: false
 ---
 
 _What application programming languages are being used?_

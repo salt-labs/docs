@@ -1,11 +1,11 @@
 ---
 title: "Getting Started"
-date: 2020-10-20T15:00:00+02:00
+date: 2020-10-20T15:00:00+10:00
 icon: "fab fa-help"
 description: "Getting started with Kubernetes."
 type: "docs"
 weight: 1
-draft: true
+draft: false
 ---
 
 ## Table of Contents
@@ -16,24 +16,20 @@ draft: true
 - [Overview](#overview)
 - [Pre-requisites](#pre-requisites)
 - [Containers](#containers)
-  - [Theory](#theory)
-  - [Practical](#practical)
+  - [Containers Theory](#containers-theory)
+  - [Containers Practical](#containers-practical)
 - [Cloud Native](#cloud-native)
-  - [Theory](#theory)
-  - [Practical](#practical)
+  - [Cloud Native Theory](#cloud-native-theory)
+  - [Cloud Native Practical](#cloud-native-practical)
 - [Kubernetes](#kubernetes)
-  - [Theory](#theory)
+  - [Kubernetes Theory](#kubernetes-theory)
     - [What is it?](#what-is-it)
     - [History](#history)
     - [What does it do?](#what-does-it-do)
     - [Concepts](#concepts)
     - [Demos](#demos)
     - [Courses](#courses)
-    - [Intermediate](#intermediate)
-    - [Advanced](#advanced)
-    - [More courses](#more-courses)
-    - [Certification](#certification)
-  - [Practical](#practical)
+  - [Kubernetes Practical](#kubernetes-practical)
     - [Beginner](#beginner)
     - [Intermediate](#intermediate)
     - [Advanced](#advanced)
@@ -65,7 +61,7 @@ If you're coming from a Windows background and looking for a decent introduction
 
 ## Containers
 
-### Theory
+### Containers Theory
 
 {{< collapse "Outcomes" >}}
 
@@ -98,7 +94,7 @@ Now that you have read about container runtimes, this visual might be of use to 
 
 {{< image src="drawio/cri-oh-my.drawio.png" alt="CRI, oh my!" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="CRI, oh my!" webp="true" >}}
 
-### Practical
+### Containers Practical
 
 {{< collapse "Outcomes" >}}
 
@@ -134,7 +130,7 @@ And for the more adventurous, ensure you create a container directly using `runc
 
 ## Cloud Native
 
-### Theory
+### Cloud Native Theory
 
 {{< collapse "Outcomes" >}}
 
@@ -161,7 +157,7 @@ Although learning _Cloud Infrastructure_ is outside the scope of this _getting s
 {{< button label="Start course (1hr 30min)" link="https://kube.academy/courses/frequently-asked-questions" >}}
 </br>
 
-### Practical
+### Cloud Native Practical
 
 {{< collapse "Outcomes" >}}
 
@@ -196,7 +192,7 @@ If none of the above makes sense, or you are completely new to the use of cloud 
 
 ## Kubernetes
 
-### Theory
+### Kubernetes Theory
 
 {{< collapse "Outcomes" >}}
 
@@ -291,7 +287,7 @@ Some of the more interesting demos from around the web to give you an idea of so
 
 There are a number of courses available on the VMware [KubeAcademy](https://kube.academy/) website arranged here by difficulty level.
 
-##### Beginner
+##### Beginner courses
 
 - An introduction to Kubernetes for _Virtual Infrastructure Administrators_.
 
@@ -318,14 +314,14 @@ There are a number of courses available on the VMware [KubeAcademy](https://kube
 {{< button label="Start Course (1 hr)" link="https://kube.academy/courses/kubernetes-platform-security" >}}
 <br/>
 
-#### Intermediate
+##### Intermediate courses
 
 - Operational considerations for _Virtual Infrastructure_ administrators.
 
 {{< button label="Start Course (1hr 30min)" link="https://kube.academy/courses/operational-considerations-for-virtual-infrastructure-administrators" >}}
 <br/>
 
-#### Advanced
+##### Advanced courses
 
 - Networking in Kubernetes
 
@@ -347,14 +343,14 @@ There are a number of courses available on the VMware [KubeAcademy](https://kube
 {{< button label="Start Course (1 hr 30 min)" link="https://kube.academy/courses/introduction-to-operators" >}}
 <br/>
 
-#### More courses
+##### More courses
 
 If you're still hungry for more, there is a self-paced introduction workshop from [edX](https://edx/org) you can complete.
 
 {{< button label="Start Course (14 weeks)" link="https://www.edx.org/course/introduction-to-kubernetes" >}}
 <br/>
 
-#### Certification
+##### Certification
 
 If you're keen to get some certifications under your belt, the _[Cloud Native Computing Foundation](https://cncf.io)_ offers the following industry standard certifications;
 
@@ -362,7 +358,7 @@ If you're keen to get some certifications under your belt, the _[Cloud Native Co
 - [Certified Kubernetes Administrator (CKA)](https://www.cncf.io/certification/cka/)
 - [Certified Kubernetes Security Specialist (CKS)](https://www.cncf.io/certification/ckas/)
 
-### Practical
+### Kubernetes Practical
 
 {{< collapse "Outcomes" >}}
 

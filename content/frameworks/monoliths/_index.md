@@ -5,7 +5,7 @@ icon: "fa-solid fa-credit-card"
 description: "A pattern for building applications as a single unit."
 type: "docs"
 weight: 103
-draft: true
+draft: false
 ---
 
 ## Overview

@@ -5,7 +5,7 @@ icon: "fa-solid fa-poo-storm"
 description: "Overview of the website"
 type: "docs"
 weight: 101
-draft: true
+draft: false
 ---
 
 ## Overview

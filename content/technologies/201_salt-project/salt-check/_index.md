@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Salt Check notes and resources."
 type: "docs"
 weight: 204
-draft: true
+draft: false
 ---
 
 ## Overview

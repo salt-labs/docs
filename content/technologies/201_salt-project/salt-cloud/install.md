@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Salt Cloud installation notes."
 type: "docs"
 weight: 401
-draft: true
+draft: false
 ---
 
 ## Provider specific

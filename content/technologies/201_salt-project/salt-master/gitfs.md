@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Salt Master gitfs configuration notes."
 type: "docs"
 weight: 400
-draft: true
+draft: false
 ---
 
 ## Overview

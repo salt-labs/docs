@@ -5,7 +5,7 @@ icon: "fa-solid fa-credit-card"
 description: "System design principle that deals with the inter-relationships of components."
 type: "docs"
 weight: 109
-draft: true
+draft: false
 ---
 
 ## Overview

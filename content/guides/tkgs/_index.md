@@ -5,7 +5,7 @@ icon: "fa-solid fa-credit-card"
 description: "Tanzu Kubernetes Grid Service (TKGs)"
 type: "docs"
 weight: 304
-draft: true
+draft: false
 ---
 
 Tutorials on common tasks working with TKGs.

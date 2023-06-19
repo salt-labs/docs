@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "The journey to becoming a Cloud Native Engineer"
 type: "docs"
 weight: 301
-draft: true
+draft: false
 ---
 
 ## Overview

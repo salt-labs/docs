@@ -5,7 +5,7 @@ icon: "fa-solid fa-credit-card"
 description: "Upgrading Tanzu Kubernetes Grid (TKGs) on vSphere 8"
 type: "docs"
 weight: 202
-draft: true
+draft: false
 ---
 
 TODO

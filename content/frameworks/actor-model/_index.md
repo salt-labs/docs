@@ -5,7 +5,7 @@ icon: "fa-solid fa-credit-card"
 description: "A pattern using 'Actors' as the fundamental agents of computing. Commonly seen with serverless systems."
 type: "docs"
 weight: 112
-draft: true
+draft: false
 ---
 
 ## Overview

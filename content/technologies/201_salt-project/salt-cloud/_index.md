@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Salt Cloud notes and resources."
 type: "docs"
 weight: 203
-draft: true
+draft: false
 ---
 
 ## Overview

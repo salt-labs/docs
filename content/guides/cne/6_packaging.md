@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "How the application is packaged for delivery."
 type: "docs"
 weight: 6
-draft: true
+draft: false
 ---
 
 _How the application is packaged for delivery._
