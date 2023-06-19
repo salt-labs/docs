@@ -8,4 +8,4 @@ weight: 300
 draft: false
 ---
 
-Guides, tutorials and walkthroughs on various products within the VMware Tanzu and Cloud-Native ecosystem.
+Guides, tutorials and walkthroughs on various products within the Cloud-Native ecosystem.

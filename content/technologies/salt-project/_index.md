@@ -37,11 +37,11 @@ This section contains notes and resources related to SaltStack.
 
 ## Terminology
 
-There are a few different tools and terminologies within SaltStack ecosystem as show below.
+There are a few different tools and terminologies within SaltStack ecosystem as shown below.
 
 ### Salt Master
 
-The Salt Master is the central manager for the Salt Minions and by default uses 0mq but can also use a custom UDP based protocol RAET.
+The Salt Master is the central manager for the Salt Minions and by default uses 0mq but can also use a custom UDP based protocol named RAET.
 
 ### Salt Minion
 

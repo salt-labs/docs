@@ -8,6 +8,6 @@ weight: 200
 draft: false
 ---
 
-Notes and tips on specific cloud-native technologies.
+Notes and tips on specific technologies.
 
 Always consult the official vendor documentation for the latest information.
