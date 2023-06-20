@@ -4,8 +4,8 @@ date: 2020-08-21T00:00:00+00:00
 icon: "fa-solid fa-credit-card"
 description: "A collection of patterns for building applications."
 type: "docs"
-weight: 105
-draft: true
+weight: 1114
+draft: false
 ---
 
 ## Emerging Architecture Patterns

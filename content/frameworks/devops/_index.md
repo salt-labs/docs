@@ -4,8 +4,8 @@ date: 2021-04-19T00:00:00+00:00
 icon: "fa-solid fa-credit-card"
 description: "DevOps is a culture, not a title."
 type: "docs"
-weight: 102
-draft: true
+weight: 1101
+draft: false
 ---
 
 ## Overview
@@ -32,64 +32,64 @@ This checklist is an extended version based on the fine work over at [DevOps Che
 
 Unifying group and individual direction and goals around the singular vision of the organization.
 
-| Question                                                                      | Answer |
-| :---------------------------------------------------------------------------- | :----: |
-| We prioritise according to business objectives                                | YES/NO |
-| We volunteer for tasks rather than have them assigned                         | YES/NO |
-| Our team has clear objectives the correspond with our company vision          | YES/NO |
-| Our product team is focused on sustainable velocity rather than current speed | YES/NO |
-| We focus on time to repair rather than time between issues                    | YES/NO |
-| DevOps is not isolated to a specific role in our organisation                 | YES/NO |
-| DevOps is not isolated to a specific team in our organisation                 | YES/NO |
-| Our operational functions are seen as a source of competitive advantage       | YES/NO |
+| Question                                                                   | Answer |
+| :------------------------------------------------------------------------- | :----: |
+| We prioritise according to business objectives                             | YES/NO |
+| We volunteer for tasks rather than have them assigned                      | YES/NO |
+| Our team has clear objectives the correspond with our company vision       | YES/NO |
+| Our product team is focused on sustainable velocity not than current speed | YES/NO |
+| We focus on time to repair rather than time between issues                 | YES/NO |
+| DevOps is not isolated to a specific role in our organisation              | YES/NO |
+| DevOps is not isolated to a specific team in our organisation              | YES/NO |
+| Our operational functions are seen as a source of competitive advantage    | YES/NO |
 
 #### Learning
 
 Empowering personal growth and fostering understanding through continuous improvement.
 
-| Question                                                                          | Answer |
-| :-------------------------------------------------------------------------------- | :----: |
-| We cultivate an environment of continuous learning                                | YES/NO |
-| We regularly celebrate our product team's learnings and success internally        | YES/NO |
-| We identify skills needed to improve or address future objectives                 | YES/NO |
-| We strive to examine how we complete our work, and how effictively we complete it | YES/NO |
-| We estimate based on measurement and past experience                              | YES/NO |
-| We provide security training to developers                                        | YES/NO |
+| Question                                                                   | Answer |
+| :------------------------------------------------------------------------- | :----: |
+| We cultivate an environment of continuous learning                         | YES/NO |
+| We regularly celebrate our product team's learnings and success internally | YES/NO |
+| We identify skills needed to improve or address future objectives          | YES/NO |
+| We strive to examine how we complete our work effectively                  | YES/NO |
+| We estimate based on measurement and past experience                       | YES/NO |
+| We provide security training to developers                                 | YES/NO |
 
 #### Lifecycle
 
 Focus on software as a product deserving of care, attention and reflection, within and ever changing ecosystem.
 
-| Question                                                                                | Answer |
-| :-------------------------------------------------------------------------------------- | :----: |
-| Our software development cycle is two weeks or less                                     | YES/NO |
-| Our software development cycle is defined by releasing a working change into production | YES/NO |
-| We stop development upon discovering a defect and prioritise it's repair                | YES/NO |
-| Developers or product owners are able to deploy our product to production               | YES/NO |
-| We have automated testing prior to automated production deployment                      | YES/NO |
-| Our configuration of systems is automated                                               | YES/NO |
-| Our deployed system configuration is immutable                                          | YES/NO |
-| Our release and deployment automation is environment agnostic                           | YES/NO |
-| We make security part of the entire development process                                 | YES/NO |
-| We test security throughout the development lifecycle                                   | YES/NO |
-| We automate as many processes as possible                                               | YES/NO |
-| We monitor processes, infrastructure and applications                                   | YES/NO |
-| We generate actionable alerts when there are issues                                     | YES/NO |
+| Question                                                                  | Answer |
+| :------------------------------------------------------------------------ | :----: |
+| Our software development cycle is two weeks or less                       | YES/NO |
+| Our software development cycle is defined by releasing into production    | YES/NO |
+| We stop development upon discovering a defect and prioritise it's repair  | YES/NO |
+| Developers or product owners are able to deploy our product to production | YES/NO |
+| We have automated testing prior to automated production deployment        | YES/NO |
+| Our configuration of systems is automated                                 | YES/NO |
+| Our deployed system configuration is immutable                            | YES/NO |
+| Our release and deployment automation is environment agnostic             | YES/NO |
+| We make security part of the entire development process                   | YES/NO |
+| We test security throughout the development lifecycle                     | YES/NO |
+| We automate as many processes as possible                                 | YES/NO |
+| We monitor processes, infrastructure and applications                     | YES/NO |
+| We generate actionable alerts when there are issues                       | YES/NO |
 
 #### Organisation
 
 Providing structure for interaction and cohesion supporting collaboration and productivity.
 
-| Question                                                                       | Answer |
-| :----------------------------------------------------------------------------- | :----: |
-| Our organisation is configured around cross-functional teams                   | YES/NO |
-| Our teams are customer and product orientated                                  | YES/NO |
-| Our developers have access to production-like systems to work and test on      | YES/NO |
-| Our developers have access to production-like data to work and test against    | YES/NO |
-| Our developers have access to dependencies required to build and test software | YES/NO |
-| We encourage secure employee behavior                                          | YES/NO |
-| We check employee behavior                                                     | YES/NO |
-| We do regular spear-phishing campaigns                                         | YES/NO |
+| Question                                                                    | Answer |
+| :-------------------------------------------------------------------------- | :----: |
+| Our organisation is configured around cross-functional teams                | YES/NO |
+| Our teams are customer and product orientated                               | YES/NO |
+| Our developers have access to production-like systems to work and test on   | YES/NO |
+| Our developers have access to production-like data to work and test against | YES/NO |
+| Our developers have access to dependencies required to build and test       | YES/NO |
+| We encourage secure employee behaviour                                      | YES/NO |
+| We check employee behaviour                                                 | YES/NO |
+| We do regular spear-phishing campaigns                                      | YES/NO |
 
 #### Process
 
@@ -100,7 +100,7 @@ Rituals crafted to foster consistency and confidence, providing a framework for 
 | Our organisation follows agile development practices.                   | YES/NO |
 | We regularly examine constraints in our delivery process                | YES/NO |
 | Our system configuration is committed into version control              | YES/NO |
-| We practice test or behavior driven development                         | YES/NO |
+| We practice test or behaviour driven development                        | YES/NO |
 | We test our changes against a merge with our mainline code              | YES/NO |
 | We test out changes against production-equivalent load and use patterns | YES/NO |
 
@@ -148,7 +148,7 @@ Monitoring and securing APIs.
 
 #### The Joel Test
 
-The classic interview questionnaire is _still_ relevant over 20 years on.
+The classic interview questionnaire is _still_ relevant over 20+ years on.
 
 | Question                                             | Answer |
 | :--------------------------------------------------- | :----: |
@@ -175,7 +175,7 @@ Some of our favourite DevOps quotes.
 
 - quote,
 
-  > DevOps is about getting away from monkeying servers with the goal of monkeying systems that monkey the servers for you.
+  > DevOps is about getting away from monkeying around with servers with the goal of monkeying with systems that monkey with the servers for you.
 
 - quote,
 
@@ -187,7 +187,7 @@ Some of our favourite DevOps quotes.
 
 - quote,
 
-  > Tools come and ago, but how you approach the work makes the difference. If your approach is "I want to learn DevOps, what tool do I need" you are doomed to disappointment, because you are asking the wrong question from the start.
+  > Tools come and go, but how you approach the work makes the difference. If your approach is "I want to learn DevOps, what tool do I need" you are doomed to disappointment, because you are asking the wrong question from the start.
 
 ### Resources
 

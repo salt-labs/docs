@@ -12,6 +12,26 @@ draft: false
 
 🔮
 
+### June 2023
+
+Sprinkled some salt on older docs to give them a new lease of life for re-release and added some new _production-ready_ checklists.
+
+{{< changelog "Changed" >}}
+
+- Updated PaaS guide.
+- Updated Carvel package author guide.
+- Updated TKGs upgrade guide.
+- Updated Frameworks.
+
+{{</ changelog >}}
+
+{{< changelog "Added" >}}
+
+- Added Production-ready PaaS checklist
+- Added Production-ready Kapps checklist
+
+{{</ changelog >}}
+
 <hr>
 
 ### May 2023

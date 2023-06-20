@@ -67,13 +67,13 @@ The weights are used to determine the order of the pages in the menu. The lower 
 
 It can get a little confusing, so here's a table to track the weights.
 
-|  Page Name   | Weight  |
-| :----------: | :-----: |
-|  Changelog   |    1    |
-|   Contact    |    1    |
-|     FAQ      |    1    |
-| Introduction |    1    |
-|    Search    |    1    |
-|  Frameworks  | 100-199 |
-| Technologies | 200-299 |
-|    Guides    | 300-399 |
+|  Page Name   |  Weight   |
+| :----------: | :-------: |
+|  Changelog   |     1     |
+|   Contact    |     1     |
+|     FAQ      |     1     |
+| Introduction |     1     |
+|    Search    |     1     |
+|  Frameworks  | 1000-1999 |
+| Technologies | 2000-2999 |
+|    Guides    | 3000-3999 |

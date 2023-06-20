@@ -4,8 +4,8 @@ date: 2020-10-10T12:00:00-04:00
 icon: "fa-solid fa-handshake"
 description: "A pattern using agents who publish their intentions to one another in the form of promises."
 type: "docs"
-weight: 107
-draft: true
+weight: 1112
+draft: false
 ---
 
 ## Overview

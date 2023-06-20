@@ -5,8 +5,8 @@ icon: "fa-solid fa-dumpster-fire"
 description: "Common frameworks, patterns and methodologies"
 feedback: true
 type: "topic"
-weight: 100
-draft: true
+weight: 1000
+draft: false
 ---
 
 ## Table of Contents
@@ -38,27 +38,20 @@ A common term used throughout the industry is _Cloud Native_. You might be wonde
 
 Here are a number of _introductory_ level resources to answer common questions and terminology.
 
-{{< collapse "What is DevOps?" >}}
-{{< button label="VMware Tanzu: Devops (15min)" link="https://tanzu.vmware.com/devops" >}}
-{{</ collapse >}}
+{{< button label="VMware Tanzu: What is Devops (15min)" link="https://tanzu.vmware.com/devops" >}}
+<br/>
 
-{{< collapse "What is Agile Software Development?" >}}
-{{< button label="VMware Tanzu: Agile (15min)" link="https://tanzu.vmware.com/agile" >}}
-{{</ collapse >}}
+{{< button label="VMware Tanzu: What is Agile Software Development (15min)" link="https://tanzu.vmware.com/agile" >}}
+<br/>
 
-{{< collapse "What is Microservices Architecture?" >}}
-{{< button label="VMware Tanzu: Microservices (15min)" link="https://tanzu.vmware.com/microservices" >}}
-{{</ collapse >}}
+{{< button label="VMware Tanzu: What is Microservices Architecture (15min)" link="https://tanzu.vmware.com/microservices" >}}
+<br/>
 
-{{< collapse "What is a Container?" >}}
-{{< button label="VMware Tanzu: Containers (15min)" link="https://tanzu.vmware.com/containers" >}}
-{{</ collapse >}}
+{{< button label="VMware Tanzu: What is a Container (15min)" link="https://tanzu.vmware.com/containers" >}}
+<br/>
 
-{{< collapse "What is a Cloud Native Security?" >}}
-{{< button label="VMware Tanzu: Cloud Native Security (15min)" link="https://tanzu.vmware.com/cloud-native-security" >}}
-{{</ collapse >}}
-
-</br>
+{{< button label="VMware Tanzu: What is Cloud Native Security (15min)" link="https://tanzu.vmware.com/cloud-native-security" >}}
+<br/>
 
 ## Phippy
 

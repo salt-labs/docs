@@ -4,10 +4,10 @@ date: 2023-02-26T00:00:00+00:00
 icon: "fa-sharp fa-regular fa-robot-astromech"
 description: "Technologies"
 type: "topic"
-weight: 200
-draft: true
+weight: 2000
+draft: false
 ---
 
-Notes and tips on specific VMware technologies.
+Notes and tips on specific technologies.
 
-The official documentation from VMware is available [here](https://docs.vmware.com/allproducts.html)
+Always consult the official vendor documentation for the latest information.
