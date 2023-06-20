@@ -4,7 +4,7 @@ date: 2021-04-19T00:00:00+00:00
 icon: "fa-solid fa-credit-card"
 description: "Applying a mathematical model to IT infrastructure."
 type: "docs"
-weight: 100
+weight: 1113
 draft: false
 ---
 

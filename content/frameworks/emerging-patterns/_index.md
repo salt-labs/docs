@@ -4,7 +4,7 @@ date: 2020-08-21T00:00:00+00:00
 icon: "fa-solid fa-credit-card"
 description: "A collection of patterns for building applications."
 type: "docs"
-weight: 100
+weight: 1114
 draft: false
 ---
 

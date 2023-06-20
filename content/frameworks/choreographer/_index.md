@@ -4,7 +4,7 @@ date: 2021-04-19T00:00:00+00:00
 icon: "fa-solid fa-credit-card"
 description: "A pattern for building distributed systems with no reliance on a single point of control."
 type: "docs"
-weight: 100
+weight: 1107
 draft: false
 ---
 

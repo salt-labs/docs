@@ -5,7 +5,7 @@ icon: "fa-solid fa-dumpster-fire"
 description: "Common frameworks, patterns and methodologies"
 feedback: true
 type: "topic"
-weight: 100
+weight: 1000
 draft: false
 ---
 

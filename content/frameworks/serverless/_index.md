@@ -4,7 +4,7 @@ date: 2023-06-19T00:00:00+00:00
 icon: "fa-solid fa-cloud"
 description: "An architectural style that abstracts away server management and pricing based on actual consumption rather than server capacity."
 type: "docs"
-weight: 100
+weight: 1110
 draft: false
 ---
 
