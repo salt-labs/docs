@@ -140,7 +140,7 @@ jobs:
           apiToken: ${{ env.WRANGLER_API_TOKEN }}
           preCommands: |
             npm --prefix workers-site install
-          command: publish --env staging
+          command: deploy --env staging
 
       # Only 'trunk' branch is pushed to the Production website
       - id: publish_website_production
