@@ -2,7 +2,7 @@
 favicon: "images/favicon.png"
 logo: "images/logo.png"
 
-main_site_link: "https://docs.saltlabs.tech"
+main_site_link: "https://saltlabs.tech"
 
 logo_icon: "images/logo-icon.png"
 site_logo: "images/logo-site.png"
@@ -15,8 +15,8 @@ purge_css: true
 
 image_gallery: true
 
-#google_adsense: ''
-google_adsense: "ca-pub-1104801561087207"
+google_adsense: ""
+#google_adsense: "ca-pub-1104801561087207"
 
 google_tag_manager: "GTM-WQQVKD7"
 
