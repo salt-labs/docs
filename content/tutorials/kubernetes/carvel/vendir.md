@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "vendir"
 type: "docs"
 weight: 3301
-draft: true
+draft: false
 ---
 
 ## Overview
@@ -52,7 +52,11 @@ Prior to starting the tutorial, you need to have the Carvel toolchain installed 
 {{< tabs "install-carvel-vendir" >}}
 
 {{< tab "MacOS" >}}
-TODO: MacOS instructions go here...
+
+```bash
+wget -O- https://carvel.dev/install.sh | sudo bash
+```
+
 {{</ tab >}}
 
 {{< tab "Linux" >}}
@@ -63,10 +67,6 @@ wget -O- https://carvel.dev/install.sh | sudo bash
 
 {{</ tab >}}
 
-{{< tab "Windows" >}}
-TODO: Windows instructions go here...
-{{</ tab >}}
-
 {{< /tabs >}}
 
 - [ ] Install `helm`
@@ -74,7 +74,11 @@ TODO: Windows instructions go here...
 {{< tabs "install-helm-vendir" >}}
 
 {{< tab "MacOS" >}}
-TODO: MacOS instructions go here...
+
+```bash
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+```
+
 {{</ tab >}}
 
 {{< tab "Linux" >}}
@@ -85,10 +89,6 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
 {{</ tab >}}
 
-{{< tab "Windows" >}}
-TODO: Windows instructions go here...
-{{</ tab >}}
-
 {{< /tabs >}}
 
 - [ ] Install `kustomize`
@@ -96,7 +96,13 @@ TODO: Windows instructions go here...
 {{< tabs "install-kustomize-vendir" >}}
 
 {{< tab "MacOS" >}}
-TODO: MacOS instructions go here...
+
+```bash
+curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
+
+sudo mv kustomize /usr/local/bin/
+```
+
 {{</ tab >}}
 
 {{< tab "Linux" >}}
@@ -109,10 +115,6 @@ sudo mv kustomize /usr/local/bin/
 
 {{</ tab >}}
 
-{{< tab "Windows" >}}
-TODO: Windows instructions go here...
-{{</ tab >}}
-
 {{< /tabs >}}
 
 - [ ] Install `yq`
@@ -120,7 +122,30 @@ TODO: Windows instructions go here...
 {{< tabs "install-yq-vendir" >}}
 
 {{< tab "MacOS" >}}
-TODO: MacOS instructions go here...
+
+```bash
+# https://github.com/mikefarah/yq/releases
+YQ_VERSION="v4.24.2"
+YQ_URL="https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64"
+YQ_URL_CHECKSUMS="https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/checksums"
+
+curl \
+    --location \
+    --insecure \
+    --output yq_linux_amd64 \
+    ${YQ_URL} \
+ && curl \
+    --location \
+    --insecure \
+    --output yq.checksums \
+    "${YQ_URL_CHECKSUMS}" \
+ && chmod +x yq_linux_amd64 \
+ && echo "$(grep "yq_linux_amd64 " yq.checksums | tr -s ' ' | cut -d ' ' -f 19)  yq_linux_amd64" | sha256sum --check \
+ && sudo mv yq_linux_amd64 /usr/local/bin/yq \
+ && yq --version \
+ && rm yq.checksums
+```
+
 {{</ tab >}}
 
 {{< tab "Linux" >}}
@@ -150,10 +175,6 @@ curl \
 
 {{</ tab >}}
 
-{{< tab "Windows" >}}
-TODO: Windows instructions go here...
-{{</ tab >}}
-
 {{< /tabs >}}
 
 `vendir` reads from a single configuration file named `vendir.yml`. Full information about all supported configuration options is available in the [specification](https://carvel.dev/vendir/docs/latest/vendir-spec/).
@@ -163,7 +184,26 @@ TODO: Windows instructions go here...
 {{< tabs "configure-vendir" >}}
 
 {{< tab "MacOS" >}}
-TODO: MacOS instructions go here...
+
+```bash
+cat <<- _EOF_ > "vendir.yml"
+apiVersion: vendir.k14s.io/v1alpha1
+kind: Config
+minimumRequiredVersion: 0.12.0
+directories:
+
+- path: vendor
+  contents:
+
+  - path: custom-repo-custom-version
+    helmChart:
+      name: contour
+      version: "1.2.1"
+      repository:
+        url: https://charts.bitnami.com/bitnami
+_EOF_
+```
+
 {{</ tab >}}
 
 {{< tab "Linux" >}}
@@ -187,10 +227,6 @@ directories:
 _EOF_
 ```
 
-{{</ tab >}}
-
-{{< tab "Windows" >}}
-TODO: Windows instructions go here...
 {{</ tab >}}
 
 {{< /tabs >}}
@@ -233,14 +269,6 @@ cat vendir.lock.yml
 
 {{</ tab >}}
 
-{{< tab "Windows" >}}
-
-```PowerShell
-Get-Content vendir.lock.yml
-```
-
-{{</ tab >}}
-
 {{< /tabs >}}
 
 As defined in the configuration file, the downloaded contents are stored in the `vendor` directory.
@@ -274,3 +302,7 @@ tree /F vendor
 {{</ tab >}}
 
 {{< /tabs >}}
+
+The basic `vendir` tutorial is now complete!
+
+For a longer form tutorial check out how `vendir` fits into a _carvel package_ [the hard way](../tutorial)

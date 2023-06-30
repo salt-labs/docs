@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "kapp"
 type: "docs"
 weight: 3305
-draft: true
+draft: false
 ---
 
 ## Overview
@@ -26,3 +26,29 @@ This allows for applying changes safely and predictably, watching resources as t
 
 {{< button label="Review documentation (45min)" link="https://carvel.dev/kapp/docs/latest/" >}}
 <br/>
+
+## Practical
+
+{{< collapse "Outcomes" >}}
+
+- [ ] Know how to use _kapp_ for deploying `apps`.
+
+{{</ collapse >}}
+
+- [ ] TODO: write tutorial here.
+
+{{< tabs "kapp-xxx" >}}
+
+{{< tab "Common" >}}
+
+```bash
+
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+The basic `kapp` tutorial is now complete!
+
+For a longer form tutorial check out how `kapp` fits into a _carvel package_ [the hard way](../tutorial)
