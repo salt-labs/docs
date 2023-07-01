@@ -30,6 +30,12 @@ draft: false
 {{< button label="Complete Scenario (15min)" link="https://katacoda.com/carvel/scenarios/kapp-controller-package-management" >}}
 <br/>
 
+### Custom Resources
+
+A visual on the relationship between the custom resources.
+
+{{< image src="images/carvel/CRDs.png" class="h-auto" alt="image" zoomable="true" >}}
+
 ## Practical
 
 {{< collapse "Outcomes" >}}
