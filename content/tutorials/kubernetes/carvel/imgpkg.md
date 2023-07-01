@@ -39,7 +39,7 @@ Bundles can be consumed with confidence knowing their contents are unchanged aft
 
 {{< tabs "imgpkg-xxx" >}}
 
-{{< tab "Common" >}}
+{{< tab "Linux" >}}
 
 ```bash
 

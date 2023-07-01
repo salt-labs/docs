@@ -39,7 +39,7 @@ This allows for applying changes safely and predictably, watching resources as t
 
 {{< tabs "kapp-xxx" >}}
 
-{{< tab "Common" >}}
+{{< tab "Linux" >}}
 
 ```bash
 

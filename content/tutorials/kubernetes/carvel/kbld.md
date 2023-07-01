@@ -39,7 +39,7 @@ A common use case is to resolve all immutable image references automatically and
 
 {{< tabs "kbld-config" >}}
 
-{{< tab "Common" >}}
+{{< tab "Linux" >}}
 
 ```bash
 cat <<- _EOF_ > "kbld.yaml"
@@ -68,7 +68,7 @@ _EOF_
 
 {{< tabs "kbld-source" >}}
 
-{{< tab "Common" >}}
+{{< tab "Linux" >}}
 
 ```bash
 cat << _EOF_ > "source.yaml"
@@ -87,7 +87,7 @@ _EOF_
 
 {{< tabs "kbld-stdout" >}}
 
-{{< tab "Common" >}}
+{{< tab "Linux" >}}
 
 ```bash
 cat source.yaml | kbld --file -
@@ -103,7 +103,7 @@ cat source.yaml | kbld --file -
 
 {{< tabs "kbld-imgpkg" >}}
 
-{{< tab "Common" >}}
+{{< tab "Linux" >}}
 
 ```bash
 cat source.yaml | \

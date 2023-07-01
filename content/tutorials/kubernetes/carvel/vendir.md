@@ -237,7 +237,7 @@ Now that the configuration file has been created, execute the utility now to pul
 
 {{< tabs "sync-vendir" >}}
 
-{{< tab "Common" >}}
+{{< tab "Linux" >}}
 
 ```shell
 vendir sync

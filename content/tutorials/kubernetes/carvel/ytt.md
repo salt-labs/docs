@@ -65,6 +65,8 @@ If you're looking for some inspiration, try completing some of the following sce
 
 #### Follow along
 
+If you want to follow along with some example, try the following.
+
 - Primer on ytt overlays
 
 {{< button label="Blog Post (15min)" link="https://carvel.dev/blog/primer-on-ytt-overlays/" >}}
