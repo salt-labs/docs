@@ -47,6 +47,7 @@ in
             golangci-lint-langserver
             gosec
             nodejs
+            hugo
           ]
           ++ unstablePkgs;
 
@@ -60,7 +61,7 @@ in
           export PRETTIER_CONFIG=''${PROJECT_DIR}/.linters/config/.prettierrc.yaml
           export YAMLLINT_CONFIG_FILE=''${PROJECT_DIR}/.linters/config/.yamllint.yml
 
-          figlet $PROJECT_SHELL
+          figlet ''${PROJECT_NAME:-Unknown}
 
           hello \
             --greeting \

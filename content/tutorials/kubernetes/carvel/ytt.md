@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "ytt"
 type: "docs"
 weight: 3302
-draft: true
+draft: false
 ---
 
 ## Overview
@@ -64,6 +64,8 @@ The best way to learn about how to use `ytt` is to mess around in the [playgroun
 If you're looking for some inspiration, try completing some of the following scenarios.
 
 #### Follow along
+
+If you want to follow along with some example, try the following.
 
 - Primer on ytt overlays
 

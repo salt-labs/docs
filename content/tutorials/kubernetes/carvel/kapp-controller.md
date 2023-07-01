@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "kapp-controller"
 type: "docs"
 weight: 3306
-draft: true
+draft: false
 ---
 
 ## Overview
@@ -29,3 +29,13 @@ draft: true
 
 {{< button label="Complete Scenario (15min)" link="https://katacoda.com/carvel/scenarios/kapp-controller-package-management" >}}
 <br/>
+
+## Practical
+
+{{< collapse "Outcomes" >}}
+
+- [ ] Know how to use _kapp-controller_ for deploying `packages`.
+
+{{</ collapse >}}
+
+For a longer form tutorial check out how `kapp-controller` fits into a _carvel package_ [the hard way](../tutorial)
