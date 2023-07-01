@@ -16,16 +16,14 @@ In this example it is assumed you are creating an empty repository from scratch 
 
 Don't worry too much about understanding the layout early on, we will be filling it out as we go along.
 
-- Create the `ROOT_DIR` folder and change into it.
+- Create a tutories folder and change into it. This is where we will be working from.
 
 {{< tabs "structure-rootdir" >}}
 
 {{< tab "Linux" >}}
 
 ```bash
-cd tutorial/
-
-mkdir -p ${ROOT_DIR}
+mkdir tutorial/ && cd $_
 ```
 
 {{< /tab >}}
@@ -63,19 +61,22 @@ touch ${ROOT_DIR}/repos/${REPOSITORY_NAME}/packages/${PACKAGE_NAME}.${PACKAGE_FQ
 
 {{< tab "Linux" >}}
 
+- Create the empty folder structure for the package.
+
 ```bash
 # NOTE: Outside of this tutorial, this process is automated with tools like `tt` and `kctrl` to initiailse a package.
 # But the steps are here for you to understand the inner-workings.
 
-# Create the empty folder structure for the package.
 mkdir -p \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/{bundle,examples,test,templates} \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/{.imgpkg,vendor,ytt} \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/overlays \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/schema
+```
 
-# Create the empty folder structure for the repository
+- Create the empty folder structure for the repository.
 
+```bash
 # Create empty files which will be populated later by the various tools.
 # NOTE: It's annoying, but some of the tools require .yml and some require .yaml. Just something to be aware of.
 touch \

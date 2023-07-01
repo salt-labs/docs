@@ -227,4 +227,4 @@ _EOF_
 
 {{< /tabs >}}
 
-Ok, take breath, there was a lot going on this section!
+Ok, now take a break to digest what happened, there was a lot going on this section!
