@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "imgpkg"
 type: "docs"
 weight: 3304
-draft: true
+draft: false
 ---
 
 ## Overview
@@ -26,3 +26,29 @@ Bundles can be consumed with confidence knowing their contents are unchanged aft
 
 {{< button label="Review documentation (45min)" link="https://carvel.dev/imgpkg/docs/latest/" >}}
 <br/>
+
+## Practical
+
+{{< collapse "Outcomes" >}}
+
+- [ ] Know how to use _imgpkg_ for creating bundles.
+
+{{</ collapse >}}
+
+- [ ] TODO: write tutorial here.
+
+{{< tabs "imgpkg-xxx" >}}
+
+{{< tab "Linux" >}}
+
+```bash
+
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+The basic `imgpkg` tutorial is now complete!
+
+For a longer form tutorial check out how `imgpkg` fits into a _carvel package_ [the hard way](../tutorial)

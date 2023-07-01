@@ -5,7 +5,7 @@ icon: "fas fa-tools"
 description: "Carvel tutorials and training material."
 type: "docs"
 weight: 3203
-draft: true
+draft: false
 ---
 
 ## Overview
@@ -32,7 +32,7 @@ Some other useful resources related to Carvel include;
 
 - Introduction to _Carvel_
 
-{{< button label="Watch video (30min)" link="https://www.youtube.com/watch?v=Yjr9s-aLHjU" >}}
+{{< youtube Yjr9s-aLHjU >}}
 <br/>
 
 - US Army _CReATE_ case study on Carvel.
