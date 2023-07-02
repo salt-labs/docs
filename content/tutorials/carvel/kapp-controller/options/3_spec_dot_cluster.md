@@ -18,11 +18,13 @@ draft: false
 
 - Centralised config
 - Minimum operations overhead
+- One `mgmt` cluster per-environment.
 
 ### Cons
 
 - Lack of separation of configuration.
 - Blast radius risks
+- Compatibility
 
 ### Mitigations
 
@@ -30,4 +32,4 @@ draft: false
 
 ## Diagram
 
-{{< image src="drawio/carvel/kapp-spec_dot_cluster.drawio.png" class="h-auto" alt="image" zoomable="true" width="800px" height="600px">}}
+{{< image src="drawio/carvel/kapp-spec-dot-cluster.drawio.png" class="h-auto" alt="image" zoomable="true" >}}

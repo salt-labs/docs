@@ -16,16 +16,15 @@ _Carvel_, formally known as _k14s_, is a Kubernetes toolchain comprised of indiv
 
 Information and tutorial on the toolchain components.
 
-| Link                               | Description                               |
-| ---------------------------------- | ----------------------------------------- |
-| [vendir](vendir)                   | Getting started with `vendir`             |
-| [ytt](ytt)                         | Getting started with `ytt`                |
-| [kbld](kbld)                       | Getting started with `kbld`               |
-| [imgpkg](imgpkg)                   | Getting started with `imgpkg`             |
-| [kapp](kapp)                       | Getting started with `kapp`               |
-| [kapp-controller](kapp-controller) | Getting started with `kapp-controller`    |
-| [deployment options](options)      | Deployment options with `kapp-controller` |
-| [tutorial](tutorial)               | Create a Carvel Package _"the hard way"_  |
+| Link                               | Description                              |
+| ---------------------------------- | ---------------------------------------- |
+| [vendir](vendir)                   | Getting started with `vendir`            |
+| [ytt](ytt)                         | Getting started with `ytt`               |
+| [kbld](kbld)                       | Getting started with `kbld`              |
+| [imgpkg](imgpkg)                   | Getting started with `imgpkg`            |
+| [kapp](kapp)                       | Getting started with `kapp`              |
+| [kapp-controller](kapp-controller) | Getting started with `kapp-controller`   |
+| [tutorial](tutorial)               | Create a Carvel Package _"the hard way"_ |
 
 ## Resources
 

@@ -12,4 +12,6 @@ draft: false
 
 _With great power comes great responsibility._
 
-There are many, many different deployment methods and options for configuring the `kapp-controller`. This following sections will attempt to document the most common ones.
+There are many, many different deployment methods and options for configuring the `kapp-controller`. This following sections will attempt to document some of the most common ones.
+
+There is no one answer, the `kapp-controller` allows almost infinite flexibility, but with that comes the responsibility of making the right choices for your organisational requirements.

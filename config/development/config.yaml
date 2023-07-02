@@ -1,5 +1,4 @@
 ---
-
 baseURL: http://localhost:1313
 
 # Show pages not yet published
@@ -7,3 +6,6 @@ buildDrafts: true
 
 # Auto-load the page that changed
 navigateToChanged: true
+
+# Disable Fast Render mode
+disableFastRender: true

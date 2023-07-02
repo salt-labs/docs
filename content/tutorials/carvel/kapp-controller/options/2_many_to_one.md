@@ -31,4 +31,4 @@ draft: false
 
 ## Diagram
 
-{{< image src="drawio/carvel/kapp-many-to-one.drawio.png" class="h-auto" alt="image" zoomable="true" width="800px" height="600px">}}
+{{< image src="drawio/carvel/kapp-many-to-one.drawio.png" class="h-auto" alt="image" zoomable="true" >}}

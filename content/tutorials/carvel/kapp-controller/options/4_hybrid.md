@@ -4,7 +4,7 @@ date: 2021-03-01T00:00:00+00:00
 icon: "fa-solid fa-box"
 description: "A hybrid deployment with kapp-controller"
 type: "docs"
-weight: 3403
+weight: 3404
 draft: false
 ---
 
@@ -16,19 +16,16 @@ draft: false
 
 ### Pros
 
-- Centralised config
-- Minimum operations overhead
+- Flexibility 😕
 
 ### Cons
 
-- Lack of separation of configuration.
-- Blast radius risks
+- Flexibility 😕
 
 ### Mitigations
 
-- Use extensive pre-merge checks in CI
-- Use lifecycle promotion of core-services
+- Careful planning
 
 ## Diagram
 
-{{< image src="drawio/carvel/kapp-hybrid.drawio.png" class="h-auto" alt="image" zoomable="true" width="800px" height="600px">}}
+{{< image src="drawio/carvel/kapp-hybrid.drawio.png" class="h-auto" alt="image" zoomable="true" >}}
