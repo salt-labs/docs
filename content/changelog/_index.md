@@ -12,6 +12,17 @@ draft: false
 
 🔮
 
+### July 2023
+
+Added carvel tutorial and `kapp-controller` deployment option draft diagrams.
+
+{{< changelog "Added" >}}
+
+- Added Carvel tutorial.
+- Added kapp-controller deployment options.
+
+{{</ changelog >}}
+
 ### June 2023
 
 Sprinkled some salt on older docs to give them a new lease of life for re-release and added some new _production-ready_ checklists.
