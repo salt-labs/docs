@@ -10,7 +10,7 @@ draft: false
 
 ### Prepare
 
-There are a few pre-requisites for this walkthrough you need to have ready before you can get started.ku
+There are a few pre-requisites for this walkthrough you need to have ready before you can get started.
 
 - [x] Have a working [kind](https://kind.sigs.k8s.io/) development environment (Or alternative cluster with enough permissions to deploy)
 - [x] Have access to a container registry (or deploy one inside your kind cluster)
