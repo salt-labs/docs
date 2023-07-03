@@ -10,7 +10,7 @@ draft: false
 
 ## Overview
 
-Carvel packaging steps from the perspective of a _Package Consumer_ persona.
+Carvel packaging steps from the perspective of the _Package Consumer_ persona.
 
 Play the part of the `Package Consumer` persona.
 

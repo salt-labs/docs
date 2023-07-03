@@ -93,8 +93,8 @@ For a Helm chart however...
 {{< tab "Linux" >}}
 
 ```bash
-# YES: -> Try the Bitnami schema generator tool.
-# TODO: Add Bitnami schema example to tutorial here...
+# YES: -> Then try the Bitnami schema generator tool.
+# https://github.com/bitnami-labs/readme-generator-for-helm
 ```
 
 {{< /tab >}}

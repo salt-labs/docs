@@ -10,65 +10,32 @@ draft: false
 
 Now that the package is available, it's _finally_ time to actually install it!
 
-- Applications are managed by storing the configuration in source control. This is managed by a minimum of two resources, a `PackageInstall` and a `Secret`.
+The `Package Author` has kindly created some examples for you to use as a starting point in you're own cluster.
 
-- _These will need to be included with every created package as user examples for installation. You can see the examples below which you can `kubectl apply` for testing locally._
+- Take a copy of the `PackageInstall` and `Secret` resources.
 
-- Create the `PackageInstall` resource.
-
-{{< tabs "consumer-pkgi" >}}
+{{< tabs "consumer-crs" >}}
 
 {{< tab "Linux" >}}
 
 ```bash
-cat <<- _EOF_ > ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/examples/PackageInstall.yaml
----
-apiVersion: packaging.carvel.dev/v1alpha1
-kind: PackageInstall
-metadata:
-  name: ${PACKAGE_NAME}
-  namespace: ${PACKAGE_NAMESPACE}
-spec:
-  serviceAccountName: ${PACKAGE_NAMESPACE}-sa
-  packageRef:
-    refName: ${PACKAGE_NAME}.${PACKAGE_FQN}
-    versionSelection:
-      constraints: ${PACKAGE_VERSION}
-  values:
-    - secretRef:
-        name: ${PACKAGE_NAME}-values
-_EOF_
+mkdir -p /tmp/tutorial-values
+
+cp "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/examples/{PackageInstall,Secret}.yaml" /tmp/tutorial-values/
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- Create a `Secret` which is how the custom values are applied to the package. This is similar to a Helm values file.
+- Now, let's edit the Secret with your own custom values.
 
 {{< tabs "consumer-secret" >}}
 
 {{< tab "Linux" >}}
 
 ```bash
-cat <<- _EOF_ > ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/examples/Secret.yaml
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: ${PACKAGE_NAME}-values
-  namespace: ${PACKAGE_NAMESPACE}
-  annotations:
-    tkg.tanzu.vmware.com/tanzu-package: ${PACKAGE_NAME}
-stringData:
-  values: |
-    ---
-    replicaCount: 1
-
-    service:
-      type: ClusterIP
-      port: 80
-_EOF_
+vim /tmp/tutorial-values/Secret.yaml
 ```
 
 {{< /tab >}}
@@ -82,7 +49,7 @@ _EOF_
 {{< tab "Linux" >}}
 
 ```bash
-kubectl apply -f "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/examples"
+kubectl apply -f /tmp/tutorial-values
 ```
 
 {{< /tab >}}
