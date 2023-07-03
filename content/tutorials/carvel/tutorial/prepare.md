@@ -205,4 +205,4 @@ kubectl rollout restart -n kapp-controller deployment/kapp-controller
 
 ### Onwards and upwards
 
-Ok, with that out of the way, we can get started.
+Ok, with that out of the way, we can get started with the tutorial.

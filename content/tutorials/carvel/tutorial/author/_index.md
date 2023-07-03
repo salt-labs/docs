@@ -10,7 +10,7 @@ draft: false
 
 ## Overview
 
-Carvel packaging steps from the perspective of a **_Package Author_** persona.
+Carvel packaging steps from the perspective of the **_Package Author_** persona.
 
 The following pages will take you through the steps that a **_Package Author_** would take to create a package that is then consumed by a **_Package Consumer_**.
 

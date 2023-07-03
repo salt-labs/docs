@@ -108,9 +108,13 @@ imgpkg push \
 
 {{< /tabs >}}
 
+Applications are managed by storing the configuration in source control. This is managed by a minimum of two resources, a `PackageInstall` and a `Secret`.
+
+_These will need to be included with every created package as user examples for installation. You can see the examples below which you can `kubectl apply` for testing locally._
+
 - Create the samples to be used by _"Package Consumers"_.
 
-{{< tabs "pkgr-samples" >}}
+{{< tabs "pkgr-samples-repo" >}}
 
 {{< tab "Linux" >}}
 
@@ -148,6 +152,63 @@ spec:
   toNamespaces:
     - "${PACKAGE_NAMESPACE}"
     - "*" #! TODO: Lockdown permissions.
+_EOF_
+```
+
+- Create the `pkgi` sample
+
+{{< tabs "pkgr-samples-pkgi" >}}
+
+{{< tab "Linux" >}}
+
+```bash
+cat <<- _EOF_ > ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/examples/PackageInstall.yaml
+---
+apiVersion: packaging.carvel.dev/v1alpha1
+kind: PackageInstall
+metadata:
+  name: ${PACKAGE_NAME}
+  namespace: ${PACKAGE_NAMESPACE}
+spec:
+  serviceAccountName: ${PACKAGE_NAMESPACE}-sa
+  packageRef:
+    refName: ${PACKAGE_NAME}.${PACKAGE_FQN}
+    versionSelection:
+      constraints: ${PACKAGE_VERSION}
+  values:
+    - secretRef:
+        name: ${PACKAGE_NAME}-values
+_EOF_
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+- Create the `Secret` sample
+
+{{< tabs "pkgr-samples-secret" >}}
+
+{{< tab "Linux" >}}
+
+```bash
+cat <<- _EOF_ > ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/examples/Secret.yaml
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ${PACKAGE_NAME}-values
+  namespace: ${PACKAGE_NAMESPACE}
+  annotations:
+    tkg.tanzu.vmware.com/tanzu-package: ${PACKAGE_NAME}
+stringData:
+  values: |
+    ---
+    replicaCount: 1
+
+    service:
+      type: ClusterIP
+      port: 80
 _EOF_
 ```
 
