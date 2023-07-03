@@ -155,6 +155,10 @@ spec:
 _EOF_
 ```
 
+{{< /tab >}}
+
+{{< /tabs >}}
+
 - Create the `pkgi` sample
 
 {{< tabs "pkgr-samples-pkgi" >}}
