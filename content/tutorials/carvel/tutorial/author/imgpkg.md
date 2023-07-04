@@ -47,7 +47,7 @@ _EOF_
 imgpkg push  \
   --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/" \
   --bundle ${OCI_REGISTRY}/${OCI_PROJECT}/packages/${PACKAGE_NAME}:${PACKAGE_VERSION} \
-  --lock-output "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/lock.yml" \
+  --lock-output "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle-lock.yaml" \
   --registry-ca-cert-path "${HOME}/.docker/certs.d/${OCI_REGISTRY}/ca.crt"
 ```
 
