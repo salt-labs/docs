@@ -122,6 +122,8 @@
         inherit crossPkgs;
         inherit crossPkgsUnstable;
       };
+
+      default = self.${system}.devShells.devenv;
     }));
 
     # Set the default devshell to the one for the current system.

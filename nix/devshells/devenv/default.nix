@@ -31,7 +31,7 @@ in
             ssh-to-pgp
             age
 
-            bash
+            bashInteractive
             bash-completion
 
             gnutar
