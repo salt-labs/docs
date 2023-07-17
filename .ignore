@@ -1,13 +1,21 @@
 # Typos ignore folders
 
 ## Ignore the typos config
+
 .typos.toml
 
 ## Ignore all of .git
+
 .git/
 
 ## Ignore themes
+
 themes/
 
 ## Ignore assets like images and pdf.
+
 assets/
+
+## Ignore generated files outside of my control
+
+.devenv.flake.nix

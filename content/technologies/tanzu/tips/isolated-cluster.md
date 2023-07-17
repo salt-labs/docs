@@ -1,8 +1,8 @@
 ---
-title: Deployment
+title: Isolated Clusters
 date: 2023-07-05T00:00:00+00:00
 icon: "fa-solid fa-user"
-description: "Management cluster deployment"
+description: "Management cluster deployment for Isolated Clusters"
 type: "docs"
 weight: 2202
 draft: false
@@ -151,17 +151,11 @@ tanzu isolated-cluster upload-bundle \
   --verbose 9
 ```
 
-- Using the Tanzu CLI, create a configuration file for the management cluster.
+- Using the Tanzu CLI, create a management cluster.
 
 ```bash
 tanzu management-cluster create \
   --file "${BUNDLE_DEST}/config/mgmt.yaml \
   --log-file /tmp/tkg-mgmt.log \
   --verbose 9
-```
-
-- Using the Tanu CLI, deploy the management cluster.
-
-```bash
-
 ```

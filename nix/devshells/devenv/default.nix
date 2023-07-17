@@ -21,9 +21,6 @@ in
             figlet
             hello
 
-            nixpkgs-fmt
-            statix
-
             sops
             #sops-init-gpg-key
             #sops-import-keys-hook
@@ -162,6 +159,13 @@ in
               write = true;
             };
 
+            statix = {
+              format = "errfmt";
+              ignore = [
+                ".devenv.flake.nix"
+              ];
+            };
+
             typos = {
               format = "long";
               diff = true;
@@ -174,7 +178,30 @@ in
           };
         };
 
-        devcontainer.enable = true;
+        devcontainer = {
+          enable = true;
+          settings = {
+            customizations = {
+              vscode = {
+                extensions = [
+                  "exiasr.hadolint"
+                  "nhoizey.gremlins"
+                  "esbenp.prettier-vscode"
+                  "github.copilot"
+                  "github.vscode-github-actions"
+                  "kamadorueda.alejandra"
+                  "ms-azuretools.vscode-docker"
+                  "pinage404.nix-extension-pack"
+                  "redhat.vscode-yaml"
+                  "timonwong.shellcheck"
+                  "tuxtina.json2yaml"
+                  "vscodevim.vim"
+                  "wakatime.vscode-wakatime"
+                ];
+              };
+            };
+          };
+        };
 
         devenv = {
           flakesIntegration = true;
