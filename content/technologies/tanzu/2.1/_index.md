@@ -22,9 +22,12 @@ Now, in v2.1, Cluster Classes from the upstream ClusterAPI (CAPI) have been impl
 
 > The idea behind ClusterClass is simple: define the shape of your cluster once, and reuse it many times, abstracting the complexities and the internals of a Kubernetes cluster away. The general idea is to have a template of a cluster and its resources in the management cluster and then whenever we create a cluster, we can reference this template and supply the values that are specific to this cluster, this allows for reuse of almost all of the boilerplate, and to allow us to only supply when creating a cluster, the needed values that are specific to this exact cluster we are creating.
 
-TKG has implement this in an interesting way. Whereas some of us have gotten used to the power of `ytt`, TKG v2.1 uses JSON patching and Go templating.
+TKG has implemented this in a new and interesting way. Whereas, some of us have gotten used to the power of `ytt`, TKG v2.1 uses JSON patching and Go templating which is performed server-side.
 
 Creating a `ClusterClass` from scratch is well documented in the the [Cluster API Book](https://cluster-api.sigs.k8s.io/tasks/experimental-features/cluster-class/write-clusterclass.html).
+
+{{< image src="images/tkg/Cluster_vs_ClusterClass.webp" class="h-auto" alt="image" zoomable="true" >}}
+<br/>
 
 ### Networking Enhancements
 

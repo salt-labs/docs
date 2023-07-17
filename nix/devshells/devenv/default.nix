@@ -36,11 +36,6 @@ in
 
             gnutar
 
-            # Spelling
-            hunspell
-            hunspellDicts.en_AU-large
-            typos
-
             # Other
             go
             golangci-lint
