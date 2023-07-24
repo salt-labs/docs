@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "Securing your application through all stages of the development lifecycle"
 type: "docs"
 weight: 3110
-draft: true
+draft: false
 ---
 
 _How to secure the application throughout all stages._
@@ -16,7 +16,7 @@ Secure the application during the build stage.
 
 Concepts for building secure application toolchains.
 
-TODO: Complete these links.
+**TODO: Complete these links.**
 
 {{< button label="SAST" link="/" >}}
 </br>

@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Audit2RBAC"
 type: "docs"
 weight: 2201
-draft: true
+draft: false
 ---
 
 ## Overview

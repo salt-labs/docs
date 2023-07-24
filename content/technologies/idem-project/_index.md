@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "Idem project notes and resources."
 type: "docs"
 weight: 2100
-draft: true
+draft: false
 ---
 
 ## Overview

@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "Common deployment patterns for cloud native applications."
 type: "docs"
 weight: 3113
-draft: true
+draft: false
 ---
 
 _Common deployment patterns._

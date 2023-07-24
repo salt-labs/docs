@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "Using the cloud like LEGO"
 type: "docs"
 weight: 3112
-draft: true
+draft: false
 ---
 
 _For a lot of companies, Infrastructure gets replaced by an API, credentials and a bill that tracks usage._
@@ -14,7 +14,7 @@ CNE's need to understand the building blocks of the cloud native applications.
 
 Common building blocks of cloud native applications.
 
-TODO: Complete these links.
+**TODO:** Complete these links.
 
 {{< button label="Compute Units" link="/" >}}
 </br>

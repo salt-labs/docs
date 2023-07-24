@@ -5,7 +5,7 @@ icon: "fa-solid fa-box"
 description: "Infrastructure as Code"
 type: "docs"
 weight: 3109
-draft: true
+draft: false
 ---
 
 _Build the infrastructure where the application will run._

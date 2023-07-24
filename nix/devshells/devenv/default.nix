@@ -151,6 +151,9 @@ in
                 # List marker spaces.
                 # Disabled for use with prettier.
                 MD030 = false;
+
+                # Allow bare-urls.
+                MD034 = false;
               };
             };
 
