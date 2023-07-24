@@ -5,7 +5,7 @@ icon: "fa-solid fa-user"
 description: "TKG v2.1"
 type: "docs"
 weight: 2101
-draft: true
+draft: false
 ---
 
 ## Overview
@@ -66,7 +66,7 @@ Now in TKG v2.1, as the templating is done server side, you no longer need full 
 
 ### Improved Air-gapped support
 
-The Tanzu CLI now includes a useful command for those of us working in internet restricted or air-gapped environments.
+The Tanzu CLI now includes a useful command via the `isolated-cluster` plugin for those of us working in internet restricted or air-gapped environments.
 
 - On the internet-connected run the following
 
@@ -91,6 +91,6 @@ tanzu isolated-cluster upload-bundle \
   --verbose
 ```
 
-In addition to this new command for the Tanzu CLI, VMware has also solved a little chicken and egg issue with the need for a private registry being needed to be depoloyed prior to deploying TKG.
+In addition to this new command for the Tanzu CLI, VMware has also solved a little chicken and egg issue with the need for a private registry being needed to be deployed prior to deploying TKG.
 
-Now, there is a new Habor OVA that can be deployed to the vSphere environment and used as the private registry for TKG to solve this issue.
+Now, there is a new Harbor OVA that can be deployed to the vSphere environment and used as the private registry for TKG to solve this issue.

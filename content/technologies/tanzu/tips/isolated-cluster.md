@@ -56,7 +56,7 @@ tanzu init
 - Prepare the necessary files locally. Note this step requires approximately `GB` of free space.
 
 ```bash
-mkdir bundle && pushd bundle
+mkdir bundle && pushd $_
 
 TKG_VERSION="v2.1.0"
 
@@ -68,12 +68,27 @@ tanzu isolated-cluster download-bundle \
 popd
 ```
 
+- Download the Tanzu CLI plugins.
+
+```bash
+mkdir tanzu-cli && pushd $_
+
+TANZU_CLI_PLUGIN_TAG="latest"
+
+tanzu plugin download-bundle \
+  --image projects.registry.vmware.com/tanzu_cli/plugins/plugin-inventory:${TANZU_CLI_PLUGIN_TAG} \
+  --to-tar plugin_bundle_complete-${TANZU_CLI_PLUGIN_TAG}.tar.gz
+
+popd
+```
+
 - Copy the contents of the `${BUNDLE_DEST}` directory to the air-gapped environment.
 
 ```bash
 tree -L 1 "${BUNDLE_DEST}"
 .
 ├── bundle
+├── tanzu-cli
 └── tools
 ```
 
@@ -136,6 +151,29 @@ ovftool \
 - Create a DNS entry for the Harbor instance.
 
 - Login to the Harbor instance and create a project Tanzu Kubernetes Grid images.
+
+```yaml
+PROJECT_NAME: tkg
+```
+
+- Upload the Tanzu CLI plugins
+
+```bash
+PLUGIN_SOURCE="/path/to/plugin_bundle_complete-latest.tar.gz"
+PLUGIN_DESTINATION="harbor.mgmt.local/tkg"
+
+tanzu plugin upload-bundle \
+  --tar "${PLUGIN_SOURCE}" \
+  --to-repo "${PLUGIN_DESTINATION}"
+```
+
+- Update the Tanzu CLI plugin source from you client
+
+```bash
+tanzu plugin source update \
+  default \
+  --url "${PLUGIN_DESTINATION}"
+```
 
 - Using the local bundle, upload the images to the Harbor instance.
 
