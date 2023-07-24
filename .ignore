@@ -11,3 +11,11 @@
 ## Ignore themes
 
 themes/
+
+## Ignore assets like images and pdf.
+
+assets/
+
+## Ignore generated files outside of my control
+
+.devenv.flake.nix

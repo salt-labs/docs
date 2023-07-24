@@ -21,9 +21,6 @@ in
             figlet
             hello
 
-            nixpkgs-fmt
-            statix
-
             sops
             #sops-init-gpg-key
             #sops-import-keys-hook
@@ -31,15 +28,10 @@ in
             ssh-to-pgp
             age
 
-            bash
+            bashInteractive
             bash-completion
 
             gnutar
-
-            # Spelling
-            hunspell
-            hunspellDicts.en_AU-large
-            typos
 
             # Other
             go
@@ -159,12 +151,22 @@ in
                 # List marker spaces.
                 # Disabled for use with prettier.
                 MD030 = false;
+
+                # Allow bare-urls.
+                MD034 = false;
               };
             };
 
             prettier = {
               output = "check";
               write = true;
+            };
+
+            statix = {
+              format = "errfmt";
+              ignore = [
+                ".devenv.flake.nix"
+              ];
             };
 
             typos = {
@@ -179,7 +181,30 @@ in
           };
         };
 
-        devcontainer.enable = true;
+        devcontainer = {
+          enable = true;
+          settings = {
+            customizations = {
+              vscode = {
+                extensions = [
+                  "exiasr.hadolint"
+                  "nhoizey.gremlins"
+                  "esbenp.prettier-vscode"
+                  "github.copilot"
+                  "github.vscode-github-actions"
+                  "kamadorueda.alejandra"
+                  "ms-azuretools.vscode-docker"
+                  "pinage404.nix-extension-pack"
+                  "redhat.vscode-yaml"
+                  "timonwong.shellcheck"
+                  "tuxtina.json2yaml"
+                  "vscodevim.vim"
+                  "wakatime.vscode-wakatime"
+                ];
+              };
+            };
+          };
+        };
 
         devenv = {
           flakesIntegration = true;

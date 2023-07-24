@@ -47,3 +47,6 @@ scss__
 
 # Ignore direnv cache.
 .direnv/
+
+# Ignore pre-commit.
+.pre-commit-config.yaml

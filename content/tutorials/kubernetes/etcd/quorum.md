@@ -5,19 +5,25 @@ icon: "fa-solid fa-box"
 description: "etcd"
 type: "docs"
 weight: 3300
-draft: true
+draft: false
 ---
 
 ## Overview
 
-Steps for dealing with etcd quorum issues.
+Steps for dealing with etcd quorum issues with a TKG environment.
+
+**NOTE:** This is by no means complete, I am just capturing some scrap notes after having to rescue a customer's production TKGs control plane which had lost etcd quorum.
 
 ## Steps
 
-- capture pod and container info
+From one of the Control Plane nodes you are designating as the "leader" node:
+
+- Stop existing etcd container
+
+- Capture pod and container info
 
 ```bash
-crictl inspectp <pod-id> > pod.json
+crictl inspect <pod-id> > pod.json
 crictl inspect <container-id> > container.json
 ```
 
@@ -48,7 +54,7 @@ crictl logs $CONTAINER_ID
 kubectl get nodes
 ```
 
-- Do some etcd stuff to cleanup
+- Do some etcd stuff to clean-up
 
 ```bash
 etcdctl member list
@@ -69,7 +75,7 @@ crictl stop $CONTAINER_ID
 vim container.json
 ```
 
-- Once healthy, fix-up the control-plane to be 1 node
+- Once healthy, fix-up the control-plane to be 1 node.
 
 ```bash
 
@@ -80,6 +86,8 @@ vim container.json
 ```bash
 
 ```
+
+- Go to the pub, it's the customer's shout for saving production.
 
 ## Related Links
 
