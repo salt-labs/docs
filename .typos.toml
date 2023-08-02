@@ -23,7 +23,12 @@ locale = "en_AU"
 
 [files]
 
-extend-exclude = [".typos.toml"]
+extend-exclude = [
+    ".typos.toml",
+    "themes/",
+    "themes/*",
+    "themes/**"
+]
 ignore-hidden = true
 ignore-files = true
 ignore-dot = true
