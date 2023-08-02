@@ -6,8 +6,9 @@
 ######################### site variables ##############################
 # customize your color and font from here.
 [params.variables]
-color_primary = "#FF0043"
-text_color = "#555"
+
+color_primary = "#710793"
+text_color = "#333"
 text_dark = "#222"
 text_light = "#999"
 body_color = "#fff"
@@ -18,14 +19,14 @@ light = "#FBFBFB"
 
 # go to https://fonts.google.com/ to find the font you want to use. select your font and copy only the bold part from the URL. and paste it here.
 # example: "Work+Sans:wght@400;500;600"
-font_icon = "Font Awesome 6 Free" # https://fontawesome.com/v6/icons
-font_primary = "Poppins:wght@300;400;500;600;700;800" 
-font_primary_type = "sans-serif" # [serif/sans-serif]
-font_secondary = "" 
-font_secondary_type = "" # [serif/sans-serif]
+font_icon = "Font Awesome 6 Free"                     # https://fontawesome.com/v6/icons
+font_primary = "Poppins:wght@300;400;500;600;700;800"
+font_primary_type = "sans-serif"                      # [serif/sans-serif]
+font_secondary = ""
+font_secondary_type = ""                              # [serif/sans-serif]
 
 # font variable
-# base font size for full website, 
+# base font size for full website,
 font_size = "16px" # default is 16px
 
 ############################# Plugins ##############################
