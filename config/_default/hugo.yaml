@@ -1,5 +1,4 @@
 ---
-
 # The directory to be used for configuration properties
 archetypeDir: archetypes
 
@@ -25,7 +24,6 @@ buildExpired: false
 
 # Cache configuration
 caches:
-
   assets:
     dir: :resourceDir/_gen
     maxAge: -1
@@ -130,7 +128,6 @@ forceSyncStatic: true
 
 # Front Matter configuration
 frontmatter:
-
   date:
     - date
     - publishDate
@@ -166,7 +163,6 @@ ignoreCache: true
 
 # Image processing configuration
 imaging:
-
   # Resample filter
   # Ref: https://github.com/disintegration/imaging
   resampleFilter: box
@@ -182,7 +178,6 @@ imaging:
 
   # EXIF config
   exif:
-
     includeFields: ""
 
     excludeFields: ""
@@ -195,7 +190,6 @@ imaging:
 
 # Language configuration
 Languages:
-
   en:
     languageName: "En"
     languageCode: "en-au"
@@ -217,7 +211,6 @@ logFile: "hugo.log"
 
 # Markup configuration
 markup:
-
   asciidocExt:
     attributes: {}
     backend: html5
@@ -291,13 +284,12 @@ mediaTypes:
     suffixes:
       - webmanifest
   text/netlify:
-    delimiter: ''
+    delimiter: ""
     suffixes:
-      - ''
+      - ""
 
 # Minify configuration
 minify:
-
   disableCSS: false
   disableHTML: false
   disableJS: false
@@ -366,11 +358,9 @@ publishDir: public
 
 # Related configuration
 related:
-
   includeNewer: false
 
   indices:
-
     - name: keywords
       weight: 100
 
@@ -399,7 +389,6 @@ sectionPagesMenu: main
 
 # Sitemap configuration
 sitemap:
-
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5

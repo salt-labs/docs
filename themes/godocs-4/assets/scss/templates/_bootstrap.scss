@@ -1,8 +1,13 @@
-// bootstrap 5.2
+// Bootstrap 5.3.0
 
+@import "../bootstrap/mixins/banner";
+@include bsBanner("");
+
+// scss-docs-start import-stack
 // Configuration
 @import "../bootstrap/functions";
 @import "../bootstrap/variables";
+@import "../bootstrap/variables-dark";
 @import "../bootstrap/maps";
 @import "../bootstrap/mixins";
 @import "../bootstrap/utilities";
