@@ -133,7 +133,7 @@ jobs:
         if: |
           env.BRANCH_NAME_CURRENT != env.BRANCH_NAME_DEFAULT &&
           steps.hugo_build_staging.outcome == 'success'
-        uses: cloudflare/wrangler-action@2.0.0
+        uses: cloudflare/wrangler-action@v3.1.1
         with:
           environment: staging
           apiToken: ${{ env.WRANGLER_API_TOKEN }}
@@ -147,7 +147,7 @@ jobs:
         if: |
           env.BRANCH_NAME_CURRENT == env.BRANCH_NAME_DEFAULT &&
           steps.hugo_build_production.outcome == 'success'
-        uses: cloudflare/wrangler-action@2.0.0
+        uses: cloudflare/wrangler-action@v3.1.1
         with:
           environment: production
           apiToken: ${{ env.WRANGLER_API_TOKEN }}
