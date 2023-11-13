@@ -19,7 +19,7 @@ For further documentation on the `vendir` available options see [carvel.dev/vend
 {{< tab "Linux" >}}
 
 ```bash
-cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/vendir.yaml"
+cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/vendir/Config.yaml"
 ---
 apiVersion: vendir.k14s.io/v1alpha1
 kind: Config
@@ -36,7 +36,7 @@ directories:
           helmVersion: ""
 _EOF_
 
-cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/vendir.lock.yaml"
+cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/vendir/LockConfig.yaml"
 # This file is generated automatically by vendir and will be updated with resolved image references by kbld later.
 _EOF_
 ```
@@ -53,8 +53,8 @@ _EOF_
 
 ```bash
 vendir sync \
-  --file "vendir.yaml" \
-  --lock-file "vendir.lock.yaml" \
+  --file "vendir/Config.yaml" \
+  --lock-file "vendir/LockConfig.yaml" \
   --chdir "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle"
 
 # Take a look at the upstream content you just downloaded.

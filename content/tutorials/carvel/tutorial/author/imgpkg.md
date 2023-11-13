@@ -23,11 +23,14 @@ cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/
 ---
 apiVersion: imgpkg.carvel.dev/v1alpha1
 kind: Bundle
+
 metadata:
   name: ${PACKAGE_NAME}
+
 authors:
   - name: ${PACKAGE_AUTHOR}
     email: ${PACKAGE_AUTHOR_EMAIL}
+
 websites:
   - url: ${PACKAGE_WEBSITE}
 _EOF_
@@ -47,7 +50,7 @@ _EOF_
 imgpkg push  \
   --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/" \
   --bundle ${OCI_REGISTRY}/${OCI_PROJECT}/packages/${PACKAGE_NAME}:${PACKAGE_VERSION} \
-  --lock-output "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle-lock.yaml" \
+  --lock-output "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/BundleLock.yaml" \
   --registry-ca-cert-path "${HOME}/.docker/certs.d/${OCI_REGISTRY}/ca.crt"
 ```
 
