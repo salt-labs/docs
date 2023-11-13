@@ -27,7 +27,7 @@ This process is made much easier with the CI configuration, but the following is
 ```bash
 # Use YTT to template the file we made previously.
 ytt \
-  --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/templates/package.yaml" \
+  --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/templates/Package.yaml" \
   --data-value version="${PACKAGE_VERSION}" \
   --data-value-file openapi="${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/schema/openapi.yaml" \
   > ${ROOT_DIR}/repos/${REPOSITORY_NAME}/packages/${PACKAGE_NAME}.${PACKAGE_FQN}/${PACKAGE_VERSION}.yaml
@@ -35,7 +35,7 @@ ytt \
 # Take a copy of the package metadata to add the package to your repository.
 # The metadata is how the repository knows what packages are contained within.
 cp -f \
-  "${ROOT_DIR}/packages/${PACKAGE_NAME}/metadata.yaml" \
+  "${ROOT_DIR}/packages/${PACKAGE_NAME}/PackageMetadata.yaml" \
   "${ROOT_DIR}/repos/${REPOSITORY_NAME}/packages/${PACKAGE_NAME}.${PACKAGE_FQN}/"
 ```
 
@@ -75,11 +75,14 @@ cat <<- _EOF_ > "${ROOT_DIR}/repos/${REPOSITORY_NAME}/.imgpkg/bundle.yml"
 ---
 apiVersion: imgpkg.carvel.dev/v1alpha1
 kind: Bundle
+
 metadata:
   name: ${REPOSITORY_NAME}
+
 authors:
   - name: ${PACKAGE_AUTHOR}
     email: ${PACKAGE_AUTHOR_EMAIL}
+
 websites:
   - url: ${PACKAGE_WEBSITE}
 _EOF_
@@ -100,7 +103,7 @@ _EOF_
 imgpkg push \
   --file "${ROOT_DIR}/repos/${REPOSITORY_NAME}" \
   --bundle ${OCI_REGISTRY}/${OCI_PROJECT}/repos/${REPOSITORY_NAME}:${REPOSITORY_VERSION} \
-  --lock-output "${ROOT_DIR}/repos/${REPOSITORY_NAME}/bundle-lock.yaml" \
+  --lock-output "${ROOT_DIR}/repos/${REPOSITORY_NAME}/BundleLock.yaml" \
   --registry-ca-cert-path "${HOME}/.docker/certs.d/${OCI_REGISTRY}/ca.crt"
 ```
 
