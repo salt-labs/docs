@@ -10,7 +10,7 @@ draft: false
 
 At this point in the tutorial, we have a `bundle` on the local file system, but how to we get it into OCI format into a container registry for consumption?
 
-{{< notice info >}}👍 **What's a bundle?** You will learn more about bundles in the `imgpkg` section later, but for now think of a bundle as _"one or more container images and a metadata file"_.
+{{< notice info >}}👍 **What's a bundle?** You will learn more about bundles in the `imgpkg` section later, but for now think of a bundle as a configuration file and a list of references to one or more container images.
 {{< /notice >}}
 
 Now it's time to create our first custom resource, the `Package`.
@@ -22,7 +22,7 @@ Now it's time to create our first custom resource, the `Package`.
 {{< tab "Linux" >}}
 
 ```bash
-cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/metadata.yaml"
+cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/PackageMetadata.yaml"
 ---
 apiVersion: data.packaging.carvel.dev/v1alpha1
 kind: PackageMetadata
@@ -74,7 +74,7 @@ Below are just a few examples of what you might come across.
 # (You don't need to run this for this tutorial)
 # NOTE: We place the output from this into a temporary file, as we will use it later.
 ytt \
-  --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/values-schema.yaml" \
+  --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/schema.yaml" \
   --data-values-schema-inspect \
   --output openapi-v3 \
   > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/schema/openapi.yaml"
@@ -177,9 +177,10 @@ yq \
 ```bash
 # This step varies wildly per-package. This is an example for this tutorial.
 # When creating real packages, this file is usually created once, and lasts for the lifetime of the package.
-cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/templates/package.yaml"
+cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/templates/Package.yaml"
 #@ load("@ytt:data", "data")
 #@ load("@ytt:yaml", "yaml")
+
 ---
 apiVersion: data.packaging.carvel.dev/v1alpha1
 kind: Package
@@ -198,10 +199,14 @@ spec:
     openAPIv3: #@ yaml.decode(data.values.openapi)["components"]["schemas"]["dataValues"]
   template:
     spec:
+
       fetch:
+
         - imgpkgBundle:
-          image: #@ "${OCI_REGISTRY}/${OCI_PROJECT}/packages/${PACKAGE_NAME}:" + data.values.version
+            image: #@ "${OCI_REGISTRY}/${OCI_PROJECT}/packages/${PACKAGE_NAME}:" + data.values.version
+
       template:
+
         - helmTemplate:
             path: "vendor/helm"
             name: ${PACKAGE_NAME}
@@ -209,17 +214,22 @@ spec:
             valuesFrom:
               - secretRef:
                 name: ${PACKAGE_NAME}-values
+
         - ytt:
             paths:
-              - "ytt/overlays"
-              - "ytt/schema.yaml"
-              - "ytt/values.yaml"
+              - "-"
+              - "ytt"
+
         - kbld:
             paths:
+              - "kbld/Config.yaml"
               - "-"
               - ".imgpkg/images.yml"
+
       deploy:
+
         - kapp: {}
+
 _EOF_
 ```
 
