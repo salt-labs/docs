@@ -23,7 +23,7 @@ Don't worry too much about understanding the layout early on, we will be filling
 {{< tab "Linux" >}}
 
 ```bash
-mkdir tutorial/ && cd $_
+mkdir tutorial && cd $_
 ```
 
 {{< /tab >}}
@@ -69,8 +69,8 @@ touch ${ROOT_DIR}/repos/${REPOSITORY_NAME}/packages/${PACKAGE_NAME}.${PACKAGE_FQ
 
 mkdir -p \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/{bundle,examples,test,templates} \
-    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/{.imgpkg,vendor,ytt} \
-    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/overlays \
+    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/{.imgpkg,kbld,vendir,vendor,ytt} \
+    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/{config,overlays} \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/schema
 ```
 
@@ -83,11 +83,12 @@ touch \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/metadata.yaml \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/examples/{PackageInstall,Secret}.yaml \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/README.md \
-    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/templates/package.yaml \
-    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/{kbld,package}.yaml \
-    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/{vendir,vendir.lock}.yaml \
+    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/templates/Package.yaml \
+    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/kbld/Config.yaml \
+    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/Package.yaml \
+    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/vendir/{Lock,LockConfig}.yaml \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/.imgpkg/{bundle,images}.yml \
-    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/{values-schema,values}.yaml \
+    ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/{schema,defaults}.yaml \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/schema/{openapi,helm}.yaml
 ```
 
@@ -107,26 +108,29 @@ kapps/packages
     │   ├── bundle
     │   │   ├── .imgpkg
     │   │   │   └── images.yml
-    │   │   ├── vendir.lock.yaml
-    │   │   ├── vendir.yaml
+    │   │   ├── kbld
+    │   │       └── Config.yaml
+    │   │   ├── vendir
+    │   │       ├── LockConfig.yaml
+    │   │       └── Config.yaml
     │   │   ├── vendor
     │   │   └── ytt
+    │   │       ├── config
     │   │       ├── overlays
-    │   │       ├── values-schema.yaml
-    │   │       └── values.yaml
+    │   │       ├── schema.yaml
+    │   │       └── defaults.yaml
     │   ├── examples
     │   │   ├── PackageInstall.yaml
     │   │   └── Secret.yaml
-    │   ├── kbld.yaml
-    │   ├── package.yaml
+    │   ├── Package.yaml
     │   ├── README.md
     │   ├── schema
     │   │   ├── helm.yaml
     │   │   └── openapi.yaml
     │   ├── templates
-    │   │   └── package.yaml
+    │   │   └── Package.yaml
     │   └── test
-    └── metadata.yaml
+    └── PackageMetadata.yaml
 
 # Repositories
 tree -Aa "${ROOT_DIR}/repos"

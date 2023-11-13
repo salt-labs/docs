@@ -26,32 +26,22 @@ Instead, we can use an image resolver to lock our supply chain making each deplo
 
 The next step is to resolve and record any image references found by scanning the `vendor` directory.
 
-For further documentation on the kbld available options see [carvel.dev/kbld](https://carvel.dev/kbld/docs/develop/).
+For further documentation on the kbld available options see [carvel.dev/kbld](https://carvel.dev/kbld/docs/latest/config/).
 
-In order for `kbld` to operate, the tool requires a valid yaml configuration file. _Let's create one now._
+In order for `kbld` to operate, the tool requires a valid yaml configuration file. _Let's create an empty one now._
 
-- Create a basic kbld config file
+- Create a basic kbld config file.
 
 {{< tabs "kbld-config" >}}
 
 {{< tab "Linux" >}}
 
 ```bash
-cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/kbld.yaml"
+cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/kbld/Config.yaml"
 ---
 apiVersion: kbld.k14s.io/v1alpha1
 kind: Config
 minimumRequiredVersion: 0.31.0
-searchRules:
-  - keyMatcher:
-    path:
-      - spec
-      - images:
-        allIndexes: true
-  - keyMatcher:
-    name: image
-    updateStrategy:
-      entireValue: {}
 _EOF_
 ```
 
@@ -73,6 +63,7 @@ helm template kbld \
   "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/vendor/helm" \
 | \
 kbld \
+  --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/kbld/Config.yaml" \
   --file - \
   --imgpkg-lock-output "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/.imgpkg/images.yml"
 ```
@@ -90,6 +81,7 @@ kbld \
 ```bash
 # NOTE: You don't need to run this for this tutorial!
 kbld \
+  --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/kbld/Config.yaml" \
   --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/vendor/manifests/" \
   --imgpkg-lock-output "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/.imgpkg/images.yml"
 ```

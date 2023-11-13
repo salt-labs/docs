@@ -70,25 +70,24 @@ _EOF_
 
 # Define the ytt values schema with example value types.
 # This also acts as fallback default values for the package, if not provided in values.yaml
-cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/values-schema.yaml"
-#! values-schema.yaml
-
+cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/schema.yaml"
 #@data/values-schema
-#@schema/desc "OpenAPIv3 Schema for pacman"
+
+#@schema/desc "OpenAPIv3 Schema for ${PACKAGE_NAME}"
 ---
-#@schema/desc "The namespace in which pacman is deployed"
+
+#@schema/desc "The namespace in which ${PACKAGE_NAME} is installed."
 #@schema/nullable
 namespace: ""
 _EOF_
 
 # Define default data values for the package.
 # These are values that can be overridden by Package Consumers in the Secret config at install time.
-cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/values.yaml"
-#! values.yaml
-
+cat <<- _EOF_ > "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/defaults.yaml"
 #@data/values
+
 ---
-namespace: "pacman"
+namespace: "${PACKAGE_NAME}"
 _EOF_
 ```
 
@@ -146,8 +145,8 @@ helm template ${PACKAGE_NAME} \
 | \
 ytt \
   --file - \
-  --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/values-schema.yaml" \
-  --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/values.yaml" \
+  --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/schema.yaml" \
+  --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/defaults.yaml" \
   --file "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/overlays" \
 | \
 grep "namespace:"
