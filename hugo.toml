@@ -31,7 +31,7 @@ font_icon = "Font Awesome 6 Free" # https://fontawesome.com/v6/icons
 font_primary = "Poppins:wght@300;400;500;600;700;800" 
 font_primary_type = "sans-serif"
 
-font_secondary = "Roboto:wght@300;@400;500;600;700;800"
+font_secondary = "Roboto:wght@300;400;500;600;700;800"
 font_secondary_type = "sans-serif"
 
 # font variable
