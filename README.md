@@ -23,7 +23,7 @@ _Contributions are welcome!_
 
 ![Contributions](/assets/images/meme/contributions.png)
 
-## Usage
+## Development
 
 Local development instructions for working with this repository.
 
@@ -37,11 +37,21 @@ git submodule update --init --recursive
 git submodule update --recursive --remote
 ```
 
-- Run your own local instance using [hugo](https://gohugo.io)
+- Install the dependencies
 
 ```bash
 npm install
 
+go mod download -x
+
+hugo mod clean
+hugo mod tidy
+hugo mod graph
+```
+
+- Run your own local instance using [hugo](https://gohugo.io)
+
+```bash
 hugo server --environment development
 ```
 
@@ -51,6 +61,8 @@ hugo server --environment development
 open http://localhost:1313/
 ```
 
+## Updating
+
 - To update dependencies
 
 ```bash
@@ -59,19 +71,23 @@ npm update --save-dev
 
 # Update production dependencies
 npm update --save-prod
+
+# update Go
+go get -u ./...
+go mod tidy
 ```
 
-### CI
+## CI
 
-#### GitHub Actions
+### GitHub Actions
 
 There is an included workflow for Cloudflare Workers that will deploy the site.
 
-### Theme
+## Theme
 
 The official documentation for this theme (GoDocs) can be found at [gethugothemes](https://docs.gethugothemes.com/godocs/)
 
-#### Weights
+### Weights
 
 The weights are used to determine the order of the pages in the menu. The lower the weight, the higher the page will appear in the menu.
 
