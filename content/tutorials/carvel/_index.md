@@ -35,6 +35,11 @@ Some other useful resources related to Carvel include;
 {{< youtube Yjr9s-aLHjU >}}
 <br/>
 
+- Supercharge your Kubernetes Platform with Carvel by Thomas Vitale
+
+{{< youtube bC3dOnjwDqA >}}
+<br/>
+
 - US Army _CReATE_ case study on Carvel.
 
 {{< button label="Read article (30min)" link="https://carvel.dev/blog/casestudy-modernizing-the-us-army" >}}
