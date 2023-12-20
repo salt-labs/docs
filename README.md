@@ -73,8 +73,10 @@ npm update --save-dev
 npm update --save-prod
 
 # update Go
-go get -u ./...
-go mod tidy
+hugo mod clean
+hugo mod get -u
+hugo mod tidy
+hugo mod graph
 ```
 
 ## CI
