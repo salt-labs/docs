@@ -9,3 +9,6 @@ navigateToChanged: true
 
 # Disable Fast Render mode
 disableFastRender: true
+
+# Enable watching for changes and auto-rebuild
+watch: true

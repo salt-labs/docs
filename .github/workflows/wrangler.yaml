@@ -85,6 +85,7 @@ jobs:
         run: |
           rm -f themes/*/content/post/* || echo "Failed to remove posts from theme"
           rm -f themes/*/data/authors/* || echo "Failed to remove authors from theme"
+          rm -rf themes/*/exampleSite || echo "Failed to remove exampleSite from theme"
           rm -rf assets/images/backup || echo "Failed to remove extra images"
           rm -rf static/images/backup || echo "Failed to remove extra images"
 
