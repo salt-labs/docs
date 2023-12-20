@@ -10,11 +10,14 @@
 [params.variables]
 
 color_primary = "#710793"
+
 text_color = "#555"
 text_dark = "#222"
 text_light = "#999"
+
 body_color = "#fff"
 border_color = "#E2E2E2"
+
 black = "#000"
 white = "#fff"
 light = "#FBFBFB"
@@ -25,10 +28,10 @@ light = "#FBFBFB"
 
 font_icon = "Font Awesome 6 Free" # https://fontawesome.com/v6/icons
 
-font_primary = "Poppins:wght@300;400;500;600;700;800" 
+font_primary = "Roboto:wght@300;400;500;600;700;800" 
 font_primary_type = "sans-serif"
 
-font_secondary = "Roboto:wght300;@400;500;600;700;800"
+font_secondary = "Poppins:wght300;@400;500;600;700;800"
 font_secondary_type = "sans-serif"
 
 # font variable
