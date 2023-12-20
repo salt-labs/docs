@@ -51,6 +51,16 @@ hugo server --environment development
 open http://localhost:1313/
 ```
 
+- To update dependencies
+
+```bash
+# Update development dependencies
+npm update --save-dev
+
+# Update production dependencies
+npm update --save-prod
+```
+
 ### CI
 
 #### GitHub Actions

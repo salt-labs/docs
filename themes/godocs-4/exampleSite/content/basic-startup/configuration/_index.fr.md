@@ -38,7 +38,7 @@ name = "contact"
 url = "contact/"
 weight = 1
 
-# Call to action is default enabled, if you want to disable it. just change the
+# Call to action is default enabled, if you want to disable it. just change the 
 enable = false
 
 ####### Default parameters ###########

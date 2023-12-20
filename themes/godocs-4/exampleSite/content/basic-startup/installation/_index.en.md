@@ -13,7 +13,7 @@ The following steps are here to help you initialize your new website. If you don
 Hugo provides a `new` command to create a new website.
 
 ```html
-hugo new site <new_project></new_project>
+hugo new site <new_project>
 ```
 
 ### Install the theme
@@ -36,16 +36,17 @@ When building the website, you can set a theme by using `--theme` option. Howeve
 theme = "godocs"
 ```
 
+
 ### Create your first content pages
 
 Then, create content pages inside the previously created chapter. Here are two ways to create content in the chapter:
 
 ```html
-hugo new installation/first-content.md hugo new
-installation/second-content/_index.md
+hugo new installation/first-content.md
+hugo new installation/second-content/_index.md
 ```
 
-Feel free to edit thoses files by adding some sample content and replacing the `title` value in the beginning of the files.
+Feel free to edit thoses files by adding some sample content and replacing the `title` value in the beginning of the files. 
 
 ### Launching the website locally
 
