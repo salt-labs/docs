@@ -69,8 +69,14 @@ open http://localhost:1313/
 # Update development dependencies
 npm update --save-dev
 
+# Test...
+
 # Update production dependencies
 npm update --save-prod
+
+# Update Workers dependencies
+npm --prefix workers-site update --save-dev
+npm --prefix workers-site update --save-prod
 
 # update Go
 hugo mod clean
