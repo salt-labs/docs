@@ -36,17 +36,17 @@ If you need to change this default behavior, create a new file in `layouts/parti
 
 ```scss
 /* Color Variables */
-$color-primary: #ff0043;
+$color-primary: #FF0043;
 $text-color: #333;
 $text-dark: #222;
 $text-light: #999;
 $body-bg: #fff;
-$border-color: #e2e2e2;
+$border-color: #E2E2E2;
 $black: #000;
 $white: #fff;
-$light: #fbfbfb;
+$light: #FBFBFB;
 
 /* Font Variables */
-$font-primary: "Montserrat", sans-serif;
-$font-icon: "Font Awesome 5 Free";
+$font-primary: 'Montserrat', sans-serif;
+$font-icon: 'Font Awesome 5 Free';
 ```

@@ -4,7 +4,7 @@ date: 2018-12-29T11:02:05+06:00
 # meta description
 description: "Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet."
 # type dont remove or customize
-type: "docs"
+type : "docs"
 ---
 
 {{< image src="getting-started.jpg" class="h-auto" alt="image" zoomable="true" width="500px" height="380px">}}

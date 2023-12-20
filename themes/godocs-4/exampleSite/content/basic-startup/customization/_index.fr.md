@@ -8,6 +8,7 @@ draft: false
 
 **GoDocs** has been built to be as configurable as possible.
 
+
 ### Change the logo
 
 In `config.toml` you will find a logo variable. you can change your logo there.
@@ -34,19 +35,20 @@ If you need to change this default behavior, create a new file in `layouts/parti
 
 **GoDocs** support change color. You can change the colors from `assets/scss/variables.scss`. You can change the colors of the template as you want.
 
+
 ```scss
 /* Color Variables */
-$color-primary: #ff0043;
+$color-primary: #FF0043;
 $text-color: #333;
 $text-dark: #222;
 $text-light: #999;
 $body-bg: #fff;
-$border-color: #e2e2e2;
+$border-color: #E2E2E2;
 $black: #000;
 $white: #fff;
-$light: #fbfbfb;
+$light: #FBFBFB;
 
 /* Font Variables */
-$font-primary: "Montserrat", sans-serif;
-$icon-font: "themify";
+$font-primary: 'Montserrat', sans-serif;
+$icon-font: 'themify';
 ```
