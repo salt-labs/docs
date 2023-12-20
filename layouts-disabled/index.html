@@ -8,20 +8,38 @@
         <h1 class="mb-4">{{ .title | markdownify }}</h1>
         <p class="mb-4">{{ .subtitle | markdownify }}</p>
         {{ end }}
-        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+        <div
+          class="d-flex flex-wrap justify-content-center justify-content-lg-start"
+        >
           {{ with .Params.banner_button }}
-          <a class="btn btn-primary ms-2 me-2 me-lg-4 mt-2" href="{{.link | safeURL}}">{{.label}}</a>
+          <a
+            class="btn btn-primary ms-2 me-2 me-lg-4 mt-2"
+            href="{{.link | safeURL}}"
+            >{{.label}}</a
+          >
           {{ end }}
 
-          <form class="search-wrapper mt-2 mx-2 mx-lg-0" name="search-form" data-bs-toggle="modal" data-bs-target="#searchModal">
+          <form
+            class="search-wrapper mt-2 mx-2 mx-lg-0"
+            name="search-form"
+            data-bs-toggle="modal"
+            data-bs-target="#searchModal"
+          >
             <i class="search-icon fas fa-search"></i>
-            <input class="form-control px-4 text-dark" placeholder="{{ i18n `search_placeholder`}}" readonly>
-            <button type="button" class="search-button" data-search-toggler>{{ i18n "search" }}</button>
+            <input
+              class="form-control px-4 text-dark"
+              placeholder="{{ i18n `search_placeholder`}}"
+              readonly
+            />
+            <button type="button" class="search-button" data-search-toggler>
+              {{ i18n "search" }}
+            </button>
           </form>
         </div>
       </div>
       <div class="col-lg-4 d-lg-block d-none">
-        {{ partial "image.html" (dict "Src" .Params.banner.image "Alt" "illustration") }}
+        {{ partial "image.html" (dict "Src" .Params.banner.image "Alt"
+        "illustration") }}
       </div>
     </div>
   </div>
@@ -36,13 +54,17 @@
       <div class="col-lg-4 col-sm-6 mb-4">
         <div class="card match-height- text-center">
           <div class="card-body">
-            <h3 class="card-title h4 mb-4"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <h3 class="card-title h4 mb-4">
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h3>
             <ul class="list-styled text-start mb-4">
               {{ range .Data.Pages }}
               <li><a href="{{.Permalink}}">{{.Title}}</a></li>
               {{end}}
             </ul>
-            <a href="{{ .Permalink }}" class="btn btn-sm btn-outline-primary">{{ i18n "details" }}</a>
+            <a href="{{ .Permalink }}" class="btn btn-sm btn-outline-primary"
+              >{{ i18n "details" }}</a
+            >
           </div>
         </div>
       </div>
@@ -66,8 +88,7 @@
 <!-- /faq -->
 
 <!-- call to action -->
-{{ if .Params.call_to_action.enable }}
-{{ with .Params.call_to_action }}
+{{ if .Params.call_to_action.enable }} {{ with .Params.call_to_action }}
 <section class="section">
   <div class="container">
     <div class="row align-items-center">
@@ -77,17 +98,16 @@
       <div class="col-lg-8 text-lg-start text-center">
         <h2 class="mb-3 fw-bold">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | absLangURL }}" class="btn btn-primary">{{ .label }}</a>
-        {{ end }}
-        {{ end }}
+        {{ if .button.enable }} {{ with .button }}
+        <a href="{{ .link | absLangURL }}" class="btn btn-primary"
+          >{{ .label }}</a
+        >
+        {{ end }} {{ end }}
       </div>
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 <!-- /call to action -->
 
 {{ end }}

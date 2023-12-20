@@ -6,7 +6,7 @@ archetypeDir: archetypes
 assetDir: assets
 
 # hostname (and path) to the root
-baseURL: ""
+#baseURL: ""
 
 # Build configuration
 build:
@@ -165,13 +165,13 @@ ignoreCache: true
 imaging:
   # Resample filter
   # Ref: https://github.com/disintegration/imaging
-  resampleFilter: box
+  resampleFilter: Box
 
   # Default quality for JPEG
   quality: 90
 
   # Anchor used when cropping pictures
-  anchor: smart
+  anchor: Smart
 
   # Default background color
   bgColor: "#ffffff"
@@ -214,7 +214,7 @@ markup:
   asciidocExt:
     attributes: {}
     backend: html5
-    docType: article
+    #docType: article
     extensions: []
     failureLevel: fatal
     noHeaderOrFooter: true
@@ -254,7 +254,9 @@ markup:
       taskList: true
       typographer: true
     parser:
-      attribute: true
+      attribute:
+        block: false
+        title: true
       autoHeadingID: true
       autoHeadingIDType: github
     renderer:
@@ -265,7 +267,7 @@ markup:
   highlight:
     codeFences: true
     guessSyntax: false
-    hl_Lines: ""
+    hl_Lines: 1
     lineNoStart: 1
     lineNos: false
     lineNumbersInTable: true
@@ -275,7 +277,7 @@ markup:
     tabWidth: 2
 
   tableOfContents:
-    startLevel: 0
+    startLevel: 1
     endLevel: 6
     ordered: false
 
@@ -283,10 +285,6 @@ mediaTypes:
   application/manifest+json:
     suffixes:
       - webmanifest
-  text/netlify:
-    delimiter: ""
-    suffixes:
-      - ""
 
 # Minify configuration
 minify:
@@ -299,7 +297,6 @@ minify:
   minifyOutput: true
   tdewolff:
     css:
-      decimals: -1
       keepCSS2: true
     html:
       keepConditionalComments: true
@@ -308,10 +305,16 @@ minify:
       keepEndTags: true
       keepQuotes: false
       keepWhitespace: false
-    js: {}
-    json: {}
+    js:
+      keepVarNames: false
+      precision: 0
+      version: 0
+    json:
+      keepNumbers: false
+      precision: 0
     svg:
-      decimals: -1
+      keepComments: false
+      precision: 0
     xml:
       keepWhitespace: false
 
@@ -408,10 +411,10 @@ themesDir: themes
 theme: godocs-4
 
 # Timeout for generating page contents
-timeout: 10000
+timeout: "900s"
 
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
-timeZone: "UTC"
+timeZone: "Australia/Sydney"
 
 # Website title
 title: Docs
