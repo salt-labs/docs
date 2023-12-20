@@ -12,6 +12,24 @@ draft: false
 
 🔮
 
+### November 2023
+
+Added an awesome Carvel YouTube video from Thomas Vitale.
+
+{{< changelog "Added" >}}
+
+- Added link to YouTube video _Supercharge your Kubernetes Platform with Carvel by Thomas Vitale_
+
+{{</ changelog >}}
+
+{{< changelog "Changed" >}}
+
+- Update Theme version
+- Update NodeJS dependencies
+- Updated Go module dependencies
+
+{{</ changelog >}}
+
 ### July 2023
 
 Added carvel tutorial and `kapp-controller` deployment option draft diagrams.

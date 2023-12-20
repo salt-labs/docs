@@ -1,6 +1,6 @@
 ---
 favicon: "images/favicon.png"
-logo: "images/logo.png"
+logo: "images/logo.webp"
 
 main_site_link: "https://saltlabs.tech"
 
@@ -20,7 +20,7 @@ google_adsense: ""
 
 google_tag_manager: "GTM-WQQVKD7"
 
-custom_script: '<script>console.log("Preloading salt...")</script>'
+custom_script: '<script>console.log("Shaking salt...")</script>'
 
 table_of_content: true
 copyright: Copyleft by Salt Labs
