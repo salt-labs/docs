@@ -144,12 +144,12 @@ Although learning _Cloud Infrastructure_ is outside the scope of this _getting s
 
 - Cloud vs Cloud Native
 
-{{< button label="Watch video (1 min)" link="https://docs.saltlabs.tech/frameworks/#cloud-vs-cloud-native" >}}
+{{< button label="Watch video (1 min)" link="/frameworks/#cloud-vs-cloud-native" >}}
 </br>
 
 - Cloud Native Concepts
 
-{{< button label="Read posts (1 hr)" link="https://docs.saltlabs.tech/frameworks/#concepts" >}}
+{{< button label="Read posts (1 hr)" link="/frameworks/#concepts" >}}
 </br>
 
 - VMware also has a course available to answer frequently asked questions.
@@ -183,7 +183,7 @@ Some examples of vendor specific training resources can be found in the followin
 
 You might also want to check out what it takes to be a _Cloud Native Engineer_, particularly as the industry continues to move towards that dream of a _Cloud Agnostic_ future.
 
-{{< button label="Cloud Native Engineer (♾ infinity hrs)" link="https://docs.saltlabs.tech/cne/" >}}
+{{< button label="Cloud Native Engineer (♾ infinity hrs)" link="/tutorials/cne/" >}}
 </br>
 
 If none of the above makes sense, or you are completely new to the use of cloud technologies, you might want to check out this free introductory course from [edX](https://edx.org).
@@ -247,17 +247,16 @@ If you're completely new to Kubernetes, you might want to check out the followin
 - A summary of _Graph Theory_ concepts.
 
 {{< button label="View content (30 min)" link="/frameworks/graph-theory" >}}
-{{< button label="View content (30 min)" link="https://docs.saltlabs.tech/frameworks/graph-theory" >}}
 <br/>
 
 - A summary of _Promise Theory_ concepts.
 
-{{< button label="View content (1 hr)" link="https://docs.saltlabs.tech/frameworks/promise-theory" >}}
+{{< button label="View content (1 hr)" link="/frameworks/promise-theory" >}}
 <br/>
 
 - A summary of _12 Factor Applications_
 
-{{< button label="View content (1 hr)" link="https://docs.saltlabs.tech/frameworks/12factors" >}}
+{{< button label="View content (1 hr)" link="/frameworks/12factors" >}}
 <br/>
 
 #### Demos
