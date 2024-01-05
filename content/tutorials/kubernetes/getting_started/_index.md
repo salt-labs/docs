@@ -109,21 +109,22 @@ So now you know what a `container` is, how do you create one?
 
 If you haven't already created a container whilst following along in the previous section, now is the time to try it out.
 
-There are a number of tutorials available in this space, here are some examples from [Katacoda](https://katacoda.com/). Note that there is some overlap between the scenarios, it's up to the individual to choose how to best spend their time.
+There are a number of tutorials available in this space, with some examples below. If the links are dead or you find better ones, please submit a pull request.
 
-- A general course on container runtimes.
+- [x] Complete a general course on container runtimes.
 
-{{< button label="Start scenario (3 hr)" link="https://www.katacoda.com/courses/container-runtimes" >}}
+{{< button label="Cloud Yuga (3 hr)" link="https://cloudyuga.guru/hands_on_lab/container-runtimes-runc" >}}
 </br>
 
-- For `Docker` specifically,
+- [x] For `Docker` specifically, perform some container inception with `Docker-In-Docker`
 
-{{< button label="Start scenario (1 hr)" link="https://www.katacoda.com/courses/docker" >}}
+{{< button label="Cloud Yuga (1 hr)" link="https://cloudyuga.guru/hands_on_lab/how-to-run-docker-in-docker" >}}
 </br>
 
-- For `Podman/Buildah/Skopeo`,
+- [x] For Red Hat environments, ensure you know the `Podman/Buildah/Skopeo` toolchain.
 
-{{< button label="Start scenario (1 hr)" link="https://www.katacoda.com/courses/containers-without-docker/" >}}
+{{< button label="A Cloud Guru" link="https://www.pluralsight.com/cloud-guru/courses/hands-on-with-podman-containers-on-linux" >}}
+
 </br>
 
 And for the more adventurous, ensure you create a container directly using `runc` to see what's really under the hood. 😲
@@ -466,7 +467,7 @@ These are a mix of theory and hands on labs rolled into each course.
 
 - More _Certified Kubernetes Application Developer_ practice scenarios.
 
-{{< button label="Start Lab (3 hrs)" link="https://www.katacoda.com/liptanbiswas/courses/ckad-practice-challenges" >}}
+{{< button label="Start Lab (4 hrs)" link="https://github.com/dgkanatsios/CKAD-exercises" >}}
 <br/>
 
 - Interactive Scenarios for _Certified Kubernetes Administrator_
