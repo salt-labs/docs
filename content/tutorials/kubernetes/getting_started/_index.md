@@ -246,17 +246,18 @@ If you're completely new to Kubernetes, you might want to check out the followin
 
 - A summary of _Graph Theory_ concepts.
 
-{{< button label="View content (30 min)" link="https://docs.saltlabs.tech.com/frameworks/graph-theory" >}}
+{{< button label="View content (30 min)" link="/frameworks/graph-theory" >}}
+{{< button label="View content (30 min)" link="https://docs.saltlabs.tech/frameworks/graph-theory" >}}
 <br/>
 
 - A summary of _Promise Theory_ concepts.
 
-{{< button label="View content (1 hr)" link="https://docs.saltlabs.tech.com/frameworks/promise-theory" >}}
+{{< button label="View content (1 hr)" link="https://docs.saltlabs.tech/frameworks/promise-theory" >}}
 <br/>
 
 - A summary of _12 Factor Applications_
 
-{{< button label="View content (1 hr)" link="https://docs.saltlabs.tech.com/frameworks/12factors" >}}
+{{< button label="View content (1 hr)" link="https://docs.saltlabs.tech/frameworks/12factors" >}}
 <br/>
 
 #### Demos
