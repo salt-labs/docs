@@ -111,17 +111,17 @@ If you haven't already created a container whilst following along in the previou
 
 There are a number of tutorials available in this space, with some examples below. If the links are dead or you find better ones, please submit a pull request.
 
-- [x] Complete a general course on container runtimes.
+- Complete a general course on container runtimes.
 
 {{< button label="Cloud Yuga (3 hr)" link="https://cloudyuga.guru/hands_on_lab/container-runtimes-runc" >}}
 </br>
 
-- [x] For `Docker` specifically, perform some container inception with `Docker-In-Docker`
+- For `Docker` specifically, perform some container inception with `Docker-In-Docker`
 
 {{< button label="Cloud Yuga (1 hr)" link="https://cloudyuga.guru/hands_on_lab/how-to-run-docker-in-docker" >}}
 </br>
 
-- [x] For Red Hat environments, ensure you know the `Podman/Buildah/Skopeo` toolchain.
+- For Red Hat environments, ensure you know the `Podman/Buildah/Skopeo` toolchain.
 
 {{< button label="A Cloud Guru" link="https://www.pluralsight.com/cloud-guru/courses/hands-on-with-podman-containers-on-linux" >}}
 
