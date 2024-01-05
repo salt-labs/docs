@@ -109,21 +109,22 @@ So now you know what a `container` is, how do you create one?
 
 If you haven't already created a container whilst following along in the previous section, now is the time to try it out.
 
-There are a number of tutorials available in this space, here are some examples from [Katacoda](https://katacoda.com/). Note that there is some overlap between the scenarios, it's up to the individual to choose how to best spend their time.
+There are a number of tutorials available in this space, with some examples below. If the links are dead or you find better ones, please submit a pull request.
 
-- A general course on container runtimes.
+- Complete a general course on container runtimes.
 
-{{< button label="Start scenario (3 hr)" link="https://www.katacoda.com/courses/container-runtimes" >}}
+{{< button label="Cloud Yuga (3 hr)" link="https://cloudyuga.guru/hands_on_lab/container-runtimes-runc" >}}
 </br>
 
-- For `Docker` specifically,
+- For `Docker` specifically, perform some container inception with `Docker-In-Docker`
 
-{{< button label="Start scenario (1 hr)" link="https://www.katacoda.com/courses/docker" >}}
+{{< button label="Cloud Yuga (1 hr)" link="https://cloudyuga.guru/hands_on_lab/how-to-run-docker-in-docker" >}}
 </br>
 
-- For `Podman/Buildah/Skopeo`,
+- For Red Hat environments, ensure you know the `Podman/Buildah/Skopeo` toolchain.
 
-{{< button label="Start scenario (1 hr)" link="https://www.katacoda.com/courses/containers-without-docker/" >}}
+{{< button label="A Cloud Guru" link="https://www.pluralsight.com/cloud-guru/courses/hands-on-with-podman-containers-on-linux" >}}
+
 </br>
 
 And for the more adventurous, ensure you create a container directly using `runc` to see what's really under the hood. 😲
@@ -144,12 +145,12 @@ Although learning _Cloud Infrastructure_ is outside the scope of this _getting s
 
 - Cloud vs Cloud Native
 
-{{< button label="Watch video (1 min)" link="https://docs.saltlabs.tech/frameworks/#cloud-vs-cloud-native" >}}
+{{< button label="Watch video (1 min)" link="/frameworks/#cloud-vs-cloud-native" >}}
 </br>
 
 - Cloud Native Concepts
 
-{{< button label="Read posts (1 hr)" link="https://docs.saltlabs.tech/frameworks/#concepts" >}}
+{{< button label="Read posts (1 hr)" link="/frameworks/#concepts" >}}
 </br>
 
 - VMware also has a course available to answer frequently asked questions.
@@ -183,7 +184,7 @@ Some examples of vendor specific training resources can be found in the followin
 
 You might also want to check out what it takes to be a _Cloud Native Engineer_, particularly as the industry continues to move towards that dream of a _Cloud Agnostic_ future.
 
-{{< button label="Cloud Native Engineer (♾ infinity hrs)" link="https://docs.saltlabs.tech/cne/" >}}
+{{< button label="Cloud Native Engineer (♾ infinity hrs)" link="/tutorials/cne/" >}}
 </br>
 
 If none of the above makes sense, or you are completely new to the use of cloud technologies, you might want to check out this free introductory course from [edX](https://edx.org).
@@ -246,17 +247,17 @@ If you're completely new to Kubernetes, you might want to check out the followin
 
 - A summary of _Graph Theory_ concepts.
 
-{{< button label="View content (30 min)" link="https://docs.saltlabs.tech.com/frameworks/graph-theory" >}}
+{{< button label="View content (30 min)" link="/frameworks/graph-theory" >}}
 <br/>
 
 - A summary of _Promise Theory_ concepts.
 
-{{< button label="View content (1 hr)" link="https://docs.saltlabs.tech.com/frameworks/promise-theory" >}}
+{{< button label="View content (1 hr)" link="/frameworks/promise-theory" >}}
 <br/>
 
 - A summary of _12 Factor Applications_
 
-{{< button label="View content (1 hr)" link="https://docs.saltlabs.tech.com/frameworks/12factors" >}}
+{{< button label="View content (1 hr)" link="/frameworks/12factors" >}}
 <br/>
 
 #### Demos
@@ -466,7 +467,7 @@ These are a mix of theory and hands on labs rolled into each course.
 
 - More _Certified Kubernetes Application Developer_ practice scenarios.
 
-{{< button label="Start Lab (3 hrs)" link="https://www.katacoda.com/liptanbiswas/courses/ckad-practice-challenges" >}}
+{{< button label="Start Lab (4 hrs)" link="https://github.com/dgkanatsios/CKAD-exercises" >}}
 <br/>
 
 - Interactive Scenarios for _Certified Kubernetes Administrator_

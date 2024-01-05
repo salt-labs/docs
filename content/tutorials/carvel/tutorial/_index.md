@@ -12,7 +12,7 @@ draft: false
 
 For those new to carvel packaging, this is an example walk through taking you through the manual steps for the creation of a _Carvel Package_ "the hard way".
 
-It is assumed that the reader already has an understanding of Kubernetes concepts and has completed the example [Katacoda](https://katacoda.com/carvel/scenarios/kapp-controller-package-management) course from VMware or prior knowledge of the carvel components prior to following this.
+It is assumed that the reader already has an understanding of Kubernetes concepts and has knowledge of the carvel components prior to following this.
 
 In a production setting, there are utilities and tools that can be used to make this process easier, but this walkthrough is designed to show the manual steps to help understand the process and see _"how the sausage is made"_.
 

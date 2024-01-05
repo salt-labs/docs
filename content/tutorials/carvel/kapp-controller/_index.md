@@ -25,11 +25,6 @@ draft: false
 {{< button label="Review documentation (45min)" link="https://carvel.dev/kapp-controller/docs/latest/" >}}
 <br/>
 
-- Complete the `kapp-controller` katacoda scenario
-
-{{< button label="Complete Scenario (15min)" link="https://katacoda.com/carvel/scenarios/kapp-controller-package-management" >}}
-<br/>
-
 ### Custom Resources
 
 A visual on the relationship between the custom resources.

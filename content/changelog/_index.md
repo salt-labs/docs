@@ -12,6 +12,16 @@ draft: false
 
 🔮
 
+### January 2024
+
+Fixed a bunch of broken links thanks to the only person who has ever contacted me about them being broken. Thanks! 👍
+
+{{< changelog "Fixed" >}}
+
+- Fixed broken links.
+
+{{</ changelog >}}
+
 ### November 2023
 
 Added an awesome Carvel YouTube video from Thomas Vitale.
