@@ -4,7 +4,7 @@ date: 2021-03-01T00:00:00+00:00
 icon: "fa-solid fa-box"
 description: "The kapp-controller"
 type: "docs"
-weight: 3508
+weight: 3709
 draft: false
 ---
 

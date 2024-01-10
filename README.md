@@ -110,4 +110,4 @@ It can get a little confusing, so here's a table to track the weights.
 |    Search    |     1     |
 |  Frameworks  | 1000-1999 |
 | Technologies | 2000-2999 |
-|    Guides    | 3000-3999 |
+|  Tutorials   | 3000-3999 |

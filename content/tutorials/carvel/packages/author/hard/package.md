@@ -4,7 +4,7 @@ date: 2021-03-01T00:00:00+00:00
 icon: "fa-solid fa-box"
 description: "Carvel package custom resource"
 type: "docs"
-weight: 3506
+weight: 3707
 draft: false
 ---
 
