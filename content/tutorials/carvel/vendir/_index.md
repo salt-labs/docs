@@ -51,7 +51,7 @@ Prior to starting the tutorial, you need to have the Carvel toolchain installed 
 
 {{< tabs "install-carvel-vendir" >}}
 
-{{< tab "MacOS" >}}
+{{< tab "macOS" >}}
 
 ```bash
 wget -O- https://carvel.dev/install.sh | sudo bash
@@ -73,7 +73,7 @@ wget -O- https://carvel.dev/install.sh | sudo bash
 
 {{< tabs "install-helm-vendir" >}}
 
-{{< tab "MacOS" >}}
+{{< tab "macOS" >}}
 
 ```bash
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
@@ -95,7 +95,7 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
 {{< tabs "install-kustomize-vendir" >}}
 
-{{< tab "MacOS" >}}
+{{< tab "macOS" >}}
 
 ```bash
 curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
@@ -121,7 +121,7 @@ sudo mv kustomize /usr/local/bin/
 
 {{< tabs "install-yq-vendir" >}}
 
-{{< tab "MacOS" >}}
+{{< tab "macOS" >}}
 
 ```bash
 # https://github.com/mikefarah/yq/releases
@@ -183,7 +183,7 @@ curl \
 
 {{< tabs "configure-vendir" >}}
 
-{{< tab "MacOS" >}}
+{{< tab "macOS" >}}
 
 ```bash
 cat <<- _EOF_ > "vendir.yml"
@@ -253,7 +253,7 @@ The tool will automatically create a lock file in the current directory, take a 
 
 {{< tabs "inspect-vendir" >}}
 
-{{< tab "MacOS" >}}
+{{< tab "macOS" >}}
 
 ```shell
 cat vendir.lock.yml
@@ -277,7 +277,7 @@ As defined in the configuration file, the downloaded contents are stored in the 
 
 {{< tabs "vendor-vendir" >}}
 
-{{< tab "MacOS" >}}
+{{< tab "macOS" >}}
 
 ```shell
 tree -a vendor

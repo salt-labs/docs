@@ -16,7 +16,7 @@ In this example it is assumed you are creating an empty repository from scratch 
 
 Don't worry too much about understanding the layout early on, we will be filling it out as we go along.
 
-- Create a tutories folder and change into it. This is where we will be working from.
+- Create a tutorial folder and change into it. This is where we will be working from.
 
 {{< tabs "structure-rootdir" >}}
 
@@ -25,6 +25,18 @@ Don't worry too much about understanding the layout early on, we will be filling
 ```bash
 mkdir tutorial && cd $_
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -50,6 +62,18 @@ touch ${ROOT_DIR}/repos/${REPOSITORY_NAME}/packages/${PACKAGE_NAME}.${PACKAGE_FQ
 # Example:
 # cp ${ROOT_DIR}/repos/template.yaml ${ROOT_DIR}/repos/${REPOSITORY_NAME}.yaml
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -91,6 +115,18 @@ touch \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/ytt/{schema,defaults}.yaml \
     ${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/schema/{openapi,helm}.yaml
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 

@@ -8,19 +8,17 @@ weight: 3701
 draft: false
 ---
 
-### Prepare
-
 There are a few pre-requisites for this walkthrough you need to have ready before you can get started.
 
 - [x] Have a working [kind](https://kind.sigs.k8s.io/) development environment (Or alternative cluster with enough permissions to deploy)
 - [x] Have access to a container registry (or deploy one inside your kind cluster)
 - [x] Have all the [carvel](https://carvel.dev) tools locally available
 
-### Tips
+## Tips
 
 Here are a couple of tips to refer to before starting. These were received as feedback from users hitting local environment issues.
 
-#### DNS
+### DNS
 
 _It's always DNS_. Well, at least sometimes it is.
 
@@ -157,13 +155,13 @@ nslookup harbor-core.harbor.svc.cluster.local
 exit
 ```
 
-#### Certificates, Certificates, Certificates
+### Certificates, Certificates, Certificates
 
 When you're developing locally, you're likely be using self-signed certificates.
 
 Be prepared to add the equivalent `--insecure-skip-tls-verify` flags to your commands or flags to blindly trust the certificates.
 
-#### kapp-controller
+### kapp-controller
 
 For the `kapp-controller` specifically, you need to ensure that the certificate that is presented by the container registry you are using is trusted.
 
@@ -203,6 +201,6 @@ kubectl apply -f kapp-controller-config.yaml
 kubectl rollout restart -n kapp-controller deployment/kapp-controller
 ```
 
-### Onwards and upwards
+## Onwards and upwards
 
 Ok, with that out of the way, we can get started with the tutorial.

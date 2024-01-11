@@ -4,7 +4,7 @@ date: 2021-03-01T00:00:00+00:00
 icon: "fa-solid fa-box"
 description: "Carvel Package"
 type: "docs"
-weight: 3802
+weight: 3803
 draft: false
 ---
 
@@ -19,10 +19,24 @@ The `Package Author` has kindly created some examples for you to use as a starti
 {{< tab "Linux" >}}
 
 ```bash
+# Create a durectory for the values.
 mkdir -p /tmp/tutorial-values
 
+# Copy the sample values files.
 cp "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/examples/{PackageInstall,Secret}.yaml" /tmp/tutorial-values/
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -35,8 +49,21 @@ cp "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/examples/{PackageIns
 {{< tab "Linux" >}}
 
 ```bash
+# Everybody uses vim right?
 vim /tmp/tutorial-values/Secret.yaml
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -49,8 +76,21 @@ vim /tmp/tutorial-values/Secret.yaml
 {{< tab "Linux" >}}
 
 ```bash
+# Apply the values file to the cluster
 kubectl apply -f /tmp/tutorial-values
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -68,6 +108,18 @@ kubectl get pkgi -n ${PACKAGE_NAMESPACE} -w
 
 {{< /tab >}}
 
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
 {{< /tabs >}}
 
 - Check out the super important application and make sure it looks healthy.
@@ -79,6 +131,18 @@ kubectl get pkgi -n ${PACKAGE_NAMESPACE} -w
 ```bash
 kubectl get all -n "${DEPLOY_NAMESPACE}"
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 

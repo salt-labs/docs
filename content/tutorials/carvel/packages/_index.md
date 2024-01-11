@@ -10,16 +10,16 @@ draft: false
 
 ## Overview
 
-Once you know about the individual tools, now it's time to look at how to combine them.
+Once you know about the individual tools, it's time to look at how to combine them.
 
 ### Package Author
 
 Tutorials for the Carvel `Package Author`.
 
-|            Name             | Description                                              |
-| :-------------------------: | :------------------------------------------------------- |
-| [The hard way](author/hard) | Learn how the sausage is made building a Carvel package. |
-| [The easy way](author/easy) | Take the easy way out with the awesome `kctrl` utility.  |
+|            Name             | Description                                                       |
+| :-------------------------: | :---------------------------------------------------------------- |
+| [The hard way](author/hard) | Learn how the sausage is made building a Carvel package manually. |
+| [The easy way](author/easy) | Take the easy way out with the awesome `kctrl` utility.           |
 
 ### Package Consumer
 

@@ -56,6 +56,7 @@ One example is `test.ping` which returns `True` if the Salt Minion is responding
 Example usage
 
 ```bash
+# Check which hosts are alive.
 salt '*' test.ping
 ```
 
@@ -67,7 +68,8 @@ Salt Runners, invoked from `salt-run` are similar to Salt Execution modules exce
 
 Salt States describe the desired state of a specific part of a targeted system. For example the following state ensure that a file is present on the system
 
-```bash
+```yaml
+# Example
 Ensure hosts file present:
   file.present:
     - name: /etc/hosts

@@ -14,7 +14,7 @@ These are all relative to the _root_ folder of where you will be working from.
 
 _Note that all commands from this point will use these so choose carefully._
 
-If you just completed the `Package Author` tutorial and are not following on with this one, you don't need to redefine these.
+If you just completed the `Package Author` tutorial and are now following on with this one, you don't need to redefine these as they should already be set.
 
 {{< tabs "variables" >}}
 
@@ -74,6 +74,18 @@ OCI_REGISTRY="ghcr.io"
 # but it will be used the suffix added after the registry.
 OCI_PROJECT="salt-labs/kapps"
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 

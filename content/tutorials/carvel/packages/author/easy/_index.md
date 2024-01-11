@@ -10,4 +10,11 @@ draft: false
 
 ## Overview
 
-This tutorial authors a Carvel packagee using the `kctrl` utility from the [kapp-controller](https://github.com/carvel-dev/kapp-controller) repository.
+This tutorial authors a Carvel package using the `kctrl` CLI which interfaces with the [kapp-controller](https://github.com/carvel-dev/kapp-controller).
+
+## Steps
+
+1. [Prepare](prepare)
+2. [Define variables](variables)
+3. [Run kctrl](kctrl)
+4. [Development inner-loop](loop)

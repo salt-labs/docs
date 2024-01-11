@@ -39,6 +39,18 @@ _EOF_
 
 {{< /tab >}}
 
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
 {{< /tabs >}}
 
 **Question:** Wait, now hold up. What is this `PackageMetadata` object and all this about?
@@ -82,6 +94,18 @@ ytt \
 
 {{< /tab >}}
 
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
 {{< /tabs >}}
 
 For a Helm chart however...
@@ -96,6 +120,18 @@ For a Helm chart however...
 # YES: -> Then try the Bitnami schema generator tool.
 # https://github.com/bitnami-labs/readme-generator-for-helm
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -147,6 +183,18 @@ _EOF_
 
 {{< /tab >}}
 
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
 {{< /tabs >}}
 
 - No matter which option you have performed, you should always manually validate the schema looks correct before continuing as this process can be quite fragile.
@@ -163,6 +211,18 @@ yq \
   --prettyPrint \
   "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/schema/openapi.yaml"
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -232,6 +292,18 @@ spec:
 
 _EOF_
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 

@@ -17,3 +17,25 @@ TODO: Finish this.
 - kapp inspect
 - kctrl pause/kick
 - yq .usefulErrorMessage trick
+
+{{< tabs >}}
+
+{{< tab "Linux" >}}
+
+**TODO:** Put commands here for Linux
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**TODO:** Put commands here for macOS
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**TODO:** Put commands here for Windows
+
+{{< /tab >}}
+
+{{< /tabs >}}

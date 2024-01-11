@@ -41,6 +41,18 @@ cp -f \
 
 {{< /tab >}}
 
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
 {{< /tabs >}}
 
 - Run `kbld` again, this time to resolve the image references for the repository.
@@ -59,6 +71,18 @@ kbld \
   --imgpkg-lock-output ${ROOT_DIR}/repos/${REPOSITORY_NAME}/.imgpkg/images.yml \
   --registry-ca-cert-path "${HOME}/.docker/certs.d/${OCI_REGISTRY}/ca.crt"
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -90,6 +114,18 @@ _EOF_
 
 {{< /tab >}}
 
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
 {{< /tabs >}}
 
 - Ship it!
@@ -106,6 +142,18 @@ imgpkg push \
   --lock-output "${ROOT_DIR}/repos/${REPOSITORY_NAME}/BundleLock.yaml" \
   --registry-ca-cert-path "${HOME}/.docker/certs.d/${OCI_REGISTRY}/ca.crt"
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -160,6 +208,18 @@ _EOF_
 
 {{< /tab >}}
 
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
 {{< /tabs >}}
 
 - Create the `pkgi` sample
@@ -187,6 +247,18 @@ spec:
         name: ${PACKAGE_NAME}-values
 _EOF_
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -218,6 +290,18 @@ stringData:
       port: 80
 _EOF_
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
