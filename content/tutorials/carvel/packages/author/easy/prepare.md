@@ -18,7 +18,7 @@ In order to test the package we need a kubernetes cluster. For this we recommend
 
 {{< tabs >}}
 
-{{< tab "Cross Platform" >}}
+{{< tab "Linux" >}}
 
 ```bash
 kind create cluster
@@ -26,41 +26,100 @@ kind create cluster
 
 {{< /tab >}}
 
-{{< /tabs >}}
+{{< tab "macOS" >}}
 
-- If you have not done so already, now is a good time to install `kctrl` by downloading the binary for your OS from the [releases](https://github.com/carvel-dev/kapp-controller/releases) page.
+**TODO:** Put commands here for macOS
 
-{{< tabs >}}
+{{< /tab >}}
 
-{{< tab "Cross Platform" >}}
+{{< tab "Windows" >}}
 
-```bash
-kctrl version
-```
+**TODO:** Put commands here for Windows
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Mind
+- If you have not done so already, now is a good time to get the [Carvel](https://carvel.dev/) toolchain installed.
+
+{{< tabs >}}
+
+{{< tab "Linux" >}}
+
+```bash
+# curl method
+curl -L https://carvel.dev/install.sh | bash
+
+# wget method
+wget -O- https://carvel.dev/install.sh | bash
+```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+```bash
+# curl method
+curl -L https://carvel.dev/install.sh | bash
+
+# or if you are using homebrew
+brew tap carvel-dev/carvel
+brew install ytt kbld kapp imgpkg kwt vendir kctrl
+```
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**TODO:** Put commands here for Windows
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+- Now that you have a working Cluster, and the tools available locally, install `kapp-controller` into your Cluster. Note that if you are in an offline environment you will need to download the release manifest and modify to suit.
+
+{{< tabs >}}
+
+{{< tab "Linux" >}}
+
+```bash
+kubectl apply -f https://github.com/carvel-dev/kapp-controller/releases/latest/download/release.yml
+```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**TODO:** Put commands here for macOS
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**TODO:** Put commands here for Windows
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+## Questions
 
 You need to prepare your mind 🧠 and do some research before continuing.
 
 Prepare answers to these questions before continuing.
 
 - What package are you building today?
-  - Name
-  - Version
-- Am I building container images or using a pre-built release?
-- What type of release (Helm, Manifets, etcetera)
+- What is the package name?
+- What is the package version?
+- Are you building container images or using a pre-built release?
+- What type of upstream artifact is it (Helm, Manifests, etcetera)
 - What are the URLs or Folders where the upstream artifacts are sourced from
-- Where will the
+- Which Container Registry will the resulting package and repository be pushed to?
 
 ## Variables
 
-The next step is to define variables about your package to make the subsequent steps easier.
-
-- Do this step
+- The next step is to define variables about your package to make the subsequent steps easier.
 
 {{< tabs >}}
 
@@ -68,30 +127,36 @@ The next step is to define variables about your package to make the subsequent s
 
 ```bash
 # Set the full path to the root level folder that will house all packages and repos.
-CARVEL_PACKAGE_HOME="$(pwd)/carvel"
+export CARVEL_PACKAGE_HOME="$(pwd)/carvel"
 
 # Set the Namespace where you will be managing carvel packages from.
-CARVEL_PACKAGE_NAMESPACE="kapps"
+export CARVEL_PACKAGE_NAMESPACE="carvel"
 
-# Set a name for your Carvel package repository
-CARVEL_PACKAGE_REPO="kapps"
+# Set the Service Account used to install Carvel packages
+export CARVEL_PACKAGE_SA="kapp-controller-sa"
+
+# Set a name for your Carvel package repository.
+export CARVEL_PACKAGE_REPO="kapps"
 
 # Set the FQDN for the Carvel packages
-CARVEL_PACKAGE_FQDN="saltlabs.tech"
+export CARVEL_PACKAGE_FQDN="saltlabs.tech"
 
 # Set the name of the package we will be creating
-CARVEL_PACKAGE_NAME="portal"
+export CARVEL_PACKAGE_NAME="portal"
 
 # Set the version of the package you are creating.
-CARVEL_PACKAGE_VERSION="0.0.1"
+export CARVEL_PACKAGE_VERSION="0.0.1"
 
 # Where is the container registry you will be using?
-OCI_REGISTRY="ghcr.io"
+export OCI_REGISTRY="ghcr.io"
 
 # What is the name of the Project/Org/Library within the image registry
 # Different registries call this different things,
 # but it will be used the suffix added after the registry.
-OCI_PROJECT="salt-labs/kapps"
+export OCI_PROJECT="salt-labs/${CARVEL_PACKAGE_NAMESPACE}"
+
+# Initialize a counter for your development loop.
+export CARVEL_PACKAGE_COUNTER=0
 ```
 
 {{< /tab >}}

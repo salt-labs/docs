@@ -12,7 +12,7 @@ draft: false
 
 This tutorial authors a Carvel package using the `kctrl` CLI which interfaces with the [kapp-controller](https://github.com/carvel-dev/kapp-controller).
 
-**NOTE:** There is now a tutorial in the official documentation [here](https://carvel.dev/kapp-controller/docs/latest/kctrl-package-authoring)
+**NOTE:** There is also a tutorial in the official documentation [here](https://carvel.dev/kapp-controller/docs/latest/kctrl-package-authoring)
 
 ## Steps
 
