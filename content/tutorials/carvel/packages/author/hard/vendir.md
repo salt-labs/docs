@@ -4,7 +4,7 @@ date: 2021-03-01T00:00:00+00:00
 icon: "fa-solid fa-box"
 description: "Vendoring upstream dependencies"
 type: "docs"
-weight: 3503
+weight: 3704
 draft: false
 ---
 
@@ -43,6 +43,18 @@ _EOF_
 
 {{< /tab >}}
 
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
 {{< /tabs >}}
 
 - Execute `vendir` to pull down the upstream content unmodified and place it into the `vendor` folder.
@@ -60,6 +72,18 @@ vendir sync \
 # Take a look at the upstream content you just downloaded.
 tree -a "${ROOT_DIR}/packages/${PACKAGE_NAME}/${PACKAGE_VERSION}/bundle/vendor"
 ```
+
+{{< /tab >}}
+
+{{< tab "macOS" >}}
+
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 

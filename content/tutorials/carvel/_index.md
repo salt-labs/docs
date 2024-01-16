@@ -4,7 +4,7 @@ date: 2021-01-20T15:00:00+10:00
 icon: "fas fa-tools"
 description: "Carvel tutorials and training material."
 type: "docs"
-weight: 3203
+weight: 3300
 draft: false
 ---
 
@@ -16,15 +16,15 @@ _Carvel_, formally known as _k14s_, is a Kubernetes toolchain comprised of indiv
 
 Information and tutorial on the toolchain components.
 
-| Link                               | Description                              |
-| ---------------------------------- | ---------------------------------------- |
-| [vendir](vendir)                   | Getting started with `vendir`            |
-| [ytt](ytt)                         | Getting started with `ytt`               |
-| [kbld](kbld)                       | Getting started with `kbld`              |
-| [imgpkg](imgpkg)                   | Getting started with `imgpkg`            |
-| [kapp](kapp)                       | Getting started with `kapp`              |
-| [kapp-controller](kapp-controller) | Getting started with `kapp-controller`   |
-| [tutorial](tutorial)               | Create a Carvel Package _"the hard way"_ |
+| Link                               | Description                            |
+| ---------------------------------- | -------------------------------------- |
+| [vendir](vendir)                   | Getting started with `vendir`          |
+| [ytt](ytt)                         | Getting started with `ytt`             |
+| [kbld](kbld)                       | Getting started with `kbld`            |
+| [imgpkg](imgpkg)                   | Getting started with `imgpkg`          |
+| [kapp](kapp)                       | Getting started with `kapp`            |
+| [kapp-controller](kapp-controller) | Getting started with `kapp-controller` |
+| [packages](packages)               | Working with Carvel Packages           |
 
 ## Resources
 

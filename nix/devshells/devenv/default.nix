@@ -94,7 +94,7 @@ in
             revive.enable = true;
 
             # Spelling
-            hunspell.enable = false;
+            hunspell.enable = true;
             typos.enable = true;
 
             # Git commit messages

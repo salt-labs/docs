@@ -14,11 +14,19 @@ draft: false
 
 ### January 2024
 
-Fixed a bunch of broken links thanks to the only person who has ever contacted me about them being broken. Thanks! 👍
+Fixed broken links and added a new Carvel tutorial.
+
+Special thanks to the person who contacted me about them being broken, at least someone is reading this! 👍 😄
 
 {{< changelog "Fixed" >}}
 
 - Fixed broken links.
+
+{{</ changelog >}}
+
+{{< changelog "Added" >}}
+
+- Added a Carvel package tutorial the "easy way"
 
 {{</ changelog >}}
 

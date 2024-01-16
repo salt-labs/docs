@@ -4,7 +4,7 @@ date: 2021-03-01T00:00:00+00:00
 icon: "fa-solid fa-box"
 description: "Variables"
 type: "docs"
-weight: 3501
+weight: 3702
 draft: false
 ---
 
