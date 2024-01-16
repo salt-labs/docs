@@ -12,6 +12,13 @@ draft: false
 
 Once you know about the individual tools, it's time to look at how to combine them.
 
+The carvel toolchain has a clear separation between the `Package Author` and `Package Consumer` personas.
+
+- `Package Authors` create and publish Carvel packages.
+- `Package Consumers` deploy and update Carvel packages is running clusters.
+
+Depending on your team size and responsibilities you might wear both hats 🤠
+
 ### Package Author
 
 Tutorials for the Carvel `Package Author`.

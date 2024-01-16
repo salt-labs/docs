@@ -16,10 +16,7 @@ Carvel packaging steps from the perspective of the `Package Consumer` persona.
 
 To give you an idea on what to expect, here is a high level overview of the steps we will work through.
 
-1. [Define variables](variables)
-2. [Deploy the Repository](repository)
-3. [Deploy the Package](package)
-<!--
-TODO: Finish this...
-4. [Troubleshoot](troubleshoot)
-5. -->
+- [ ] [Defining values](steps)
+- [ ] [Deploying the Repository](steps)
+- [ ] [Deploying the Package](steps)
+- [ ] [Troubleshooting](troubleshoot)

@@ -53,13 +53,13 @@ mkdir --parents "${CARVEL_PACKAGE_HOME}/packages/${CARVEL_PACKAGE_NAME}.${CARVEL
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -101,13 +101,13 @@ kubectl config set-context --current --namespace ${CARVEL_PACKAGE_NAMESPACE}
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -136,13 +136,13 @@ tree -a "${CARVEL_PACKAGE_HOME}/packages/${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -165,13 +165,13 @@ EOF
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -209,13 +209,13 @@ yq eval-all \
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -243,13 +243,13 @@ kctrl --debug \
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -282,13 +282,13 @@ kctrl --debug \
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -313,13 +313,13 @@ kctrl package repository release \
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -345,13 +345,13 @@ cp --force \
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -379,13 +379,13 @@ yq \
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -422,13 +422,13 @@ EOF
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -476,13 +476,13 @@ kubectl get pkgr -A
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -504,13 +504,13 @@ kubectl apply \
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -544,13 +544,13 @@ kubectl apply \
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -590,13 +590,13 @@ kctrl package installed kick \
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 

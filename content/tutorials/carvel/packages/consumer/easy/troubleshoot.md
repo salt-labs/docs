@@ -8,15 +8,19 @@ weight: 3804
 draft: true
 ---
 
+### Overview
+
 But what about when things go wrong?
 
-TODO: Finish this.
+**TODO:** Finish this.
 
 - kubectl get pkgr,pkgm,pkg,pkgm
 - kapp-controller health
 - kapp inspect
 - kctrl pause/kick
 - yq .usefulErrorMessage trick
+
+- Do more things and stuff...
 
 {{< tabs >}}
 
@@ -28,13 +32,13 @@ TODO: Finish this.
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 

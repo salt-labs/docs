@@ -28,13 +28,13 @@ kind create cluster
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -71,7 +71,7 @@ brew install ytt kbld kapp imgpkg kwt vendir kctrl
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -91,13 +91,13 @@ kubectl apply -f https://github.com/carvel-dev/kapp-controller/releases/latest/d
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
@@ -163,13 +163,13 @@ export CARVEL_PACKAGE_COUNTER=0
 
 {{< tab "macOS" >}}
 
-**TODO:** Put commands here for macOS
+**Do you use macOS? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
 {{< tab "Windows" >}}
 
-**TODO:** Put commands here for Windows
+**Do you use Windows? Why not [contribute](https://github.com/salt-labs/docs) the commands that you would run here...**
 
 {{< /tab >}}
 
