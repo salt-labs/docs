@@ -176,6 +176,8 @@ spec:
   displayName: ${CARVEL_PACKAGE_NAME}
   longDescription: ${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}
   shortDescription: ${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}
+  maintainers: []
+  categories: []
 EOF
 
 # Package Readme
@@ -593,9 +595,7 @@ stringData:
   values.yaml: |
     ---
 
-    # Place value overrides here.
-
-    registry: harbor.internal.lan
+    # Place value overrides for your specific package here.
 
 EOF
 ```

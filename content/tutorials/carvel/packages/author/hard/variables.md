@@ -61,6 +61,9 @@ PACKAGE_AUTHOR_EMAIL="MAHDTech@saltlabs.tech"
 # Package Author website
 PACKAGE_WEBSITE="https://saltlabs.tech"
 
+# What is the service account that is used to install packages
+PACKAGE_SA="kapp-controller-sa"
+
 # What is the version of the repository you will be creating?
 REPOSITORY_VERSION="$(date +%Y-%m-%d)"
 

@@ -237,7 +237,7 @@ metadata:
   name: ${PACKAGE_NAME}
   namespace: ${PACKAGE_NAMESPACE}
 spec:
-  serviceAccountName: ${PACKAGE_NAMESPACE}-sa
+  serviceAccountName: ${PACKAGE_SA}
   packageRef:
     refName: ${PACKAGE_NAME}.${PACKAGE_FQN}
     versionSelection:
