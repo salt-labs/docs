@@ -117,13 +117,14 @@ kubectl config set-context --current --namespace ${CARVEL_PACKAGE_NAMESPACE}
 
 ### Init
 
-- Create a template to be used by the initialization process.
+- Create the templates used by the initialization process.
 
 {{< tabs >}}
 
 {{< tab "Linux" >}}
 
 ```bash
+# PackageBuild
 cat <<- EOF > "${CARVEL_PACKAGE_HOME}/packages/${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}/package-build.yml"
 ---
 apiVersion: kctrl.carvel.dev/v1alpha1
@@ -161,6 +162,50 @@ spec:
         includePaths:
             - upstream
             - config
+EOF
+
+# PackageMetadata
+cat <<- EOF > "${CARVEL_PACKAGE_HOME}/packages/${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}/package-resources.yml"
+---
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: PackageMetadata
+metadata:
+  creationTimestamp: null
+  name: ${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}
+spec:
+  displayName: ${CARVEL_PACKAGE_NAME}
+  longDescription: ${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}
+  shortDescription: ${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}
+EOF
+
+# Package Readme
+cat <<- EOF > "${CARVEL_PACKAGE_HOME}/packages/${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}/README.md"
+# Carvel package for ${CARVEL_PACKAGE_NAME}
+
+This Carvel package provides << awesome functionality >>
+
+## Requirements
+
+This package has the following requirements.
+
+- Kubernetes \`v0.0.0\`
+- Kapp Controller \`v0.0.0\`
+
+## Components
+
+## Configuration
+
+The following configuration values can be set to customize the ${CARVEL_PACKAGE_NAME} installation.
+
+### Global
+
+| Value | Required/Optional | Description |
+|-------|-------------------|-------------|
+| \`name\` | Optional | description |
+
+## Usage Examples
+
+There are starting templates available in [examples](./examples)
 EOF
 ```
 
