@@ -130,7 +130,7 @@ cat <<- EOF > "${CARVEL_PACKAGE_HOME}/packages/${CARVEL_PACKAGE_NAME}.${CARVEL_P
 apiVersion: kctrl.carvel.dev/v1alpha1
 kind: PackageBuild
 metadata:
-  creationTimestamp: null
+  creationTimestamp: "$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
   name: ${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}
 spec:
   release:
@@ -170,12 +170,14 @@ cat <<- EOF > "${CARVEL_PACKAGE_HOME}/packages/${CARVEL_PACKAGE_NAME}.${CARVEL_P
 apiVersion: data.packaging.carvel.dev/v1alpha1
 kind: PackageMetadata
 metadata:
-  creationTimestamp: null
+  creationTimestamp: "$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
   name: ${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}
 spec:
   displayName: ${CARVEL_PACKAGE_NAME}
   longDescription: ${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}
   shortDescription: ${CARVEL_PACKAGE_NAME}.${CARVEL_PACKAGE_FQDN}
+  maintainers: []
+  categories: []
 EOF
 
 # Package Readme
@@ -593,9 +595,7 @@ stringData:
   values.yaml: |
     ---
 
-    # Place value overrides here.
-
-    registry: harbor.internal.lan
+    # Place value overrides for your specific package here.
 
 EOF
 ```
